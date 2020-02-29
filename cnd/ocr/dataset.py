@@ -1,19 +1,19 @@
 import cv2
 import numpy as np
-import pathlib
 import re
+from typing import List
 
 from torch.utils.data import Dataset
 
 class OcrDataset(Dataset):
-    def __init__(self, path_to_data: str, transforms=None):
-        # TODO: Here you can create samples from dirs and initialize transfroms
-        self.__path_to_data = path_to_data
+    def __init__(self, data: List, transforms=None):
+        self.data = data
         self.__transforms = transforms
-        self.__all_posix_filenames = self.__get_all_posix_filenames()
         self.__all_str_filenames = self.__get_all_str_filenames()
         self.__region_codes = self.__get_region_codes()
 
+    def __len__(self):
+        return len(self.data)
 
     def __get_region_codes(self):
         region_codes = list(np.arange(1, 100))
@@ -25,16 +25,12 @@ class OcrDataset(Dataset):
         region_codes = set(['0' + str(item) if len(str(item)) == 1 else str(item) for item in region_codes])
         return region_codes
 
-    def __get_all_posix_filenames(self):
-        dataset_paths = pathlib.Path(self.__path_to_data)
-        return list(dataset_paths.glob('**/*'))
-
     def __get_all_str_filenames(self):
-        return [str(file.name) for file in self.__all_posix_filenames if file.is_file()]
+        return [str(file.name) for file in self.data if file.is_file()]
 
-    def get_train_sample(self, path_to_file: str):
-        img = cv2.imread(path_to_file)
-        file = pathlib.Path(path_to_file)
+    def __getitem__(self, idx):
+        file = self.data[idx]
+        img = cv2.imread(str(file))
 
         if file.is_file():
             name = file.name
