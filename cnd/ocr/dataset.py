@@ -2,11 +2,16 @@ import cv2
 import numpy as np
 import re
 from typing import List
-
+from torchvision.transforms.transforms import Compose
 from torch.utils.data import Dataset
 
 class OcrDataset(Dataset):
-    def __init__(self, data: List, transforms=None):
+    def __init__(self, data: List, transforms: Compose):
+        """
+        data - список путей к файлам в формате pathlib.Path
+        transforms - Compose объект с трансформами и аугментациями
+        """
+
         self.data = data
         self.__transforms = transforms
         self.__all_str_filenames = self.__get_all_str_filenames()
@@ -31,12 +36,10 @@ class OcrDataset(Dataset):
     def __getitem__(self, idx):
         file = self.data[idx]
         img = cv2.imread(str(file))
+        img = self.__transforms(img)
 
         if file.is_file():
             name = file.name
-
-            if '_nolabel' in name:
-                return img, ""
 
             name = re.sub('\\s\\(2\\)', '', name)
             found = re.search('[A-Z]\d{3}[A-Z]{2}\\s\d{2,5}', name)
