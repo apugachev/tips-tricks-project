@@ -1,97 +1,107 @@
 import argparse
-import os
 
 from torch.utils.data import DataLoader, ConcatDataset
-
 from cnd.ocr.dataset import OcrDataset
 from cnd.ocr.model import CRNN
+from cnd.config import OCR_EXPERIMENTS_DIR, CONFIG_PATH, Config
+from cnd.ocr.transforms import get_transforms
+from cnd.ocr.metrics import WrapCTCLoss
+from catalyst.dl import SupervisedRunner, CheckpointCallback
 import string
+from pathlib import Path
 import torch
+
+from sklearn.model_selection import train_test_split
 
 torch.backends.cudnn.enabled = False
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-en", "--experimet_name", help="Save folder name", required=True)
+parser.add_argument("-en", "--experiment_name", help="Save folder name", required=True)
 parser.add_argument("-gpu_i", "--gpu_index", type=str, default="0", help="gpu index")
 args = parser.parse_args()
 
-os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
-os.environ["CUDA_VISIBLE_DEVICES"] = args.gpu_index
+# define experiment path
+EXPERIMENT_NAME = args.experiment_name
+EXPERIMENT_DIR = OCR_EXPERIMENTS_DIR / EXPERIMENT_NAME
 
-#define experiment path
-# EXPERIMENT_NAME = args.experimet_name
-# EXPERIMENT_DIR = OCR_EXPERIMENTS_DIR / EXPERIMENT_NAME
+CV_CONFIG = Config(CONFIG_PATH)
 
 DATASET_PATHS = [
-    "ds1"
+    Path(CV_CONFIG.get("data_path"))
 ]
+# CHANGE YOUR BATCH SIZE
+BATCH_SIZE = 200
+# 400 EPOCH SHOULD BE ENOUGH
+NUM_EPOCHS = 5
 
-BATCH_SIZE = 512
-
-# CV_CONFIG =
-
-alphabet = ":,.; "
+alphabet = " "
 alphabet += string.ascii_uppercase
 alphabet += "".join([str(i) for i in range(10)])
 
-PARAMS = {
-    "model": (
-        "CRNN",
-        {
-            "image_height": 10,
-            "number_input_channels": 1,
-            "number_class_symbols": 32,
-            "rnn_size": 128,
-        },
-    ),
-    "loss": {},
-    "optimizer": ("Adam", {"lr": 0.001}),
-    "alphabet": alphabet,
-    "device": "cuda",
+MODEL_PARAMS = {
+    "image_height": 32,
+    "number_input_channels": 1,
+    "number_class_symbols": len(alphabet),
+    "rnn_size": 64,
 }
 
 if __name__ == "__main__":
-    # if EXPERIMENT_DIR.exists():
-    #     print(f"Folder 'EXPERIMENT_DIR' already exists")
-    # else:
-    #     EXPERIMENT_DIR.mkdir(parents=True, exist_ok=True)
+    if EXPERIMENT_DIR.exists():
+        print(f"Folder 'EXPERIMENT_DIR' already exists")
+    else:
+        EXPERIMENT_DIR.mkdir(parents=True, exist_ok=True)
 
-    # transforms =  # define your transforms here
-    # define data path
-    train_dataset_paths = [p / "train" for p in DATASET_PATHS]
-    train_datasets = [
-        OcrDataset(p)
-        for p in train_dataset_paths
-    ]
+    transforms = get_transforms(CV_CONFIG.get('ocr_image_size'))
 
-    train_dataset = ConcatDataset(train_datasets)
+    path = '/Users/alex/PycharmProjects/tips-tricks-main-repo/Tips-Tricks/project/CropNumbers'
+    dataset_paths = Path(path)
+
+    filepaths = list(dataset_paths.glob('**/*'))[4:]
+    filepaths = [file for file in filepaths if file.is_file()]
+
+    train_paths, val_paths = train_test_split(filepaths)
+
+    train_dataset = ConcatDataset([
+        OcrDataset(train_paths, transforms)
+    ])
+
+    val_dataset = ConcatDataset([
+        OcrDataset(val_paths, transforms)
+    ])
+
 
     train_loader = DataLoader(
         train_dataset,
         batch_size=BATCH_SIZE,
         shuffle=True,
         drop_last=True,
-        num_workers=10,
+        num_workers=0
     )
-
-    val_dataset_paths = [p / "val" for p in DATASET_PATHS]
-    val_dataset = ConcatDataset([OcrDataset(p) for p in val_dataset_paths])
 
     val_loader = DataLoader(
-        val_dataset, batch_size=BATCH_SIZE, shuffle=False, num_workers=4
+        val_dataset,
+        batch_size=BATCH_SIZE,
+        shuffle=False,
+        num_workers=0
     )
 
-    model = CRNN(PARAMS)
-    #define callbacks if any
-    callbacks = []
-    #define metrics if any
-    metrics = []
+    model = CRNN(**MODEL_PARAMS)
+    # YOU CAN ADD CALLBACK IF IT NEEDED, FIND MORE IN
+    optimizer = torch.optim.Adam(model.parameters(), lr=1e-4)
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer)
+    # define callbacks if any
+    callbacks = [CheckpointCallback(save_n_best=10)]
+    # input_keys - which key from dataloader we need to pass to the model
+    runner = SupervisedRunner(input_key="image", input_target_key="targets")
 
-    fit(model,
-        train_loader,
-        val_loader=val_loader,
-        max_epochs=1500,
-        metrics=metrics,
-        callbacks=callbacks,
-        metrics_on_train=True,
+    runner.train(
+        model=model,
+        criterion=WrapCTCLoss(alphabet),
+        optimizer=optimizer,
+        scheduler=scheduler,
+        loaders={'train': train_loader, "valid": val_loader},
+        logdir="./logs/ocr",
+        num_epochs=NUM_EPOCHS,
+        verbose=True,
+        callbacks=callbacks
     )

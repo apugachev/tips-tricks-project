@@ -1,11 +1,14 @@
+import pathlib
 import trafaret as t
 from trafaret_config import read_and_validate
+
+OCR_EXPERIMENTS_DIR = pathlib.Path('/Users/alex/PycharmProjects/tips-tricks-project/experiments')
+CONFIG_PATH = pathlib.Path('/Users/alex/PycharmProjects/tips-tricks-project/cnd/config.json')
 
 CONFIG_TRAFARET = t.Dict({
     t.Key('data_path'): t.String(),
     t.Key('ocr_image_size'): t.List(t.Int[1:], 2, 2),
 })
-
 
 class Config:
     def __init__(self, config_path):
@@ -33,4 +36,3 @@ class Config:
 
     def get(self, *keys):
         return self._get(self.data, keys)
-

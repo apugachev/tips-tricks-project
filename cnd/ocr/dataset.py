@@ -4,7 +4,6 @@ import re
 from typing import List
 from torchvision.transforms.transforms import Compose
 from torch.utils.data import Dataset
-from nltk.corpus import brown
 
 class OcrDataset(Dataset):
     def __init__(self, data: List, transforms: Compose):
@@ -66,7 +65,9 @@ class OcrDataset(Dataset):
                     if short_name in self.__all_str_filenames:
                         carnumber = short_name.split('.')[0]
 
-                return img, carnumber
+                return {"image": img,
+                "targets": carnumber}
             else:
-                return img, ""
+                return {"image": img,
+                "targets": ""}
 
