@@ -28,3 +28,18 @@
 [2020-03-09 16:45:11,031] 
 5/5 * Epoch 5 (train): _base/lr=0.0010 | _base/momentum=0.9000 | _timers/_fps=192.0551 | _timers/batch_time=1.1610 | _timers/data_time=0.7706 | _timers/model_time=0.3903 | loss=17.4005
 5/5 * Epoch 5 (valid): _base/lr=0.0010 | _base/momentum=0.9000 | _timers/_fps=146.0625 | _timers/batch_time=1.4166 | _timers/data_time=1.0400 | _timers/model_time=0.3765 | loss=17.6615
+[2020-03-09 22:18:31,406] 
+1/5 * Epoch 1 (train): _base/lr=0.0001 | _base/momentum=0.9000 | _timers/_fps=143.5908 | _timers/batch_time=1.5093 | _timers/data_time=1.0768 | _timers/model_time=0.4325 | loss=20.5435
+1/5 * Epoch 1 (valid): _base/lr=0.0001 | _base/momentum=0.9000 | _timers/_fps=160.0087 | _timers/batch_time=1.3619 | _timers/data_time=0.9747 | _timers/model_time=0.3872 | loss=21.4833
+[2020-03-09 22:19:31,138] 
+2/5 * Epoch 2 (train): _base/lr=0.0001 | _base/momentum=0.9000 | _timers/_fps=129.4586 | _timers/batch_time=1.6333 | _timers/data_time=1.1773 | _timers/model_time=0.4560 | loss=-3.331e+04
+2/5 * Epoch 2 (valid): _base/lr=0.0001 | _base/momentum=0.9000 | _timers/_fps=194.4657 | _timers/batch_time=1.1553 | _timers/data_time=0.8036 | _timers/model_time=0.3517 | loss=20.9347
+[2020-03-09 22:20:28,631] 
+3/5 * Epoch 3 (train): _base/lr=0.0001 | _base/momentum=0.9000 | _timers/_fps=146.4751 | _timers/batch_time=1.4711 | _timers/data_time=1.0530 | _timers/model_time=0.4180 | loss=20.7825
+3/5 * Epoch 3 (valid): _base/lr=0.0001 | _base/momentum=0.9000 | _timers/_fps=166.5817 | _timers/batch_time=1.3702 | _timers/data_time=0.9980 | _timers/model_time=0.3722 | loss=20.5785
+[2020-03-09 22:21:19,798] 
+4/5 * Epoch 4 (train): _base/lr=0.0001 | _base/momentum=0.9000 | _timers/_fps=170.8126 | _timers/batch_time=1.2871 | _timers/data_time=0.8822 | _timers/model_time=0.4049 | loss=20.5782
+4/5 * Epoch 4 (valid): _base/lr=0.0001 | _base/momentum=0.9000 | _timers/_fps=203.0695 | _timers/batch_time=1.0980 | _timers/data_time=0.7602 | _timers/model_time=0.3378 | loss=20.5071
+[2020-03-09 22:22:07,832] 
+5/5 * Epoch 5 (train): _base/lr=0.0001 | _base/momentum=0.9000 | _timers/_fps=191.7111 | _timers/batch_time=1.1949 | _timers/data_time=0.8221 | _timers/model_time=0.3727 | loss=20.7812
+5/5 * Epoch 5 (valid): _base/lr=0.0001 | _base/momentum=0.9000 | _timers/_fps=209.8248 | _timers/batch_time=1.0657 | _timers/data_time=0.7323 | _timers/model_time=0.3333 | loss=20.5267

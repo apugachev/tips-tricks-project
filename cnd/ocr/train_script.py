@@ -32,7 +32,7 @@ DATASET_PATHS = [
 # CHANGE YOUR BATCH SIZE
 BATCH_SIZE = 200
 # 400 EPOCH SHOULD BE ENOUGH
-NUM_EPOCHS = 5
+NUM_EPOCHS = 20
 
 alphabet = " "
 alphabet += string.ascii_uppercase
