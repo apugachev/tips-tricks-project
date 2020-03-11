@@ -4,7 +4,7 @@ import cv2
 from typing import Tuple, List
 from torchvision.transforms import Compose
 from albumentations import Blur, GaussNoise, Resize, RandomBrightness, RandomContrast, \
-                            Rotate, InvertImg, RandomCrop
+                            Rotate, RandomCrop
 
 
 class ImageNormalization(object):
@@ -39,7 +39,7 @@ class ContrastTransform(object):
         return RandomContrast()(image=image)['image']
 
 class RotateTransform(object):
-    def __init__(self, angle: int=30):
+    def __init__(self, angle: int=15):
         self.angle = angle
 
     def __call__(self, image: np.ndarray) -> np.ndarray:
@@ -47,23 +47,19 @@ class RotateTransform(object):
 
 class BlurTransform(object):
     def __call__(self, image: np.ndarray) -> np.ndarray:
-        return Blur(blur_limit=3)(image=image)['image']
+        return Blur(blur_limit=1)(image=image)['image']
 
 class GaussNoiseTransfrorm(object):
-    def __init__(self, var_limit: Tuple=(75.0, 250.0)):
+    def __init__(self, var_limit: Tuple=(50.0, 200.0)):
         self.var_limit = var_limit
 
     def __call__(self, image: np.ndarray) -> np.ndarray:
         return GaussNoise(var_limit=self.var_limit)(image=image)['image']
 
-class InvertTransform(object):
-    def __call__(self, image: np.ndarray) -> np.ndarray:
-        return InvertImg(p=0.2)(image=image)['image']
-
 class RandomCropTransform(object):
     def __call__(self, image: np.ndarray) -> np.ndarray:
-        height = np.random.randint(image.shape[0] // 2, image.shape[0])
-        width = np.random.randint(image.shape[1] // 2, image.shape[1])
+        height = np.random.randint(image.shape[0] // 1.5, image.shape[0])
+        width = np.random.randint(image.shape[1] // 1.5, image.shape[1])
         return RandomCrop(height, width)(image=image)['image']
 
 def get_transforms(image_size):
@@ -74,7 +70,6 @@ def get_transforms(image_size):
         RotateTransform(),
         BlurTransform(),
         GaussNoiseTransfrorm(),
-        InvertTransform(),
         RandomCropTransform(),
         ImageNormalization(),
         ScaleTransform(image_size),

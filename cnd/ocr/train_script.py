@@ -7,7 +7,6 @@ from cnd.config import OCR_EXPERIMENTS_DIR, CONFIG_PATH, Config
 from cnd.ocr.transforms import get_transforms
 from cnd.ocr.metrics import WrapCTCLoss
 from catalyst.dl import SupervisedRunner, CheckpointCallback
-import string
 from pathlib import Path
 import torch
 
@@ -30,12 +29,12 @@ DATASET_PATHS = [
     Path(CV_CONFIG.get("data_path"))
 ]
 # CHANGE YOUR BATCH SIZE
-BATCH_SIZE = 200
+BATCH_SIZE = 128
 # 400 EPOCH SHOULD BE ENOUGH
-NUM_EPOCHS = 20
+NUM_EPOCHS = 100
 
 alphabet = " "
-alphabet += string.ascii_uppercase
+alphabet += "ABEKMHOPCTYX"
 alphabet += "".join([str(i) for i in range(10)])
 
 MODEL_PARAMS = {
@@ -53,13 +52,13 @@ if __name__ == "__main__":
 
     transforms = get_transforms(CV_CONFIG.get('ocr_image_size'))
 
-    path = '/Users/alex/PycharmProjects/tips-tricks-main-repo/Tips-Tricks/project/CropNumbers'
+    path = CV_CONFIG.get('data_path')
     dataset_paths = Path(path)
 
-    filepaths = list(dataset_paths.glob('**/*'))[4:]
+    filepaths = list(dataset_paths.glob('**/*'))[1:]
     filepaths = [file for file in filepaths if file.is_file()]
 
-    train_paths, val_paths = train_test_split(filepaths)
+    train_paths, val_paths = train_test_split(filepaths, random_state=4)
 
     train_dataset = ConcatDataset([
         OcrDataset(train_paths, transforms)
@@ -99,7 +98,7 @@ if __name__ == "__main__":
         criterion=WrapCTCLoss(alphabet),
         optimizer=optimizer,
         scheduler=scheduler,
-        loaders={'train': train_loader, "valid": val_loader},
+        loaders={'train': train_loader},
         logdir="./logs/ocr",
         num_epochs=NUM_EPOCHS,
         verbose=True,
