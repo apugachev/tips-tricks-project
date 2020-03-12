@@ -1,13 +1,15 @@
 import torch.nn as nn
 from cnd.ocr.converter import strLabelConverter
-from catalyst.utils.torch import any2device
 import torch
+from catalyst.dl.core import MultiMetricCallback
+from typing import List
+from sklearn.metrics import accuracy_score as acc
+from Levenshtein import distance
 
 class WrapCTCLoss(nn.Module):
-    def __init__(self, alphabet, device='cpu'):
+    def __init__(self, alphabet):
         super().__init__()
         self.converter = strLabelConverter(alphabet)
-        self.device = device
         self.loss = nn.CTCLoss()
 
     def preds_converter(self, logits, len_images):
@@ -22,6 +24,78 @@ class WrapCTCLoss(nn.Module):
         sim_preds, preds_size = self.preds_converter(logits, len(targets))
         loss = self.loss(logits, text, preds_size, length)
         return loss
+
+def _get_default_accuracy_args(num_classes: int) -> List[int]:
+
+    result = [1]
+
+    if num_classes is None:
+        return result
+
+    if num_classes > 3:
+        result.append(3)
+    if num_classes > 5:
+        result.append(5)
+
+    return result
+
+
+class WrapAccuracyScore(MultiMetricCallback):
+    def __init__(
+        self,
+        input_key: str = "targets",
+        output_key: str = "logits",
+        prefix: str = "accuracy",
+        accuracy_args: List[int] = None,
+        num_classes: int = None
+    ):
+        list_args = accuracy_args or _get_default_accuracy_args(num_classes)
+
+        super().__init__(
+            prefix=prefix,
+            metric_fn=self.__myaccuracy,
+            list_args=list_args,
+            input_key=input_key,
+            output_key=output_key
+        )
+
+    def __myaccuracy(self, outputs, targets, list_args):
+        alphabet = " ABEKMHOPCTYX"
+        alphabet += "".join([str(i) for i in range(10)])
+
+        ctc_wrap = WrapCTCLoss(alphabet)
+        preds, preds_size = ctc_wrap.preds_converter(outputs, outputs.shape[1])
+        return [acc(targets, preds)]
+
+class WrapLevenshteinScore(MultiMetricCallback):
+    def __init__(
+        self,
+        input_key: str = "targets",
+        output_key: str = "logits",
+        prefix: str = "levenshtein",
+        accuracy_args: List[int] = None,
+        num_classes: int = None
+    ):
+        list_args = accuracy_args or _get_default_accuracy_args(num_classes)
+
+        super().__init__(
+            prefix=prefix,
+            metric_fn=self.__mylevenshtein,
+            list_args=list_args,
+            input_key=input_key,
+            output_key=output_key
+        )
+
+    def __mylevenshtein(self, outputs, targets, list_args):
+        alphabet = " ABEKMHOPCTYX"
+        alphabet += "".join([str(i) for i in range(10)])
+
+        ctc_wrap = WrapCTCLoss(alphabet)
+        preds, _ = ctc_wrap.preds_converter(outputs, outputs.shape[1])
+        levs = [distance(t,p) for t,p in zip(targets, preds)]
+        return levs
+
+
 
 
 #TODO: ADD ACCURACY https://catalyst-team.github.io/catalyst/_modules/catalyst/dl/callbacks/metrics/accuracy.html

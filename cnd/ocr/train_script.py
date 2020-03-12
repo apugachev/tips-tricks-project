@@ -1,5 +1,6 @@
 import argparse
 
+from sklearn.model_selection import train_test_split
 from torch.utils.data import DataLoader, ConcatDataset
 from cnd.ocr.dataset import OcrDataset
 from cnd.ocr.model import CRNN
@@ -7,10 +8,9 @@ from cnd.config import OCR_EXPERIMENTS_DIR, CONFIG_PATH, Config
 from cnd.ocr.transforms import get_transforms
 from cnd.ocr.metrics import WrapCTCLoss
 from catalyst.dl import SupervisedRunner, CheckpointCallback
+from cnd.ocr.metrics import WrapAccuracyScore, WrapLevenshteinScore
 from pathlib import Path
 import torch
-
-from sklearn.model_selection import train_test_split
 
 torch.backends.cudnn.enabled = False
 
@@ -41,10 +41,11 @@ MODEL_PARAMS = {
     "image_height": 32,
     "number_input_channels": 1,
     "number_class_symbols": len(alphabet),
-    "rnn_size": 64,
+    "rnn_size": 128,
 }
 
 if __name__ == "__main__":
+
     if EXPERIMENT_DIR.exists():
         print(f"Folder 'EXPERIMENT_DIR' already exists")
     else:
@@ -57,8 +58,9 @@ if __name__ == "__main__":
 
     filepaths = list(dataset_paths.glob('**/*'))[1:]
     filepaths = [file for file in filepaths if file.is_file()]
+    filepaths = [file for file in filepaths if not file.name.startswith('.')]
 
-    train_paths, val_paths = train_test_split(filepaths, random_state=4)
+    train_paths, val_paths = train_test_split(filepaths, random_state=6)
 
     train_dataset = ConcatDataset([
         OcrDataset(train_paths, transforms)
@@ -89,7 +91,7 @@ if __name__ == "__main__":
     optimizer = torch.optim.Adam(model.parameters(), lr=1e-4)
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer)
     # define callbacks if any
-    callbacks = [CheckpointCallback(save_n_best=10)]
+    callbacks = [CheckpointCallback(save_n_best=10), WrapAccuracyScore(), WrapLevenshteinScore()]
     # input_keys - which key from dataloader we need to pass to the model
     runner = SupervisedRunner(input_key="image", input_target_key="targets")
 

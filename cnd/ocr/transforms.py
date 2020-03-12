@@ -65,12 +65,6 @@ class RandomCropTransform(object):
 def get_transforms(image_size):
     transform = Compose([
         ToGrayScale(),
-        BrightnessTransform(),
-        ContrastTransform(),
-        RotateTransform(),
-        BlurTransform(),
-        GaussNoiseTransfrorm(),
-        RandomCropTransform(),
         ImageNormalization(),
         ScaleTransform(image_size),
         FromNumpyToTensor()])
