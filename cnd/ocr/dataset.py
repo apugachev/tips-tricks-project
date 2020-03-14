@@ -65,7 +65,7 @@ class OcrDataset(Dataset):
                     if short_name in self.__all_str_filenames:
                         carnumber = short_name.split('.')[0]
 
-                #carnumber = re.sub(" +", "", carnumber)
+                carnumber = re.sub(" +", "", carnumber)
 
                 return {"image": img,
                 "targets": carnumber}

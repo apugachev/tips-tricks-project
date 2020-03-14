@@ -29,9 +29,9 @@ DATASET_PATHS = [
     Path(CV_CONFIG.get("data_path"))
 ]
 # CHANGE YOUR BATCH SIZE
-BATCH_SIZE = 128
+BATCH_SIZE = 5
 # 400 EPOCH SHOULD BE ENOUGH
-NUM_EPOCHS = 100
+NUM_EPOCHS = 400
 
 alphabet = " "
 alphabet += "ABEKMHOPCTYX"
@@ -41,7 +41,7 @@ MODEL_PARAMS = {
     "image_height": 32,
     "number_input_channels": 1,
     "number_class_symbols": len(alphabet),
-    "rnn_size": 128,
+    "rnn_size": 64,
 }
 
 if __name__ == "__main__":
@@ -70,7 +70,6 @@ if __name__ == "__main__":
         OcrDataset(val_paths, transforms)
     ])
 
-
     train_loader = DataLoader(
         train_dataset,
         batch_size=BATCH_SIZE,
@@ -88,10 +87,10 @@ if __name__ == "__main__":
 
     model = CRNN(**MODEL_PARAMS)
     # YOU CAN ADD CALLBACK IF IT NEEDED, FIND MORE IN
-    optimizer = torch.optim.Adam(model.parameters(), lr=1e-4)
+    optimizer = torch.optim.Adam(model.parameters(), lr=1e-5)
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer)
     # define callbacks if any
-    callbacks = [CheckpointCallback(save_n_best=10), WrapAccuracyScore(), WrapLevenshteinScore()]
+    callbacks = [CheckpointCallback(save_n_best=25), WrapAccuracyScore(), WrapLevenshteinScore()]
     # input_keys - which key from dataloader we need to pass to the model
     runner = SupervisedRunner(input_key="image", input_target_key="targets")
 

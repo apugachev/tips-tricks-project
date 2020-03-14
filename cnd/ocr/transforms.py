@@ -9,7 +9,9 @@ from albumentations import Blur, GaussNoise, Resize, RandomBrightness, RandomCon
 
 class ImageNormalization(object):
     def __call__(self, image: np.ndarray) -> np.ndarray:
-        return image / 255.
+        mean = np.mean(image)
+        std = np.std(image)
+        return (image - mean) / std
 
 class FromNumpyToTensor(object) :
     def __call__(self, image: np.ndarray) -> torch.Tensor:
@@ -65,7 +67,7 @@ class RandomCropTransform(object):
 def get_transforms(image_size):
     transform = Compose([
         ToGrayScale(),
-        ImageNormalization(),
         ScaleTransform(image_size),
+        ImageNormalization(),
         FromNumpyToTensor()])
     return transform
