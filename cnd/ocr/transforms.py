@@ -9,9 +9,7 @@ from albumentations import Blur, GaussNoise, Resize, RandomBrightness, RandomCon
 
 class ImageNormalization(object):
     def __call__(self, image: np.ndarray) -> np.ndarray:
-        mean = np.mean(image)
-        std = np.std(image)
-        return (image - mean) / std
+        return image / 255.
 
 class FromNumpyToTensor(object) :
     def __call__(self, image: np.ndarray) -> torch.Tensor:

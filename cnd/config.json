@@ -1,4 +1,4 @@
 {
   "ocr_image_size": [32, 96],
-  "data_path": "/Users/alex/PycharmProjects/tips-tricks-project/CropNumbers/"
+  "data_path": "../../CropNumbers/"
 }
