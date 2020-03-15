@@ -1,4 +1,4 @@
 {
   "ocr_image_size": [32, 96],
-  "data_path": "../../CropNumbers/"
+  "data_path": "CropNumbers/"
 }
