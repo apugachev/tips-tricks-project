@@ -27,12 +27,9 @@ class CRNNModel(Model):
             self.nn_module.train()
 
         self.optimizer.zero_grad()
-
         images = batch["image"].to(self.device)
         text, length =  self.converter.encode(batch["target"])
-
         preds = self.nn_module(images)
-
         sim_preds, preds_size =  self.preds_converter(preds, images.size(0))
         loss = self.loss(preds, text, preds_size, length)
         loss.backward()
@@ -48,6 +45,7 @@ class CRNNModel(Model):
     def val_step(self, batch, state) -> dict:
         if self.nn_module.training:
             self.nn_module.eval()
+
         with torch.no_grad():
             images = batch["image"].to(self.device)
             texts, length = self.converter.encode(batch["target"])
