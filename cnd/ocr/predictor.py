@@ -49,6 +49,8 @@ if __name__ == "__main__":
 
 
     pic = cv2.imread('/Users/alex/PycharmProjects/tips-tricks-project/CropNumbers/NumBase/Y446YK 19726.bmp')
-
+    pic2 = cv2.imread('/Users/alex/PycharmProjects/tips-tricks-project/CropNumbers/NumBase/P494KE 19793.bmp')
+    pica = np.stack((pic, pic))
+    print(pica.shape)
     p = Predictor(path, [32, 96])
-    print(p.predict(pic))
+    print(p.predict(pica))
