@@ -44,7 +44,7 @@ MODEL_PARAMS = {"nn_module":
                     ("CRNN", CRNN_PARAMS),
                 "alphabet": alphabet,
                 "loss": {"reduction":"mean"},
-                "optimizer": ("Adam", {"lr": 0.000001}),
+                "optimizer": ("Adam", {"lr": 0.00001}),
                 "device": "cpu",
                 }
 

@@ -15,6 +15,7 @@ class CRNNModel(Model):
     def __init__(self, params):
         super().__init__(params)
         self.converter = strLabelConverter(params["alphabet"])
+        self.device = torch.device(params["device"])
 
     def prepare_batch(self, batch, device):
         images, texts = batch["image"], batch["target"]

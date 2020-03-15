@@ -2,7 +2,7 @@ import pathlib
 import trafaret as t
 from trafaret_config import read_and_validate
 
-OCR_EXPERIMENTS_DIR = pathlib.Path('../../experiments')
+OCR_EXPERIMENTS_DIR = pathlib.Path('../../experiments/')
 CONFIG_PATH = pathlib.Path('../config.json')
 
 CONFIG_TRAFARET = t.Dict({
