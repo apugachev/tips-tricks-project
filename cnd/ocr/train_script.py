@@ -32,7 +32,7 @@ BATCH_SIZE = 128
 
 NUM_EPOCHS = 400
 
-alphabet = " ABEKMHOPCTYX" + "".join([str(i) for i in range(10)])
+alphabet = "ABEKMHOPCTYX" + "".join([str(i) for i in range(10)]) + "-"
 
 CRNN_PARAMS = {"image_height": 32,
                         "number_input_channels": 1,

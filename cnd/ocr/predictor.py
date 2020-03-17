@@ -14,7 +14,7 @@ class Predictor:
         self.model = load_model(model_path, device=device)
         self.ocr_image_size = image_size
         self.image_size = image_size
-        self.alphabet = " ABEKMHOPCTYX" + "".join([str(i) for i in range(10)])
+        self.alphabet = "ABEKMHOPCTYX" + "".join([str(i) for i in range(10)]) + "-"
         self.converter = strLabelConverter(self.alphabet)
 
     def predict(self, images):
