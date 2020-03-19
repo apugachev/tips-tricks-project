@@ -30,7 +30,7 @@ DATASET_PATHS = [
 
 BATCH_SIZE = 128
 
-NUM_EPOCHS = 400
+NUM_EPOCHS = 500
 
 alphabet = "ABEKMHOPCTYX" + "".join([str(i) for i in range(10)]) + "-"
 
@@ -44,7 +44,7 @@ MODEL_PARAMS = {"nn_module":
                     ("CRNN", CRNN_PARAMS),
                 "alphabet": alphabet,
                 "loss": {"reduction":"mean"},
-                "optimizer": ("Adam", {"lr": 0.00001}),
+                "optimizer": ("Adam", {"lr": 0.0001}),
                 "device": "cpu",
                 }
 

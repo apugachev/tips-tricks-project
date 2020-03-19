@@ -3,6 +3,8 @@ from cnd.ocr.converter import strLabelConverter
 from Levenshtein import distance
 import torch
 
+
+
 class StringAccuracy(Metric):
     name = "str_accuracy"
     better = "max"
