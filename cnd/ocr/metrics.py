@@ -8,7 +8,7 @@ class StringAccuracy(Metric):
     better = "max"
 
     def __init__(self):
-        self.alphabet = " ABEKMHOPCTYX" + "".join([str(i) for i in range(10)])
+        self.alphabet = "ABEKMHOPCTYX" + "".join([str(i) for i in range(10)]) + "-"
         self.encoder = strLabelConverter(self.alphabet)
 
     def reset(self):
