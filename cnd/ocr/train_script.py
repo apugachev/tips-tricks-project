@@ -35,10 +35,10 @@ NUM_EPOCHS = 500
 alphabet = "ABEKMHOPCTYX" + "".join([str(i) for i in range(10)]) + "-"
 
 CRNN_PARAMS = {"image_height": 32,
-                        "number_input_channels": 1,
-                        "number_class_symbols": len(alphabet),
-                        "rnn_size": 16,
-                    }
+                "number_input_channels": 1,
+                "number_class_symbols": len(alphabet),
+                "rnn_size": 16,
+                }
 
 MODEL_PARAMS = {"nn_module":
                     ("CRNN", CRNN_PARAMS),
