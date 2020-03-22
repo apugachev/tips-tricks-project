@@ -1,13 +1,12 @@
 import cv2
 
 cv2.setNumThreads(0)
-import sys
 import logging
+from datetime import datetime
 from logging.handlers import RotatingFileHandler
 
 from worker.state import State
 from worker.video_reader import VideoReader
-from worker.ocr_stream import OcrStream
 from worker.visualize_stream import VisualizeStream
 
 def setup_logging(path, level='INFO'):
@@ -59,6 +58,7 @@ if __name__ == '__main__':
     #setup_logging(sys.argv[1], sys.argv[2])
     logger = logging.getLogger(__name__)
     project = None
+    start = datetime.now()
     try:
         project = CNDProject("CNDProject", '/Users/alex/PycharmProjects/tips-tricks-project/slow.mp4',
                              '/Users/alex/PycharmProjects/tips-tricks-project/experiments/res.mp4')
@@ -66,5 +66,8 @@ if __name__ == '__main__':
     except Exception as e:
         logger.exception(e)
     finally:
+        time = (datetime.now() - start).total_seconds()
+        print('TIME (seconds):', time)
+        logger.info('TIME (seconds):', time)
         if project is not None:
             project.stop()
