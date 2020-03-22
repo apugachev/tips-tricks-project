@@ -1,15 +1,20 @@
 import logging
 import time
+import numpy as np
+import torch
 from threading import Thread
+from matplotlib import pyplot as plt
 
 import cv2
 from worker.state import State
 from worker.video_reader import VideoReader
 from worker.video_writer import VideoWriter
+from worker.ocr_stream import OcrStream
+from cnd.ocr.transforms import get_transforms
 
 
 class Visualizer:
-    def __init__(self, state: State, coord, color=(0, 0, 255), thick=2, font_scale=1.2, font=cv2.FONT_HERSHEY_SIMPLEX):
+    def __init__(self, state: State, coord, color=(255, 255, 255), thick=3, font_scale=3, font=cv2.FONT_HERSHEY_SIMPLEX):
         self.state = state
         self.coord_x, self.coord_y = coord
         self.color = color
@@ -17,15 +22,21 @@ class Visualizer:
         self.font_scale = font_scale
         self.font = font
 
-    def _draw_ocr_text(self, frame):
+    def _draw_ocr_text(self, frames):
         text = self.state.text
-        if text:
-            #TODO: Put text on frame
-        return frame
 
-    def __call__(self, frame):
-        frame = self._draw_ocr_text(frame)
-        return frame
+        for i in range(len(frames)):
+            if text[i]:
+                frames[i] = cv2.putText(frames[i], text[i // 10 * 10], (self.coord_x, self.coord_y), self.font, self.font_scale,
+                                        self.color, self.thickness)
+            if i == 0:
+                plt.imshow(frames[i])
+                plt.show()
+        return frames
+
+    def __call__(self, frames):
+        frames = self._draw_ocr_text(frames)
+        return frames
 
 
 class VisualizeStream:
@@ -46,6 +57,7 @@ class VisualizeStream:
         self.visualize_thread = None
 
         self.visualizer = Visualizer(self.state, self.coord)
+        self.ocr_stream = self.ocr_stream = OcrStream("OcrStream", self.state, self.in_video)
 
         self.logger.info("Create VisualizeStream")
 
@@ -54,10 +66,21 @@ class VisualizeStream:
             while True:
                 if self.stopped:
                     return
-                #TODO: Read && resize (if needed) then use visualizer to put text on frame
-                # then save video with VideoWriter
 
-                time.sleep(self.sleep_time_vis)
+                frames_main = np.zeros((self.fps, self.frame_size[1], self.frame_size[0], 3), dtype=np.uint8)
+                frames_resized = torch.zeros((self.fps, 1, 32, 96))
+
+                for i, pos in enumerate(range(self.fps)):
+                    frame = self.in_video.read()
+                    frame = cv2.resize(frame, self.frame_size)
+                    frames_main[i] = frame
+                    frame = get_transforms([32, 96])(frame)
+                    frames_resized[i] = frame
+
+                self.state.text = self.ocr_stream(frames_resized)
+                result_frames = self.visualizer(frames_main)
+                for frame in result_frames:
+                    self.out_video.write(frame)
 
         except Exception as e:
             self.logger.exception(e)

@@ -16,10 +16,9 @@ class VideoWriter:
     def write(self, frame):
         self.video.write(frame)
 
-    def start(self, ):
+    def start(self):
         self.video.open(self.video_path)
 
     def stop(self):
         self.video.release()
-        cv2.destroyAllWindows()
         self.logger.info(f"Stop VideoWriter")
