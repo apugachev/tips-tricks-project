@@ -1,6 +1,6 @@
 import logging
 import numpy as np
-import torch
+import time
 from threading import Thread
 
 import cv2
@@ -8,7 +8,6 @@ from worker.state import State
 from worker.video_reader import VideoReader
 from worker.video_writer import VideoWriter
 from worker.ocr_stream import OcrStream
-from cnd.ocr.transforms import get_transforms
 from cnd.config import CONFIG_PATH, Config
 
 
@@ -26,7 +25,7 @@ class Visualizer:
 
         for i in range(len(frames)):
             if text[i]:
-                frames[i] = cv2.putText(frames[i], text[i // 20 * 20], (self.coord_x, self.coord_y), self.font, self.font_scale,
+                frames[i] = cv2.putText(frames[i], text[i // 5 * 5], (self.coord_x, self.coord_y), self.font, self.font_scale,
                                         self.color, self.thickness)
         return frames
 
@@ -63,20 +62,17 @@ class VisualizeStream:
                     return
 
                 frames_main = np.zeros((self.fps, self.frame_size[1], self.frame_size[0], 3), dtype=np.uint8)
-                frames_resized = torch.zeros((self.fps, 1, self.ocr_size[0], self.ocr_size[1]))
 
                 for i, pos in enumerate(range(self.fps)):
                     frame = self.in_video.read()
                     frame = cv2.resize(frame, self.frame_size)
                     frames_main[i] = frame
-                    frame = get_transforms(self.ocr_size)(frame)
-                    frames_resized[i] = frame
 
-                self.state.text = self.ocr_stream(frames_resized)
+                self.state.text = self.ocr_stream(frames_main)
                 result_frames = self.visualizer(frames_main)
-                
                 for frame in result_frames:
                     self.out_video.write(frame)
+
 
         except Exception as e:
             self.logger.exception(e)

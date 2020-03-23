@@ -15,6 +15,7 @@ class VideoWriter:
 
     def write(self, frame):
         self.video.write(frame)
+        cv2.waitKey(100)
 
     def start(self):
         self.video.open(self.video_path)

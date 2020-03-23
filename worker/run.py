@@ -26,7 +26,7 @@ def setup_logging(path, level='INFO'):
 
 
 class CNDProject:
-    def __init__(self, name, video_path, save_path, fps=60, frame_size=(1280, 720), coord=(100, 100)):
+    def __init__(self, name, video_path, save_path, fps=30, frame_size=(1280, 720), coord=(100, 100)):
         self.name = name
         self.logger = logging.getLogger(self.name)
         self.state = State()
@@ -60,7 +60,7 @@ if __name__ == '__main__':
     project = None
     start = datetime.now()
     try:
-        project = CNDProject("CNDProject", '/Users/alex/PycharmProjects/tips-tricks-project/slow.mp4',
+        project = CNDProject("CNDProject", '/Users/alex/Downloads/3.mp4',
                              '/Users/alex/PycharmProjects/tips-tricks-project/experiments/res.mp4')
         project.start()
     except Exception as e:
