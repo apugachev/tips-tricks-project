@@ -18,8 +18,9 @@ class Predictor:
         self.converter = strLabelConverter(self.alphabet)
 
     def predict(self, images):
-
+        images = [images] if len(images[0].shape) == 2 else images
         img_resized = torch.zeros(tuple([len(images), 1] + self.image_size))
+
         for i in range(len(images)):
             img_resized[i] = self.transforms(images[i])
 
@@ -34,9 +35,9 @@ class Predictor:
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("--img-folder", help="Path to folder with images", required=True)
-    parser.add_argument("--model", help="Path to model", required=True)
-    parser.add_argument("--cuda", action="store_true", help="Device (gpu or cpu)")
+    parser.add_argument("-pcs", "--img-folder", help="Path to folder with images", default="test_folder/pics")
+    parser.add_argument("-m", "--model", help="Path to model", default="models/best_model_colab_700.pth")
+    parser.add_argument("-c", "--cuda", action="store_true", help="Device (gpu or cpu)")
     args = parser.parse_args()
 
     test_paths = pathlib.Path(args.img_folder)
@@ -54,6 +55,6 @@ if __name__ == "__main__":
     p = Predictor(args.model, IMG_SIZE, device)
     preds = p.predict(images)
 
-    result = [(t, p) for t,p in zip(targets, preds)]
+    result = [(t.replace(' ', ''), p) for t,p in zip(targets, preds)]
 
     print(tabulate(result, headers=['Target', 'Predict']))

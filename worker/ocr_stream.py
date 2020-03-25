@@ -5,7 +5,7 @@ from worker.video_reader import VideoReader
 
 
 class OcrStream:
-    def __init__(self, name, state: State, video_reader: VideoReader):
+    def __init__(self, name, state: State, video_reader: VideoReader, model_path):
         self.name = name
         self.logger = logging.getLogger(self.name)
         self.state = state
@@ -13,7 +13,7 @@ class OcrStream:
         self.video_reader = video_reader
         self.ocr_thread = None
 
-        self.predictor = Predictor('/Users/alex/Downloads/best_model_colab.pth', [32,96])
+        self.predictor = Predictor(model_path, [32,96])
 
         self.logger.info("Create OcrStream")
 

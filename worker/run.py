@@ -11,8 +11,10 @@ from worker.video_reader import VideoReader
 from worker.visualize_stream import VisualizeStream
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-vp", "--video_path", help = "Path to video file", required = True)
-parser.add_argument("-sp", "--save_path", help = "Save path for video", required = True)
+parser.add_argument("-vp", "--video_path", help = "Path to video file", required=True)
+parser.add_argument("-sp", "--save_path", help = "Save path for video", default='experiments/result.mp4')
+parser.add_argument("-m", "--model_path", help = "Path to model", default='models/best_model_colab_700.pth')
+parser.add_argument("-fp", "--pred_path", help = "Path to frames prediction file", default='experiments/pred_frames.txt')
 parser.add_argument("-log", "--log_path", help="Logging file", default='experiments/logs/video_logs.txt')
 parser.add_argument("-lvl", "--log_level", help="Level for logging", default='INFO')
 args = parser.parse_args()
@@ -35,14 +37,14 @@ def setup_logging(path, level='INFO'):
 
 
 class CNDProject:
-    def __init__(self, name, video_path, save_path, fps=30, frame_size=(1280, 720), coord=(100, 100)):
+    def __init__(self, name, video_path, save_path, model_path, pred_path, fps=30, frame_size=(1280, 720), coord=(100, 100)):
         self.name = name
         self.logger = logging.getLogger(self.name)
         self.state = State()
         self.video_reader = VideoReader("VideoReader", video_path)
 
         self.visualize_stream = VisualizeStream("VisualizeStream", self.video_reader,
-                                                self.state, save_path, fps, frame_size, coord)
+                                                self.state, save_path, model_path, pred_path, fps, frame_size, coord)
         self.logger.info("Start Project")
 
     def start(self):
@@ -58,7 +60,6 @@ class CNDProject:
 
     def stop(self):
         self.logger.info("Stop Project")
-
         self.video_reader.stop()
         self.visualize_stream.stop()
 
@@ -68,13 +69,15 @@ if __name__ == '__main__':
     logger = logging.getLogger(__name__)
     project = None
     start = datetime.now()
+    open(args.pred_path, 'w').close()
+
     try:
-        project = CNDProject("CNDProject", args.video_path, args.save_path)
+        project = CNDProject("CNDProject", args.video_path, args.save_path, args.model_path, args.pred_path)
         project.start()
     except Exception as e:
         logger.exception(e)
     finally:
-        time = (datetime.now() - start).total_seconds()
-        logger.info('TIME (seconds): ' + str(time))
         if project is not None:
             project.stop()
+        time = (datetime.now() - start).total_seconds()
+        logger.info('TOTAL TIME (seconds): ' + str(time))
