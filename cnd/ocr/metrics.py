@@ -58,7 +58,8 @@ class LevDistance(Metric):
 
         decoded_targets = self.encoder.decode(targets, torch.IntTensor([len(targets)]))
         preds_joined = ''.join(preds)
-        self.levdist = distance(preds_joined, decoded_targets)
+        min_len = min(len(preds), len(targets))
+        self.levdist = distance(preds_joined, decoded_targets) / min_len
 
     def compute(self):
         return self.levdist

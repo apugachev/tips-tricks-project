@@ -25,7 +25,7 @@ class Visualizer:
 
         for i in range(len(frames)):
             if text[i]:
-                frames[i] = cv2.putText(frames[i], text[i // 5 * 5], (self.coord_x, self.coord_y), self.font, self.font_scale,
+                frames[i] = cv2.putText(frames[i], text[i], (self.coord_x, self.coord_y), self.font, self.font_scale,
                                         self.color, self.thickness)
         return frames
 

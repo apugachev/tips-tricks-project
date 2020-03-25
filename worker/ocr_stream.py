@@ -13,7 +13,7 @@ class OcrStream:
         self.video_reader = video_reader
         self.ocr_thread = None
 
-        self.predictor = Predictor('/Users/alex/PycharmProjects/tips-tricks-project/models/best_model2.pth', [32,96])
+        self.predictor = Predictor('/Users/alex/Downloads/best_model_colab.pth', [32,96])
 
         self.logger.info("Create OcrStream")
 

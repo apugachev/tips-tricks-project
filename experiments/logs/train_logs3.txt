@@ -1,0 +1,903 @@
+2020-03-24 16:58:03,803 INFO Train - Epoch: 0, LR: 0.0001, train_loss: 17.74724, train_str_accuracy: 0.05624662, train_str_levenshtein: 5.273438
+2020-03-24 16:58:14,464 INFO Validation - Epoch: 0, val_loss: 22.10104, val_str_accuracy: 0, val_str_levenshtein: 5.750557
+2020-03-24 16:58:14,470 INFO Model saved to 'experiments/exp7/model-000-17.747244.pth'
+2020-03-24 16:58:59,587 INFO Train - Epoch: 1, LR: 0.0001, train_loss: 10.66011, train_str_accuracy: 0.05712802, train_str_levenshtein: 5.753906
+2020-03-24 16:59:10,403 INFO Validation - Epoch: 1, val_loss: 12.47217, val_str_accuracy: 0, val_str_levenshtein: 5.750557
+2020-03-24 16:59:10,409 INFO Model saved to 'experiments/exp7/model-001-10.660106.pth'
+2020-03-24 16:59:55,323 INFO Train - Epoch: 2, LR: 0.0001, train_loss: 6.031182, train_str_accuracy: 0.0625, train_str_levenshtein: 6.007812
+2020-03-24 17:00:06,035 INFO Validation - Epoch: 2, val_loss: 5.169281, val_str_accuracy: 0, val_str_levenshtein: 5.750557
+2020-03-24 17:00:06,041 INFO Model saved to 'experiments/exp7/model-002-6.031182.pth'
+2020-03-24 17:00:50,134 INFO Train - Epoch: 3, LR: 0.0001, train_loss: 3.935591, train_str_accuracy: 0, train_str_levenshtein: 6.115234
+2020-03-24 17:01:00,717 INFO Validation - Epoch: 3, val_loss: 3.487937, val_str_accuracy: 0, val_str_levenshtein: 5.750557
+2020-03-24 17:01:00,723 INFO Model saved to 'experiments/exp7/model-003-3.935591.pth'
+2020-03-24 17:01:44,875 INFO Train - Epoch: 4, LR: 0.0001, train_loss: 3.279773, train_str_accuracy: 0, train_str_levenshtein: 6.119141
+2020-03-24 17:01:55,489 INFO Validation - Epoch: 4, val_loss: 3.289752, val_str_accuracy: 0, val_str_levenshtein: 5.750557
+2020-03-24 17:01:55,494 INFO Model saved to 'experiments/exp7/model-004-3.279773.pth'
+2020-03-24 17:02:39,885 INFO Train - Epoch: 5, LR: 0.0001, train_loss: 3.067855, train_str_accuracy: 0, train_str_levenshtein: 6.185547
+2020-03-24 17:02:50,597 INFO Validation - Epoch: 5, val_loss: 3.137583, val_str_accuracy: 0, val_str_levenshtein: 5.750557
+2020-03-24 17:02:50,603 INFO Model saved to 'experiments/exp7/model-005-3.067855.pth'
+2020-03-24 17:03:35,325 INFO Train - Epoch: 6, LR: 0.0001, train_loss: 2.950822, train_str_accuracy: 0, train_str_levenshtein: 5.923828
+2020-03-24 17:03:46,064 INFO Validation - Epoch: 6, val_loss: 2.873178, val_str_accuracy: 0, val_str_levenshtein: 5.750557
+2020-03-24 17:03:46,069 INFO Model saved to 'experiments/exp7/model-006-2.950822.pth'
+2020-03-24 17:04:30,918 INFO Train - Epoch: 7, LR: 0.0001, train_loss: 2.87325, train_str_accuracy: 0, train_str_levenshtein: 5.912109
+2020-03-24 17:04:41,566 INFO Validation - Epoch: 7, val_loss: 2.796861, val_str_accuracy: 0, val_str_levenshtein: 5.750557
+2020-03-24 17:04:41,571 INFO Model saved to 'experiments/exp7/model-007-2.873250.pth'
+2020-03-24 17:05:26,725 INFO Train - Epoch: 8, LR: 0.0001, train_loss: 2.820199, train_str_accuracy: 0, train_str_levenshtein: 6.148438
+2020-03-24 17:05:37,382 INFO Validation - Epoch: 8, val_loss: 2.767348, val_str_accuracy: 0, val_str_levenshtein: 5.750557
+2020-03-24 17:05:37,386 INFO Model saved to 'experiments/exp7/model-008-2.820199.pth'
+2020-03-24 17:06:22,021 INFO Train - Epoch: 9, LR: 0.0001, train_loss: 2.795888, train_str_accuracy: 0, train_str_levenshtein: 5.851562
+2020-03-24 17:06:32,721 INFO Validation - Epoch: 9, val_loss: 2.713937, val_str_accuracy: 0, val_str_levenshtein: 5.750557
+2020-03-24 17:06:32,726 INFO Model saved to 'experiments/exp7/model-009-2.795888.pth'
+2020-03-24 17:07:17,972 INFO Train - Epoch: 10, LR: 0.0001, train_loss: 2.744915, train_str_accuracy: 0, train_str_levenshtein: 5.955078
+2020-03-24 17:07:28,544 INFO Validation - Epoch: 10, val_loss: 2.665734, val_str_accuracy: 0, val_str_levenshtein: 5.750557
+2020-03-24 17:07:28,549 INFO Model saved to 'experiments/exp7/model-010-2.744915.pth'
+2020-03-24 17:08:13,618 INFO Train - Epoch: 11, LR: 0.0001, train_loss: 2.707132, train_str_accuracy: 0, train_str_levenshtein: 5.861328
+2020-03-24 17:08:24,277 INFO Validation - Epoch: 11, val_loss: 2.669802, val_str_accuracy: 0, val_str_levenshtein: 5.750557
+2020-03-24 17:08:24,282 INFO Model saved to 'experiments/exp7/model-011-2.707132.pth'
+2020-03-24 17:09:08,438 INFO Train - Epoch: 12, LR: 0.0001, train_loss: 2.687736, train_str_accuracy: 0, train_str_levenshtein: 6.115234
+2020-03-24 17:09:19,062 INFO Validation - Epoch: 12, val_loss: 2.645269, val_str_accuracy: 0, val_str_levenshtein: 5.750557
+2020-03-24 17:09:19,068 INFO Model saved to 'experiments/exp7/model-012-2.687736.pth'
+2020-03-24 17:10:03,547 INFO Train - Epoch: 13, LR: 0.0001, train_loss: 2.652117, train_str_accuracy: 0, train_str_levenshtein: 5.898438
+2020-03-24 17:10:14,167 INFO Validation - Epoch: 13, val_loss: 2.578511, val_str_accuracy: 0, val_str_levenshtein: 5.750557
+2020-03-24 17:10:14,172 INFO Model saved to 'experiments/exp7/model-013-2.652117.pth'
+2020-03-24 17:10:58,174 INFO Train - Epoch: 14, LR: 0.0001, train_loss: 2.63252, train_str_accuracy: 0, train_str_levenshtein: 5.945312
+2020-03-24 17:11:08,714 INFO Validation - Epoch: 14, val_loss: 2.562446, val_str_accuracy: 0, val_str_levenshtein: 5.750557
+2020-03-24 17:11:08,718 INFO Model saved to 'experiments/exp7/model-014-2.632520.pth'
+2020-03-24 17:11:52,806 INFO Train - Epoch: 15, LR: 0.0001, train_loss: 2.608995, train_str_accuracy: 0, train_str_levenshtein: 6.041016
+2020-03-24 17:12:03,412 INFO Validation - Epoch: 15, val_loss: 2.567747, val_str_accuracy: 0, val_str_levenshtein: 5.750557
+2020-03-24 17:12:03,417 INFO Model saved to 'experiments/exp7/model-015-2.608995.pth'
+2020-03-24 17:12:48,422 INFO Train - Epoch: 16, LR: 0.0001, train_loss: 2.586356, train_str_accuracy: 0, train_str_levenshtein: 5.962891
+2020-03-24 17:12:59,132 INFO Validation - Epoch: 16, val_loss: 2.517589, val_str_accuracy: 0, val_str_levenshtein: 5.750557
+2020-03-24 17:12:59,137 INFO Model saved to 'experiments/exp7/model-016-2.586356.pth'
+2020-03-24 17:13:43,132 INFO Train - Epoch: 17, LR: 0.0001, train_loss: 2.567455, train_str_accuracy: 0, train_str_levenshtein: 5.970703
+2020-03-24 17:13:53,866 INFO Validation - Epoch: 17, val_loss: 2.493348, val_str_accuracy: 0, val_str_levenshtein: 5.750557
+2020-03-24 17:13:53,871 INFO Model saved to 'experiments/exp7/model-017-2.567455.pth'
+2020-03-24 17:14:37,845 INFO Train - Epoch: 18, LR: 0.0001, train_loss: 2.5507, train_str_accuracy: 0, train_str_levenshtein: 6.318359
+2020-03-24 17:14:48,459 INFO Validation - Epoch: 18, val_loss: 2.658157, val_str_accuracy: 0, val_str_levenshtein: 5.750557
+2020-03-24 17:14:48,465 INFO Model saved to 'experiments/exp7/model-018-2.550700.pth'
+2020-03-24 17:15:32,886 INFO Train - Epoch: 19, LR: 0.0001, train_loss: 2.541687, train_str_accuracy: 0, train_str_levenshtein: 5.980469
+2020-03-24 17:15:43,364 INFO Validation - Epoch: 19, val_loss: 2.603697, val_str_accuracy: 0, val_str_levenshtein: 5.750557
+2020-03-24 17:15:43,369 INFO Model saved to 'experiments/exp7/model-019-2.541687.pth'
+2020-03-24 17:16:26,540 INFO Train - Epoch: 20, LR: 0.0001, train_loss: 2.523195, train_str_accuracy: 0, train_str_levenshtein: 5.955078
+2020-03-24 17:16:37,051 INFO Validation - Epoch: 20, val_loss: 2.450276, val_str_accuracy: 0, val_str_levenshtein: 5.750557
+2020-03-24 17:16:37,056 INFO Model saved to 'experiments/exp7/model-020-2.523195.pth'
+2020-03-24 17:17:21,587 INFO Train - Epoch: 21, LR: 0.0001, train_loss: 2.5039, train_str_accuracy: 0, train_str_levenshtein: 5.689453
+2020-03-24 17:17:32,177 INFO Validation - Epoch: 21, val_loss: 2.436724, val_str_accuracy: 0, val_str_levenshtein: 5.750557
+2020-03-24 17:17:32,183 INFO Model saved to 'experiments/exp7/model-021-2.503900.pth'
+2020-03-24 17:18:16,570 INFO Train - Epoch: 22, LR: 0.0001, train_loss: 2.480756, train_str_accuracy: 0, train_str_levenshtein: 6.298828
+2020-03-24 17:18:27,125 INFO Validation - Epoch: 22, val_loss: 2.460928, val_str_accuracy: 0, val_str_levenshtein: 5.750557
+2020-03-24 17:18:27,130 INFO Model saved to 'experiments/exp7/model-022-2.480756.pth'
+2020-03-24 17:19:11,872 INFO Train - Epoch: 23, LR: 0.0001, train_loss: 2.467258, train_str_accuracy: 0, train_str_levenshtein: 6.042969
+2020-03-24 17:19:22,345 INFO Validation - Epoch: 23, val_loss: 2.406328, val_str_accuracy: 0, val_str_levenshtein: 5.750557
+2020-03-24 17:19:22,350 INFO Model saved to 'experiments/exp7/model-023-2.467258.pth'
+2020-03-24 17:20:06,408 INFO Train - Epoch: 24, LR: 0.0001, train_loss: 2.456007, train_str_accuracy: 0, train_str_levenshtein: 5.789062
+2020-03-24 17:20:17,158 INFO Validation - Epoch: 24, val_loss: 2.426082, val_str_accuracy: 0, val_str_levenshtein: 5.750557
+2020-03-24 17:20:17,162 INFO Model saved to 'experiments/exp7/model-024-2.456007.pth'
+2020-03-24 17:21:01,951 INFO Train - Epoch: 25, LR: 0.0001, train_loss: 2.443221, train_str_accuracy: 0, train_str_levenshtein: 5.794922
+2020-03-24 17:21:12,631 INFO Validation - Epoch: 25, val_loss: 2.375696, val_str_accuracy: 0, val_str_levenshtein: 5.750557
+2020-03-24 17:21:12,636 INFO Model saved to 'experiments/exp7/model-025-2.443221.pth'
+2020-03-24 17:21:57,454 INFO Train - Epoch: 26, LR: 0.0001, train_loss: 2.420483, train_str_accuracy: 0, train_str_levenshtein: 6.177734
+2020-03-24 17:22:08,084 INFO Validation - Epoch: 26, val_loss: 2.346419, val_str_accuracy: 0, val_str_levenshtein: 5.750557
+2020-03-24 17:22:08,089 INFO Model saved to 'experiments/exp7/model-026-2.420483.pth'
+2020-03-24 17:22:52,982 INFO Train - Epoch: 27, LR: 0.0001, train_loss: 2.404848, train_str_accuracy: 0, train_str_levenshtein: 6.011719
+2020-03-24 17:23:03,617 INFO Validation - Epoch: 27, val_loss: 2.341094, val_str_accuracy: 0, val_str_levenshtein: 5.750557
+2020-03-24 17:23:03,621 INFO Model saved to 'experiments/exp7/model-027-2.404848.pth'
+2020-03-24 17:23:47,936 INFO Train - Epoch: 28, LR: 0.0001, train_loss: 2.385377, train_str_accuracy: 0, train_str_levenshtein: 5.994141
+2020-03-24 17:23:58,634 INFO Validation - Epoch: 28, val_loss: 2.315092, val_str_accuracy: 0, val_str_levenshtein: 5.74833
+2020-03-24 17:23:58,639 INFO Model saved to 'experiments/exp7/model-028-2.385377.pth'
+2020-03-24 17:24:43,351 INFO Train - Epoch: 29, LR: 0.0001, train_loss: 2.369369, train_str_accuracy: 0, train_str_levenshtein: 5.980469
+2020-03-24 17:24:53,917 INFO Validation - Epoch: 29, val_loss: 2.325485, val_str_accuracy: 0.06060606, val_str_levenshtein: 5.739421
+2020-03-24 17:24:53,922 INFO Model saved to 'experiments/exp7/model-029-2.369369.pth'
+2020-03-24 17:25:38,559 INFO Train - Epoch: 30, LR: 0.0001, train_loss: 2.366624, train_str_accuracy: 0.07843137, train_str_levenshtein: 6.011719
+2020-03-24 17:25:49,247 INFO Validation - Epoch: 30, val_loss: 2.325186, val_str_accuracy: 0.09090909, val_str_levenshtein: 5.746102
+2020-03-24 17:25:49,252 INFO Model saved to 'experiments/exp7/model-030-2.366624.pth'
+2020-03-24 17:26:34,018 INFO Train - Epoch: 31, LR: 0.0001, train_loss: 2.346881, train_str_accuracy: 0.04615385, train_str_levenshtein: 6.080078
+2020-03-24 17:26:44,779 INFO Validation - Epoch: 31, val_loss: 2.286266, val_str_accuracy: 0.06, val_str_levenshtein: 5.746102
+2020-03-24 17:26:44,784 INFO Model saved to 'experiments/exp7/model-031-2.346881.pth'
+2020-03-24 17:27:29,348 INFO Train - Epoch: 32, LR: 0.0001, train_loss: 2.322131, train_str_accuracy: 0.1055901, train_str_levenshtein: 5.923828
+2020-03-24 17:27:40,028 INFO Validation - Epoch: 32, val_loss: 2.254989, val_str_accuracy: 0.06493506, val_str_levenshtein: 5.741648
+2020-03-24 17:27:40,032 INFO Model saved to 'experiments/exp7/model-032-2.322131.pth'
+2020-03-24 17:28:25,148 INFO Train - Epoch: 33, LR: 0.0001, train_loss: 2.306616, train_str_accuracy: 0.1449814, train_str_levenshtein: 5.927734
+2020-03-24 17:28:35,843 INFO Validation - Epoch: 33, val_loss: 2.256851, val_str_accuracy: 0.1296296, val_str_levenshtein: 5.681514
+2020-03-24 17:28:35,848 INFO Model saved to 'experiments/exp7/model-033-2.306616.pth'
+2020-03-24 17:29:20,525 INFO Train - Epoch: 34, LR: 0.0001, train_loss: 2.287328, train_str_accuracy: 0.1158192, train_str_levenshtein: 5.804688
+2020-03-24 17:29:31,362 INFO Validation - Epoch: 34, val_loss: 2.22472, val_str_accuracy: 0.1277533, val_str_levenshtein: 5.708241
+2020-03-24 17:29:31,367 INFO Model saved to 'experiments/exp7/model-034-2.287328.pth'
+2020-03-24 17:30:15,855 INFO Train - Epoch: 35, LR: 0.0001, train_loss: 2.269054, train_str_accuracy: 0.129376, train_str_levenshtein: 6.011719
+2020-03-24 17:30:26,737 INFO Validation - Epoch: 35, val_loss: 2.211737, val_str_accuracy: 0.1101695, val_str_levenshtein: 5.616927
+2020-03-24 17:30:26,742 INFO Model saved to 'experiments/exp7/model-035-2.269054.pth'
+2020-03-24 17:31:11,552 INFO Train - Epoch: 36, LR: 0.0001, train_loss: 2.259958, train_str_accuracy: 0.1383764, train_str_levenshtein: 5.976562
+2020-03-24 17:31:22,324 INFO Validation - Epoch: 36, val_loss: 2.193969, val_str_accuracy: 0.1158879, val_str_levenshtein: 5.641425
+2020-03-24 17:31:22,329 INFO Model saved to 'experiments/exp7/model-036-2.259958.pth'
+2020-03-24 17:32:07,431 INFO Train - Epoch: 37, LR: 0.0001, train_loss: 2.245371, train_str_accuracy: 0.0893617, train_str_levenshtein: 5.632812
+2020-03-24 17:32:18,332 INFO Validation - Epoch: 37, val_loss: 2.183022, val_str_accuracy: 0.1120907, val_str_levenshtein: 5.561247
+2020-03-24 17:32:18,337 INFO Model saved to 'experiments/exp7/model-037-2.245371.pth'
+2020-03-24 17:33:03,667 INFO Train - Epoch: 38, LR: 0.0001, train_loss: 2.23098, train_str_accuracy: 0.1085873, train_str_levenshtein: 5.929688
+2020-03-24 17:33:14,461 INFO Validation - Epoch: 38, val_loss: 2.176797, val_str_accuracy: 0.08910891, val_str_levenshtein: 5.376392
+2020-03-24 17:33:14,466 INFO Model saved to 'experiments/exp7/model-038-2.230980.pth'
+2020-03-24 17:34:00,083 INFO Train - Epoch: 39, LR: 0.0001, train_loss: 2.220292, train_str_accuracy: 0.09854661, train_str_levenshtein: 5.353516
+2020-03-24 17:34:11,094 INFO Validation - Epoch: 39, val_loss: 2.17493, val_str_accuracy: 0.1035549, val_str_levenshtein: 5.42539
+2020-03-24 17:34:11,099 INFO Model saved to 'experiments/exp7/model-039-2.220292.pth'
+2020-03-24 17:34:56,703 INFO Train - Epoch: 40, LR: 0.0001, train_loss: 2.202111, train_str_accuracy: 0.08323252, train_str_levenshtein: 5.433594
+2020-03-24 17:35:07,704 INFO Validation - Epoch: 40, val_loss: 2.143529, val_str_accuracy: 0.08402923, val_str_levenshtein: 5.280624
+2020-03-24 17:35:07,709 INFO Model saved to 'experiments/exp7/model-040-2.202111.pth'
+2020-03-24 17:35:53,560 INFO Train - Epoch: 41, LR: 0.0001, train_loss: 2.189774, train_str_accuracy: 0.07973422, train_str_levenshtein: 5.650391
+2020-03-24 17:36:04,806 INFO Validation - Epoch: 41, val_loss: 2.137037, val_str_accuracy: 0.09638554, val_str_levenshtein: 5.260579
+2020-03-24 17:36:04,812 INFO Model saved to 'experiments/exp7/model-041-2.189774.pth'
+2020-03-24 17:36:50,765 INFO Train - Epoch: 42, LR: 0.0001, train_loss: 2.183887, train_str_accuracy: 0.08622222, train_str_levenshtein: 5.574219
+2020-03-24 17:37:01,993 INFO Validation - Epoch: 42, val_loss: 2.125132, val_str_accuracy: 0.09106892, val_str_levenshtein: 5.155902
+2020-03-24 17:37:01,999 INFO Model saved to 'experiments/exp7/model-042-2.183887.pth'
+2020-03-24 17:37:47,651 INFO Train - Epoch: 43, LR: 0.0001, train_loss: 2.165007, train_str_accuracy: 0.08229665, train_str_levenshtein: 5.306641
+2020-03-24 17:37:58,680 INFO Validation - Epoch: 43, val_loss: 2.109821, val_str_accuracy: 0.07021277, val_str_levenshtein: 5.298441
+2020-03-24 17:37:58,685 INFO Model saved to 'experiments/exp7/model-043-2.165007.pth'
+2020-03-24 17:38:44,361 INFO Train - Epoch: 44, LR: 0.0001, train_loss: 2.148495, train_str_accuracy: 0.0737854, train_str_levenshtein: 5.546875
+2020-03-24 17:38:55,504 INFO Validation - Epoch: 44, val_loss: 2.098595, val_str_accuracy: 0.09412955, val_str_levenshtein: 5.280624
+2020-03-24 17:38:55,509 INFO Model saved to 'experiments/exp7/model-044-2.148495.pth'
+2020-03-24 17:39:41,049 INFO Train - Epoch: 45, LR: 0.0001, train_loss: 2.142052, train_str_accuracy: 0.08199337, train_str_levenshtein: 5.449219
+2020-03-24 17:39:52,041 INFO Validation - Epoch: 45, val_loss: 2.056194, val_str_accuracy: 0.08998599, val_str_levenshtein: 5.162584
+2020-03-24 17:39:52,046 INFO Model saved to 'experiments/exp7/model-045-2.142052.pth'
+2020-03-24 17:40:37,712 INFO Train - Epoch: 46, LR: 0.0001, train_loss: 2.119611, train_str_accuracy: 0.07445646, train_str_levenshtein: 5.572266
+2020-03-24 17:40:48,681 INFO Validation - Epoch: 46, val_loss: 2.051687, val_str_accuracy: 0.09080923, val_str_levenshtein: 5.162584
+2020-03-24 17:40:48,686 INFO Model saved to 'experiments/exp7/model-046-2.119611.pth'
+2020-03-24 17:41:34,369 INFO Train - Epoch: 47, LR: 0.0001, train_loss: 2.103921, train_str_accuracy: 0.08537616, train_str_levenshtein: 5.525391
+2020-03-24 17:41:45,403 INFO Validation - Epoch: 47, val_loss: 2.035201, val_str_accuracy: 0.09488006, val_str_levenshtein: 5.184855
+2020-03-24 17:41:45,408 INFO Model saved to 'experiments/exp7/model-047-2.103921.pth'
+2020-03-24 17:42:30,862 INFO Train - Epoch: 48, LR: 0.0001, train_loss: 2.091548, train_str_accuracy: 0.07967836, train_str_levenshtein: 5.105469
+2020-03-24 17:42:41,833 INFO Validation - Epoch: 48, val_loss: 2.020985, val_str_accuracy: 0.08177505, val_str_levenshtein: 5.126949
+2020-03-24 17:42:41,838 INFO Model saved to 'experiments/exp7/model-048-2.091548.pth'
+2020-03-24 17:43:27,223 INFO Train - Epoch: 49, LR: 0.0001, train_loss: 2.077802, train_str_accuracy: 0.07968609, train_str_levenshtein: 5.642578
+2020-03-24 17:43:38,241 INFO Validation - Epoch: 49, val_loss: 2.008673, val_str_accuracy: 0.08217846, val_str_levenshtein: 5.035635
+2020-03-24 17:43:38,247 INFO Model saved to 'experiments/exp7/model-049-2.077802.pth'
+2020-03-24 17:44:24,054 INFO Train - Epoch: 50, LR: 0.0001, train_loss: 2.06002, train_str_accuracy: 0.08081497, train_str_levenshtein: 5.330078
+2020-03-24 17:44:35,089 INFO Validation - Epoch: 50, val_loss: 1.986008, val_str_accuracy: 0.07650834, val_str_levenshtein: 5.106904
+2020-03-24 17:44:35,094 INFO Model saved to 'experiments/exp7/model-050-2.060020.pth'
+2020-03-24 17:45:20,878 INFO Train - Epoch: 51, LR: 0.0001, train_loss: 2.044668, train_str_accuracy: 0.07554797, train_str_levenshtein: 5.341797
+2020-03-24 17:45:32,099 INFO Validation - Epoch: 51, val_loss: 1.985017, val_str_accuracy: 0.08010681, val_str_levenshtein: 5.013363
+2020-03-24 17:45:32,106 INFO Model saved to 'experiments/exp7/model-051-2.044668.pth'
+2020-03-24 17:46:18,687 INFO Train - Epoch: 52, LR: 0.0001, train_loss: 2.029471, train_str_accuracy: 0.08001036, train_str_levenshtein: 5.390625
+2020-03-24 17:46:29,959 INFO Validation - Epoch: 52, val_loss: 1.967836, val_str_accuracy: 0.07845216, val_str_levenshtein: 5.082405
+2020-03-24 17:46:29,964 INFO Model saved to 'experiments/exp7/model-052-2.029471.pth'
+2020-03-24 17:47:15,671 INFO Train - Epoch: 53, LR: 0.0001, train_loss: 2.010874, train_str_accuracy: 0.07757965, train_str_levenshtein: 5.212891
+2020-03-24 17:47:26,810 INFO Validation - Epoch: 53, val_loss: 1.944216, val_str_accuracy: 0.07547613, val_str_levenshtein: 5.073497
+2020-03-24 17:47:26,815 INFO Model saved to 'experiments/exp7/model-053-2.010874.pth'
+2020-03-24 17:48:12,907 INFO Train - Epoch: 54, LR: 0.0001, train_loss: 1.998984, train_str_accuracy: 0.0808998, train_str_levenshtein: 5.189453
+2020-03-24 17:48:24,130 INFO Validation - Epoch: 54, val_loss: 1.933265, val_str_accuracy: 0.07786885, val_str_levenshtein: 4.966592
+2020-03-24 17:48:24,134 INFO Model saved to 'experiments/exp7/model-054-1.998984.pth'
+2020-03-24 17:49:09,607 INFO Train - Epoch: 55, LR: 0.0001, train_loss: 1.983548, train_str_accuracy: 0.07783418, train_str_levenshtein: 5.292969
+2020-03-24 17:49:20,717 INFO Validation - Epoch: 55, val_loss: 1.911531, val_str_accuracy: 0.07647691, val_str_levenshtein: 4.959911
+2020-03-24 17:49:20,722 INFO Model saved to 'experiments/exp7/model-055-1.983548.pth'
+2020-03-24 17:50:06,928 INFO Train - Epoch: 56, LR: 0.0001, train_loss: 1.973795, train_str_accuracy: 0.081366, train_str_levenshtein: 5.230469
+2020-03-24 17:50:17,964 INFO Validation - Epoch: 56, val_loss: 1.931997, val_str_accuracy: 0.07233742, val_str_levenshtein: 5.01559
+2020-03-24 17:50:17,969 INFO Model saved to 'experiments/exp7/model-056-1.973795.pth'
+2020-03-24 17:51:04,400 INFO Train - Epoch: 57, LR: 0.0001, train_loss: 1.960534, train_str_accuracy: 0.07898669, train_str_levenshtein: 5.15625
+2020-03-24 17:51:15,650 INFO Validation - Epoch: 57, val_loss: 1.896792, val_str_accuracy: 0.07742714, val_str_levenshtein: 4.77951
+2020-03-24 17:51:15,655 INFO Model saved to 'experiments/exp7/model-057-1.960534.pth'
+2020-03-24 17:52:01,909 INFO Train - Epoch: 58, LR: 0.0001, train_loss: 1.945391, train_str_accuracy: 0.08031853, train_str_levenshtein: 5.089844
+2020-03-24 17:52:13,204 INFO Validation - Epoch: 58, val_loss: 1.886178, val_str_accuracy: 0.076861, val_str_levenshtein: 4.88196
+2020-03-24 17:52:13,210 INFO Model saved to 'experiments/exp7/model-058-1.945391.pth'
+2020-03-24 17:53:00,010 INFO Train - Epoch: 59, LR: 0.0001, train_loss: 1.933735, train_str_accuracy: 0.08187594, train_str_levenshtein: 5.005859
+2020-03-24 17:53:11,297 INFO Validation - Epoch: 59, val_loss: 1.861269, val_str_accuracy: 0.07808959, val_str_levenshtein: 4.786192
+2020-03-24 17:53:11,303 INFO Model saved to 'experiments/exp7/model-059-1.933735.pth'
+2020-03-24 17:53:57,870 INFO Train - Epoch: 60, LR: 0.0001, train_loss: 1.922388, train_str_accuracy: 0.07906565, train_str_levenshtein: 4.910156
+2020-03-24 17:54:09,262 INFO Validation - Epoch: 60, val_loss: 1.882995, val_str_accuracy: 0.07648871, val_str_levenshtein: 4.77951
+2020-03-24 17:54:09,267 INFO Model saved to 'experiments/exp7/model-060-1.922388.pth'
+2020-03-24 17:54:55,485 INFO Train - Epoch: 61, LR: 0.0001, train_loss: 1.916874, train_str_accuracy: 0.07774766, train_str_levenshtein: 4.828125
+2020-03-24 17:55:06,888 INFO Validation - Epoch: 61, val_loss: 1.859106, val_str_accuracy: 0.08198331, val_str_levenshtein: 4.737194
+2020-03-24 17:55:06,893 INFO Model saved to 'experiments/exp7/model-061-1.916874.pth'
+2020-03-24 17:55:53,822 INFO Train - Epoch: 62, LR: 0.0001, train_loss: 1.892997, train_str_accuracy: 0.08015472, train_str_levenshtein: 5.007812
+2020-03-24 17:56:05,393 INFO Validation - Epoch: 62, val_loss: 1.827025, val_str_accuracy: 0.07887701, val_str_levenshtein: 4.652561
+2020-03-24 17:56:05,398 INFO Model saved to 'experiments/exp7/model-062-1.892997.pth'
+2020-03-24 17:56:52,307 INFO Train - Epoch: 63, LR: 0.0001, train_loss: 1.88119, train_str_accuracy: 0.07789897, train_str_levenshtein: 5.082031
+2020-03-24 17:57:03,691 INFO Validation - Epoch: 63, val_loss: 1.805384, val_str_accuracy: 0.07978899, val_str_levenshtein: 4.699332
+2020-03-24 17:57:03,697 INFO Model saved to 'experiments/exp7/model-063-1.881190.pth'
+2020-03-24 17:57:50,542 INFO Train - Epoch: 64, LR: 0.0001, train_loss: 1.858326, train_str_accuracy: 0.07854153, train_str_levenshtein: 5.140625
+2020-03-24 17:58:02,221 INFO Validation - Epoch: 64, val_loss: 1.803688, val_str_accuracy: 0.08147714, val_str_levenshtein: 4.619154
+2020-03-24 17:58:02,226 INFO Model saved to 'experiments/exp7/model-064-1.858326.pth'
+2020-03-24 17:58:49,174 INFO Train - Epoch: 65, LR: 0.0001, train_loss: 1.850254, train_str_accuracy: 0.07740755, train_str_levenshtein: 4.738281
+2020-03-24 17:59:00,819 INFO Validation - Epoch: 65, val_loss: 1.776432, val_str_accuracy: 0.07129991, val_str_levenshtein: 4.616927
+2020-03-24 17:59:00,824 INFO Model saved to 'experiments/exp7/model-065-1.850254.pth'
+2020-03-24 17:59:47,783 INFO Train - Epoch: 66, LR: 0.0001, train_loss: 1.834029, train_str_accuracy: 0.07785812, train_str_levenshtein: 4.630859
+2020-03-24 17:59:59,377 INFO Validation - Epoch: 66, val_loss: 1.776404, val_str_accuracy: 0.08326683, val_str_levenshtein: 4.498886
+2020-03-24 17:59:59,383 INFO Model saved to 'experiments/exp7/model-066-1.834029.pth'
+2020-03-24 18:00:46,253 INFO Train - Epoch: 67, LR: 0.0001, train_loss: 1.819671, train_str_accuracy: 0.08263442, train_str_levenshtein: 4.990234
+2020-03-24 18:00:57,827 INFO Validation - Epoch: 67, val_loss: 1.755786, val_str_accuracy: 0.07260447, val_str_levenshtein: 4.5902
+2020-03-24 18:00:57,832 INFO Model saved to 'experiments/exp7/model-067-1.819671.pth'
+2020-03-24 18:01:45,124 INFO Train - Epoch: 68, LR: 0.0001, train_loss: 1.802669, train_str_accuracy: 0.07755622, train_str_levenshtein: 4.636719
+2020-03-24 18:01:56,907 INFO Validation - Epoch: 68, val_loss: 1.735039, val_str_accuracy: 0.08388075, val_str_levenshtein: 4.380846
+2020-03-24 18:01:56,912 INFO Model saved to 'experiments/exp7/model-068-1.802669.pth'
+2020-03-24 18:02:44,580 INFO Train - Epoch: 69, LR: 0.0001, train_loss: 1.792135, train_str_accuracy: 0.07820904, train_str_levenshtein: 4.732422
+2020-03-24 18:02:56,615 INFO Validation - Epoch: 69, val_loss: 1.805972, val_str_accuracy: 0.08832004, val_str_levenshtein: 4.314031
+2020-03-24 18:02:56,620 INFO Model saved to 'experiments/exp7/model-069-1.792135.pth'
+2020-03-24 18:03:44,687 INFO Train - Epoch: 70, LR: 0.0001, train_loss: 1.784867, train_str_accuracy: 0.08026266, train_str_levenshtein: 4.964844
+2020-03-24 18:03:56,525 INFO Validation - Epoch: 70, val_loss: 1.737275, val_str_accuracy: 0.07635617, val_str_levenshtein: 4.371938
+2020-03-24 18:03:56,530 INFO Model saved to 'experiments/exp7/model-070-1.784867.pth'
+2020-03-24 18:04:45,740 INFO Train - Epoch: 71, LR: 0.0001, train_loss: 1.762403, train_str_accuracy: 0.07518458, train_str_levenshtein: 4.669922
+2020-03-24 18:04:57,637 INFO Validation - Epoch: 71, val_loss: 1.701116, val_str_accuracy: 0.0796218, val_str_levenshtein: 4.445434
+2020-03-24 18:04:57,642 INFO Model saved to 'experiments/exp7/model-071-1.762403.pth'
+2020-03-24 18:05:46,363 INFO Train - Epoch: 72, LR: 0.0001, train_loss: 1.750201, train_str_accuracy: 0.08025753, train_str_levenshtein: 4.533203
+2020-03-24 18:05:58,287 INFO Validation - Epoch: 72, val_loss: 1.657587, val_str_accuracy: 0.07776145, val_str_levenshtein: 4.378619
+2020-03-24 18:05:58,293 INFO Model saved to 'experiments/exp7/model-072-1.750201.pth'
+2020-03-24 18:06:46,149 INFO Train - Epoch: 73, LR: 0.0001, train_loss: 1.736742, train_str_accuracy: 0.08099473, train_str_levenshtein: 4.449219
+2020-03-24 18:06:58,175 INFO Validation - Epoch: 73, val_loss: 1.656135, val_str_accuracy: 0.07621987, val_str_levenshtein: 4.334076
+2020-03-24 18:06:58,180 INFO Model saved to 'experiments/exp7/model-073-1.736742.pth'
+2020-03-24 18:07:46,658 INFO Train - Epoch: 74, LR: 0.0001, train_loss: 1.71159, train_str_accuracy: 0.07968821, train_str_levenshtein: 4.634766
+2020-03-24 18:07:58,532 INFO Validation - Epoch: 74, val_loss: 1.631533, val_str_accuracy: 0.08212667, val_str_levenshtein: 4.207127
+2020-03-24 18:07:58,537 INFO Model saved to 'experiments/exp7/model-074-1.711590.pth'
+2020-03-24 18:08:47,793 INFO Train - Epoch: 75, LR: 0.0001, train_loss: 1.69271, train_str_accuracy: 0.07642414, train_str_levenshtein: 4.558594
+2020-03-24 18:08:59,669 INFO Validation - Epoch: 75, val_loss: 1.625639, val_str_accuracy: 0.08438771, val_str_levenshtein: 4.238307
+2020-03-24 18:08:59,674 INFO Model saved to 'experiments/exp7/model-075-1.692710.pth'
+2020-03-24 18:09:47,330 INFO Train - Epoch: 76, LR: 0.0001, train_loss: 1.680551, train_str_accuracy: 0.07942637, train_str_levenshtein: 4.595703
+2020-03-24 18:09:59,249 INFO Validation - Epoch: 76, val_loss: 1.607078, val_str_accuracy: 0.08842357, val_str_levenshtein: 4.195991
+2020-03-24 18:09:59,254 INFO Model saved to 'experiments/exp7/model-076-1.680551.pth'
+2020-03-24 18:10:47,448 INFO Train - Epoch: 77, LR: 0.0001, train_loss: 1.665023, train_str_accuracy: 0.07983694, train_str_levenshtein: 4.193359
+2020-03-24 18:10:59,482 INFO Validation - Epoch: 77, val_loss: 1.582454, val_str_accuracy: 0.08497229, val_str_levenshtein: 4.169265
+2020-03-24 18:10:59,487 INFO Model saved to 'experiments/exp7/model-077-1.665023.pth'
+2020-03-24 18:11:47,371 INFO Train - Epoch: 78, LR: 0.0001, train_loss: 1.646836, train_str_accuracy: 0.07975666, train_str_levenshtein: 4.355469
+2020-03-24 18:11:59,307 INFO Validation - Epoch: 78, val_loss: 1.617962, val_str_accuracy: 0.07770106, val_str_levenshtein: 4.057906
+2020-03-24 18:11:59,313 INFO Model saved to 'experiments/exp7/model-078-1.646836.pth'
+2020-03-24 18:12:47,189 INFO Train - Epoch: 79, LR: 0.0001, train_loss: 1.62709, train_str_accuracy: 0.0797938, train_str_levenshtein: 4.273438
+2020-03-24 18:12:58,922 INFO Validation - Epoch: 79, val_loss: 1.556442, val_str_accuracy: 0.07961353, val_str_levenshtein: 4.028953
+2020-03-24 18:12:58,927 INFO Model saved to 'experiments/exp7/model-079-1.627090.pth'
+2020-03-24 18:13:46,389 INFO Train - Epoch: 80, LR: 0.0001, train_loss: 1.609161, train_str_accuracy: 0.07927845, train_str_levenshtein: 4.457031
+2020-03-24 18:13:58,148 INFO Validation - Epoch: 80, val_loss: 1.60035, val_str_accuracy: 0.08328019, val_str_levenshtein: 4.30735
+2020-03-24 18:13:58,153 INFO Model saved to 'experiments/exp7/model-080-1.609161.pth'
+2020-03-24 18:14:47,949 INFO Train - Epoch: 81, LR: 0.0001, train_loss: 1.597522, train_str_accuracy: 0.08152212, train_str_levenshtein: 4.271484
+2020-03-24 18:15:00,499 INFO Validation - Epoch: 81, val_loss: 1.517929, val_str_accuracy: 0.07827676, val_str_levenshtein: 3.979955
+2020-03-24 18:15:00,504 INFO Model saved to 'experiments/exp7/model-081-1.597522.pth'
+2020-03-24 18:15:49,667 INFO Train - Epoch: 82, LR: 0.0001, train_loss: 1.579915, train_str_accuracy: 0.07934883, train_str_levenshtein: 4.373047
+2020-03-24 18:16:01,839 INFO Validation - Epoch: 82, val_loss: 1.493767, val_str_accuracy: 0.07164892, val_str_levenshtein: 4.066815
+2020-03-24 18:16:01,845 INFO Model saved to 'experiments/exp7/model-082-1.579915.pth'
+2020-03-24 18:16:51,784 INFO Train - Epoch: 83, LR: 0.0001, train_loss: 1.556407, train_str_accuracy: 0.08099348, train_str_levenshtein: 4.289062
+2020-03-24 18:17:03,910 INFO Validation - Epoch: 83, val_loss: 1.477532, val_str_accuracy: 0.08076388, val_str_levenshtein: 4.004454
+2020-03-24 18:17:03,915 INFO Model saved to 'experiments/exp7/model-083-1.556407.pth'
+2020-03-24 18:17:53,356 INFO Train - Epoch: 84, LR: 0.0001, train_loss: 1.546431, train_str_accuracy: 0.07969351, train_str_levenshtein: 4.132812
+2020-03-24 18:18:05,849 INFO Validation - Epoch: 84, val_loss: 1.461106, val_str_accuracy: 0.07778231, val_str_levenshtein: 3.690423
+2020-03-24 18:18:05,854 INFO Model saved to 'experiments/exp7/model-084-1.546431.pth'
+2020-03-24 18:18:55,338 INFO Train - Epoch: 85, LR: 0.0001, train_loss: 1.530485, train_str_accuracy: 0.07740075, train_str_levenshtein: 4.169922
+2020-03-24 18:19:07,800 INFO Validation - Epoch: 85, val_loss: 1.450198, val_str_accuracy: 0.08130749, val_str_levenshtein: 3.659243
+2020-03-24 18:19:07,805 INFO Model saved to 'experiments/exp7/model-085-1.530485.pth'
+2020-03-24 18:19:56,805 INFO Train - Epoch: 86, LR: 0.0001, train_loss: 1.513744, train_str_accuracy: 0.07874211, train_str_levenshtein: 3.962891
+2020-03-24 18:20:09,133 INFO Validation - Epoch: 86, val_loss: 1.428983, val_str_accuracy: 0.07817899, val_str_levenshtein: 3.737194
+2020-03-24 18:20:09,138 INFO Model saved to 'experiments/exp7/model-086-1.513744.pth'
+2020-03-24 18:20:58,834 INFO Train - Epoch: 87, LR: 0.0001, train_loss: 1.493756, train_str_accuracy: 0.07965912, train_str_levenshtein: 4.103516
+2020-03-24 18:21:11,048 INFO Validation - Epoch: 87, val_loss: 1.405696, val_str_accuracy: 0.08675473, val_str_levenshtein: 3.788419
+2020-03-24 18:21:11,053 INFO Model saved to 'experiments/exp7/model-087-1.493756.pth'
+2020-03-24 18:22:01,218 INFO Train - Epoch: 88, LR: 0.0001, train_loss: 1.481328, train_str_accuracy: 0.07887341, train_str_levenshtein: 3.712891
+2020-03-24 18:22:13,600 INFO Validation - Epoch: 88, val_loss: 1.416767, val_str_accuracy: 0.08244613, val_str_levenshtein: 3.741648
+2020-03-24 18:22:13,606 INFO Model saved to 'experiments/exp7/model-088-1.481328.pth'
+2020-03-24 18:23:03,870 INFO Train - Epoch: 89, LR: 0.0001, train_loss: 1.472996, train_str_accuracy: 0.07865005, train_str_levenshtein: 4.117188
+2020-03-24 18:23:16,353 INFO Validation - Epoch: 89, val_loss: 1.41372, val_str_accuracy: 0.07804404, val_str_levenshtein: 3.581292
+2020-03-24 18:23:16,359 INFO Model saved to 'experiments/exp7/model-089-1.472996.pth'
+2020-03-24 18:24:05,872 INFO Train - Epoch: 90, LR: 0.0001, train_loss: 1.458199, train_str_accuracy: 0.07984066, train_str_levenshtein: 3.783203
+2020-03-24 18:24:18,440 INFO Validation - Epoch: 90, val_loss: 1.434365, val_str_accuracy: 0.07174066, val_str_levenshtein: 3.365256
+2020-03-24 18:24:18,445 INFO Model saved to 'experiments/exp7/model-090-1.458199.pth'
+2020-03-24 18:25:08,487 INFO Train - Epoch: 91, LR: 0.0001, train_loss: 1.432558, train_str_accuracy: 0.07847905, train_str_levenshtein: 3.808594
+2020-03-24 18:25:20,947 INFO Validation - Epoch: 91, val_loss: 1.366846, val_str_accuracy: 0.08425348, val_str_levenshtein: 3.614699
+2020-03-24 18:25:20,953 INFO Model saved to 'experiments/exp7/model-091-1.432558.pth'
+2020-03-24 18:26:11,026 INFO Train - Epoch: 92, LR: 0.0001, train_loss: 1.417183, train_str_accuracy: 0.07775401, train_str_levenshtein: 3.814453
+2020-03-24 18:26:23,471 INFO Validation - Epoch: 92, val_loss: 1.326274, val_str_accuracy: 0.08087736, val_str_levenshtein: 3.458797
+2020-03-24 18:26:23,475 INFO Model saved to 'experiments/exp7/model-092-1.417183.pth'
+2020-03-24 18:27:13,609 INFO Train - Epoch: 93, LR: 0.0001, train_loss: 1.394569, train_str_accuracy: 0.07554855, train_str_levenshtein: 3.794922
+2020-03-24 18:27:25,919 INFO Validation - Epoch: 93, val_loss: 1.325396, val_str_accuracy: 0.07623995, val_str_levenshtein: 3.596882
+2020-03-24 18:27:25,924 INFO Model saved to 'experiments/exp7/model-093-1.394569.pth'
+2020-03-24 18:28:16,687 INFO Train - Epoch: 94, LR: 0.0001, train_loss: 1.377731, train_str_accuracy: 0.07608639, train_str_levenshtein: 3.644531
+2020-03-24 18:28:29,183 INFO Validation - Epoch: 94, val_loss: 1.287754, val_str_accuracy: 0.08062876, val_str_levenshtein: 3.403118
+2020-03-24 18:28:29,188 INFO Model saved to 'experiments/exp7/model-094-1.377731.pth'
+2020-03-24 18:29:19,172 INFO Train - Epoch: 95, LR: 0.0001, train_loss: 1.365655, train_str_accuracy: 0.07868155, train_str_levenshtein: 3.587891
+2020-03-24 18:29:31,843 INFO Validation - Epoch: 95, val_loss: 1.277797, val_str_accuracy: 0.07630017, val_str_levenshtein: 3.200445
+2020-03-24 18:29:31,848 INFO Model saved to 'experiments/exp7/model-095-1.365655.pth'
+2020-03-24 18:30:21,705 INFO Train - Epoch: 96, LR: 0.0001, train_loss: 1.356188, train_str_accuracy: 0.07533115, train_str_levenshtein: 3.316406
+2020-03-24 18:30:34,109 INFO Validation - Epoch: 96, val_loss: 1.261751, val_str_accuracy: 0.07944449, val_str_levenshtein: 3.33853
+2020-03-24 18:30:34,117 INFO Model saved to 'experiments/exp7/model-096-1.356188.pth'
+2020-03-24 18:31:25,337 INFO Train - Epoch: 97, LR: 0.0001, train_loss: 1.329892, train_str_accuracy: 0.07285152, train_str_levenshtein: 3.349609
+2020-03-24 18:31:38,049 INFO Validation - Epoch: 97, val_loss: 1.24669, val_str_accuracy: 0.07343399, val_str_levenshtein: 3.046771
+2020-03-24 18:31:38,054 INFO Model saved to 'experiments/exp7/model-097-1.329892.pth'
+2020-03-24 18:32:28,528 INFO Train - Epoch: 98, LR: 0.0001, train_loss: 1.313176, train_str_accuracy: 0.07671739, train_str_levenshtein: 3.535156
+2020-03-24 18:32:41,310 INFO Validation - Epoch: 98, val_loss: 1.225735, val_str_accuracy: 0.07386696, val_str_levenshtein: 3.042316
+2020-03-24 18:32:41,315 INFO Model saved to 'experiments/exp7/model-098-1.313176.pth'
+2020-03-24 18:33:32,018 INFO Train - Epoch: 99, LR: 0.0001, train_loss: 1.294296, train_str_accuracy: 0.07229556, train_str_levenshtein: 3.191406
+2020-03-24 18:33:44,827 INFO Validation - Epoch: 99, val_loss: 1.208196, val_str_accuracy: 0.06769212, val_str_levenshtein: 2.839644
+2020-03-24 18:33:44,832 INFO Model saved to 'experiments/exp7/model-099-1.294296.pth'
+2020-03-24 18:34:35,654 INFO Train - Epoch: 100, LR: 0.0001, train_loss: 1.284697, train_str_accuracy: 0.07164846, train_str_levenshtein: 3.191406
+2020-03-24 18:34:48,329 INFO Validation - Epoch: 100, val_loss: 1.188581, val_str_accuracy: 0.07265136, val_str_levenshtein: 2.770601
+2020-03-24 18:34:48,333 INFO Model saved to 'experiments/exp7/model-100-1.284697.pth'
+2020-03-24 18:35:39,253 INFO Train - Epoch: 101, LR: 0.0001, train_loss: 1.2669, train_str_accuracy: 0.07494709, train_str_levenshtein: 3.148438
+2020-03-24 18:35:52,195 INFO Validation - Epoch: 101, val_loss: 1.176544, val_str_accuracy: 0.07104444, val_str_levenshtein: 2.654788
+2020-03-24 18:35:52,200 INFO Model saved to 'experiments/exp7/model-101-1.266900.pth'
+2020-03-24 18:36:43,676 INFO Train - Epoch: 102, LR: 0.0001, train_loss: 1.24842, train_str_accuracy: 0.07154966, train_str_levenshtein: 3.416016
+2020-03-24 18:36:56,698 INFO Validation - Epoch: 102, val_loss: 1.153963, val_str_accuracy: 0.07240306, val_str_levenshtein: 2.699332
+2020-03-24 18:36:56,705 INFO Model saved to 'experiments/exp7/model-102-1.248420.pth'
+2020-03-24 18:37:47,757 INFO Train - Epoch: 103, LR: 0.0001, train_loss: 1.234002, train_str_accuracy: 0.07119403, train_str_levenshtein: 3.175781
+2020-03-24 18:38:00,865 INFO Validation - Epoch: 103, val_loss: 1.144013, val_str_accuracy: 0.06859311, val_str_levenshtein: 2.623608
+2020-03-24 18:38:00,872 INFO Model saved to 'experiments/exp7/model-103-1.234002.pth'
+2020-03-24 18:38:52,051 INFO Train - Epoch: 104, LR: 0.0001, train_loss: 1.227307, train_str_accuracy: 0.0694657, train_str_levenshtein: 2.876953
+2020-03-24 18:39:04,934 INFO Validation - Epoch: 104, val_loss: 1.136642, val_str_accuracy: 0.07479938, val_str_levenshtein: 2.739421
+2020-03-24 18:39:04,939 INFO Model saved to 'experiments/exp7/model-104-1.227307.pth'
+2020-03-24 18:39:55,778 INFO Train - Epoch: 105, LR: 0.0001, train_loss: 1.205989, train_str_accuracy: 0.07077416, train_str_levenshtein: 2.890625
+2020-03-24 18:40:08,489 INFO Validation - Epoch: 105, val_loss: 1.117338, val_str_accuracy: 0.07027325, val_str_levenshtein: 2.708241
+2020-03-24 18:40:08,495 INFO Model saved to 'experiments/exp7/model-105-1.205989.pth'
+2020-03-24 18:40:59,679 INFO Train - Epoch: 106, LR: 0.0001, train_loss: 1.192679, train_str_accuracy: 0.07031187, train_str_levenshtein: 2.765625
+2020-03-24 18:41:12,689 INFO Validation - Epoch: 106, val_loss: 1.09705, val_str_accuracy: 0.06796425, val_str_levenshtein: 2.407572
+2020-03-24 18:41:12,694 INFO Model saved to 'experiments/exp7/model-106-1.192679.pth'
+2020-03-24 18:42:03,524 INFO Train - Epoch: 107, LR: 0.0001, train_loss: 1.182233, train_str_accuracy: 0.07109375, train_str_levenshtein: 2.841797
+2020-03-24 18:42:16,489 INFO Validation - Epoch: 107, val_loss: 1.089847, val_str_accuracy: 0.07257761, val_str_levenshtein: 2.391982
+2020-03-24 18:42:16,495 INFO Model saved to 'experiments/exp7/model-107-1.182233.pth'
+2020-03-24 18:43:07,471 INFO Train - Epoch: 108, LR: 0.0001, train_loss: 1.163946, train_str_accuracy: 0.07244777, train_str_levenshtein: 2.794922
+2020-03-24 18:43:20,494 INFO Validation - Epoch: 108, val_loss: 1.08026, val_str_accuracy: 0.06694676, val_str_levenshtein: 2.396437
+2020-03-24 18:43:20,499 INFO Model saved to 'experiments/exp7/model-108-1.163946.pth'
+2020-03-24 18:44:11,732 INFO Train - Epoch: 109, LR: 0.0001, train_loss: 1.165693, train_str_accuracy: 0.06755519, train_str_levenshtein: 3.140625
+2020-03-24 18:44:24,384 INFO Validation - Epoch: 109, val_loss: 1.085178, val_str_accuracy: 0.07007052, val_str_levenshtein: 2.523385
+2020-03-24 18:44:24,389 INFO Model saved to 'experiments/exp7/model-109-1.165693.pth'
+2020-03-24 18:45:15,526 INFO Train - Epoch: 110, LR: 0.0001, train_loss: 1.132758, train_str_accuracy: 0.06945218, train_str_levenshtein: 2.623047
+2020-03-24 18:45:28,429 INFO Validation - Epoch: 110, val_loss: 1.04097, val_str_accuracy: 0.07028562, val_str_levenshtein: 2.342984
+2020-03-24 18:45:28,434 INFO Model saved to 'experiments/exp7/model-110-1.132758.pth'
+2020-03-24 18:46:19,723 INFO Train - Epoch: 111, LR: 0.0001, train_loss: 1.12302, train_str_accuracy: 0.07191378, train_str_levenshtein: 2.517578
+2020-03-24 18:46:32,655 INFO Validation - Epoch: 111, val_loss: 1.025717, val_str_accuracy: 0.06810055, val_str_levenshtein: 2.22049
+2020-03-24 18:46:32,660 INFO Model saved to 'experiments/exp7/model-111-1.123020.pth'
+2020-03-24 18:47:24,249 INFO Train - Epoch: 112, LR: 0.0001, train_loss: 1.108494, train_str_accuracy: 0.06877192, train_str_levenshtein: 2.582031
+2020-03-24 18:47:37,226 INFO Validation - Epoch: 112, val_loss: 1.027852, val_str_accuracy: 0.06607974, val_str_levenshtein: 2.08686
+2020-03-24 18:47:37,231 INFO Model saved to 'experiments/exp7/model-112-1.108494.pth'
+2020-03-24 18:48:29,240 INFO Train - Epoch: 113, LR: 0.0001, train_loss: 1.096126, train_str_accuracy: 0.06925905, train_str_levenshtein: 2.625
+2020-03-24 18:48:42,353 INFO Validation - Epoch: 113, val_loss: 1.011234, val_str_accuracy: 0.07027981, val_str_levenshtein: 2.113586
+2020-03-24 18:48:42,358 INFO Model saved to 'experiments/exp7/model-113-1.096126.pth'
+2020-03-24 18:49:33,543 INFO Train - Epoch: 114, LR: 0.0001, train_loss: 1.088757, train_str_accuracy: 0.06838158, train_str_levenshtein: 2.552734
+2020-03-24 18:49:46,555 INFO Validation - Epoch: 114, val_loss: 1.022563, val_str_accuracy: 0.06867905, val_str_levenshtein: 2.175947
+2020-03-24 18:49:46,560 INFO Model saved to 'experiments/exp7/model-114-1.088757.pth'
+2020-03-24 18:50:37,923 INFO Train - Epoch: 115, LR: 0.0001, train_loss: 1.066844, train_str_accuracy: 0.06922122, train_str_levenshtein: 2.384766
+2020-03-24 18:50:50,969 INFO Validation - Epoch: 115, val_loss: 0.9567722, val_str_accuracy: 0.0685563, val_str_levenshtein: 1.98441
+2020-03-24 18:50:50,974 INFO Model saved to 'experiments/exp7/model-115-1.066844.pth'
+2020-03-24 18:51:42,518 INFO Train - Epoch: 116, LR: 0.0001, train_loss: 1.051289, train_str_accuracy: 0.06662033, train_str_levenshtein: 2.357422
+2020-03-24 18:51:55,854 INFO Validation - Epoch: 116, val_loss: 0.9671319, val_str_accuracy: 0.06751229, val_str_levenshtein: 1.755011
+2020-03-24 18:51:55,859 INFO Model saved to 'experiments/exp7/model-116-1.051289.pth'
+2020-03-24 18:52:48,012 INFO Train - Epoch: 117, LR: 0.0001, train_loss: 1.038351, train_str_accuracy: 0.06881041, train_str_levenshtein: 2.339844
+2020-03-24 18:53:00,893 INFO Validation - Epoch: 117, val_loss: 0.9319044, val_str_accuracy: 0.07042114, val_str_levenshtein: 1.973274
+2020-03-24 18:53:00,899 INFO Model saved to 'experiments/exp7/model-117-1.038351.pth'
+2020-03-24 18:53:53,111 INFO Train - Epoch: 118, LR: 0.0001, train_loss: 1.02573, train_str_accuracy: 0.06799196, train_str_levenshtein: 2.25
+2020-03-24 18:54:06,123 INFO Validation - Epoch: 118, val_loss: 0.9265854, val_str_accuracy: 0.07048644, val_str_levenshtein: 2.073497
+2020-03-24 18:54:06,128 INFO Model saved to 'experiments/exp7/model-118-1.025730.pth'
+2020-03-24 18:54:58,000 INFO Train - Epoch: 119, LR: 0.0001, train_loss: 1.011394, train_str_accuracy: 0.06710746, train_str_levenshtein: 2.294922
+2020-03-24 18:55:11,059 INFO Validation - Epoch: 119, val_loss: 0.9325708, val_str_accuracy: 0.0668771, val_str_levenshtein: 1.942094
+2020-03-24 18:55:11,067 INFO Model saved to 'experiments/exp7/model-119-1.011394.pth'
+2020-03-24 18:56:02,791 INFO Train - Epoch: 120, LR: 0.0001, train_loss: 1.008487, train_str_accuracy: 0.06955612, train_str_levenshtein: 2.089844
+2020-03-24 18:56:15,952 INFO Validation - Epoch: 120, val_loss: 0.9101421, val_str_accuracy: 0.06399498, val_str_levenshtein: 1.775056
+2020-03-24 18:56:15,958 INFO Model saved to 'experiments/exp7/model-120-1.008487.pth'
+2020-03-24 18:57:08,003 INFO Train - Epoch: 121, LR: 0.0001, train_loss: 0.9918514, train_str_accuracy: 0.06686519, train_str_levenshtein: 2.039062
+2020-03-24 18:57:21,288 INFO Validation - Epoch: 121, val_loss: 0.9099731, val_str_accuracy: 0.06741363, val_str_levenshtein: 1.728285
+2020-03-24 18:57:21,293 INFO Model saved to 'experiments/exp7/model-121-0.991851.pth'
+2020-03-24 18:58:13,108 INFO Train - Epoch: 122, LR: 0.0001, train_loss: 0.9737714, train_str_accuracy: 0.06778479, train_str_levenshtein: 2.359375
+2020-03-24 18:58:26,138 INFO Validation - Epoch: 122, val_loss: 0.8812398, val_str_accuracy: 0.06634961, val_str_levenshtein: 1.708241
+2020-03-24 18:58:26,143 INFO Model saved to 'experiments/exp7/model-122-0.973771.pth'
+2020-03-24 18:59:17,415 INFO Train - Epoch: 123, LR: 0.0001, train_loss: 0.9604492, train_str_accuracy: 0.06845745, train_str_levenshtein: 2.181641
+2020-03-24 18:59:30,711 INFO Validation - Epoch: 123, val_loss: 0.8684532, val_str_accuracy: 0.07145476, val_str_levenshtein: 1.625835
+2020-03-24 18:59:30,716 INFO Model saved to 'experiments/exp7/model-123-0.960449.pth'
+2020-03-24 19:00:24,362 INFO Train - Epoch: 124, LR: 0.0001, train_loss: 0.9495123, train_str_accuracy: 0.06777656, train_str_levenshtein: 2.115234
+2020-03-24 19:00:38,404 INFO Validation - Epoch: 124, val_loss: 0.8753432, val_str_accuracy: 0.06641268, val_str_levenshtein: 1.697105
+2020-03-24 19:00:38,409 INFO Model saved to 'experiments/exp7/model-124-0.949512.pth'
+2020-03-24 19:01:33,070 INFO Train - Epoch: 125, LR: 0.0001, train_loss: 0.9307785, train_str_accuracy: 0.06642818, train_str_levenshtein: 1.966797
+2020-03-24 19:01:46,651 INFO Validation - Epoch: 125, val_loss: 0.8433045, val_str_accuracy: 0.06735283, val_str_levenshtein: 1.583519
+2020-03-24 19:01:46,656 INFO Model saved to 'experiments/exp7/model-125-0.930779.pth'
+2020-03-24 19:02:40,049 INFO Train - Epoch: 126, LR: 0.0001, train_loss: 0.9266337, train_str_accuracy: 0.06844269, train_str_levenshtein: 1.941406
+2020-03-24 19:02:53,371 INFO Validation - Epoch: 126, val_loss: 0.8398748, val_str_accuracy: 0.06785427, val_str_levenshtein: 1.628062
+2020-03-24 19:02:53,376 INFO Model saved to 'experiments/exp7/model-126-0.926634.pth'
+2020-03-24 19:03:45,652 INFO Train - Epoch: 127, LR: 0.0001, train_loss: 0.9104697, train_str_accuracy: 0.06600617, train_str_levenshtein: 1.875
+2020-03-24 19:03:59,206 INFO Validation - Epoch: 127, val_loss: 0.8185356, val_str_accuracy: 0.0646252, val_str_levenshtein: 1.63029
+2020-03-24 19:03:59,211 INFO Model saved to 'experiments/exp7/model-127-0.910470.pth'
+2020-03-24 19:04:52,123 INFO Train - Epoch: 128, LR: 0.0001, train_loss: 0.9023513, train_str_accuracy: 0.06803707, train_str_levenshtein: 2.019531
+2020-03-24 19:05:05,356 INFO Validation - Epoch: 128, val_loss: 0.8226837, val_str_accuracy: 0.06952984, val_str_levenshtein: 1.665924
+2020-03-24 19:05:05,363 INFO Model saved to 'experiments/exp7/model-128-0.902351.pth'
+2020-03-24 19:05:57,321 INFO Train - Epoch: 129, LR: 0.0001, train_loss: 0.9025819, train_str_accuracy: 0.06551624, train_str_levenshtein: 1.972656
+2020-03-24 19:06:10,699 INFO Validation - Epoch: 129, val_loss: 0.8087446, val_str_accuracy: 0.06861321, val_str_levenshtein: 1.610245
+2020-03-24 19:06:10,704 INFO Model saved to 'experiments/exp7/model-129-0.902582.pth'
+2020-03-24 19:07:02,263 INFO Train - Epoch: 130, LR: 0.0001, train_loss: 0.8949167, train_str_accuracy: 0.06541996, train_str_levenshtein: 2.037109
+2020-03-24 19:07:15,545 INFO Validation - Epoch: 130, val_loss: 0.7886395, val_str_accuracy: 0.0686506, val_str_levenshtein: 1.467706
+2020-03-24 19:07:15,550 INFO Model saved to 'experiments/exp7/model-130-0.894917.pth'
+2020-03-24 19:08:08,009 INFO Train - Epoch: 131, LR: 0.0001, train_loss: 0.879304, train_str_accuracy: 0.06543853, train_str_levenshtein: 1.863281
+2020-03-24 19:08:21,200 INFO Validation - Epoch: 131, val_loss: 0.7807124, val_str_accuracy: 0.06732265, val_str_levenshtein: 1.483296
+2020-03-24 19:08:21,205 INFO Model saved to 'experiments/exp7/model-131-0.879304.pth'
+2020-03-24 19:09:13,554 INFO Train - Epoch: 132, LR: 0.0001, train_loss: 0.8658609, train_str_accuracy: 0.06549786, train_str_levenshtein: 1.740234
+2020-03-24 19:09:26,886 INFO Validation - Epoch: 132, val_loss: 0.7832102, val_str_accuracy: 0.06857066, val_str_levenshtein: 1.403118
+2020-03-24 19:09:26,891 INFO Model saved to 'experiments/exp7/model-132-0.865861.pth'
+2020-03-24 19:10:19,265 INFO Train - Epoch: 133, LR: 0.0001, train_loss: 0.8579206, train_str_accuracy: 0.0659297, train_str_levenshtein: 1.962891
+2020-03-24 19:10:32,684 INFO Validation - Epoch: 133, val_loss: 0.7589324, val_str_accuracy: 0.06537617, val_str_levenshtein: 1.436526
+2020-03-24 19:10:32,689 INFO Model saved to 'experiments/exp7/model-133-0.857921.pth'
+2020-03-24 19:11:24,763 INFO Train - Epoch: 134, LR: 0.0001, train_loss: 0.8489941, train_str_accuracy: 0.06687848, train_str_levenshtein: 1.828125
+2020-03-24 19:11:38,305 INFO Validation - Epoch: 134, val_loss: 0.7757513, val_str_accuracy: 0.06381096, val_str_levenshtein: 1.420935
+2020-03-24 19:11:38,311 INFO Model saved to 'experiments/exp7/model-134-0.848994.pth'
+2020-03-24 19:12:30,990 INFO Train - Epoch: 135, LR: 0.0001, train_loss: 0.8325386, train_str_accuracy: 0.06527124, train_str_levenshtein: 1.765625
+2020-03-24 19:12:44,429 INFO Validation - Epoch: 135, val_loss: 0.7315265, val_str_accuracy: 0.06490799, val_str_levenshtein: 1.427617
+2020-03-24 19:12:44,434 INFO Model saved to 'experiments/exp7/model-135-0.832539.pth'
+2020-03-24 19:13:37,439 INFO Train - Epoch: 136, LR: 0.0001, train_loss: 0.8286909, train_str_accuracy: 0.06553637, train_str_levenshtein: 1.689453
+2020-03-24 19:13:50,723 INFO Validation - Epoch: 136, val_loss: 0.7308678, val_str_accuracy: 0.06439714, val_str_levenshtein: 1.443207
+2020-03-24 19:13:50,728 INFO Model saved to 'experiments/exp7/model-136-0.828691.pth'
+2020-03-24 19:14:43,817 INFO Train - Epoch: 137, LR: 0.0001, train_loss: 0.8118521, train_str_accuracy: 0.06497707, train_str_levenshtein: 1.716797
+2020-03-24 19:14:56,999 INFO Validation - Epoch: 137, val_loss: 0.7526251, val_str_accuracy: 0.06775711, val_str_levenshtein: 1.316258
+2020-03-24 19:14:57,004 INFO Model saved to 'experiments/exp7/model-137-0.811852.pth'
+2020-03-24 19:15:48,348 INFO Train - Epoch: 138, LR: 0.0001, train_loss: 0.8069903, train_str_accuracy: 0.06765733, train_str_levenshtein: 1.882812
+2020-03-24 19:16:01,542 INFO Validation - Epoch: 138, val_loss: 0.7171687, val_str_accuracy: 0.0671873, val_str_levenshtein: 1.300668
+2020-03-24 19:16:01,547 INFO Model saved to 'experiments/exp7/model-138-0.806990.pth'
+2020-03-24 19:16:54,428 INFO Train - Epoch: 139, LR: 0.0001, train_loss: 0.8078838, train_str_accuracy: 0.06570292, train_str_levenshtein: 1.595703
+2020-03-24 19:17:07,511 INFO Validation - Epoch: 139, val_loss: 0.7048005, val_str_accuracy: 0.06776362, val_str_levenshtein: 1.311804
+2020-03-24 19:17:07,515 INFO Model saved to 'experiments/exp7/model-139-0.807884.pth'
+2020-03-24 19:17:59,095 INFO Train - Epoch: 140, LR: 0.0001, train_loss: 0.7888067, train_str_accuracy: 0.0649805, train_str_levenshtein: 1.71875
+2020-03-24 19:18:12,232 INFO Validation - Epoch: 140, val_loss: 0.7134246, val_str_accuracy: 0.06879095, val_str_levenshtein: 1.238307
+2020-03-24 19:18:12,237 INFO Model saved to 'experiments/exp7/model-140-0.788807.pth'
+2020-03-24 19:19:03,790 INFO Train - Epoch: 141, LR: 0.0001, train_loss: 0.7815451, train_str_accuracy: 0.06596871, train_str_levenshtein: 1.695312
+2020-03-24 19:19:16,816 INFO Validation - Epoch: 141, val_loss: 0.6947929, val_str_accuracy: 0.06424349, val_str_levenshtein: 1.269488
+2020-03-24 19:19:16,822 INFO Model saved to 'experiments/exp7/model-141-0.781545.pth'
+2020-03-24 19:20:09,975 INFO Train - Epoch: 142, LR: 0.0001, train_loss: 0.7711463, train_str_accuracy: 0.0678812, train_str_levenshtein: 1.535156
+2020-03-24 19:20:23,524 INFO Validation - Epoch: 142, val_loss: 0.6833619, val_str_accuracy: 0.06508241, val_str_levenshtein: 1.30735
+2020-03-24 19:20:23,529 INFO Model saved to 'experiments/exp7/model-142-0.771146.pth'
+2020-03-24 19:21:16,025 INFO Train - Epoch: 143, LR: 0.0001, train_loss: 0.764956, train_str_accuracy: 0.0647653, train_str_levenshtein: 1.654297
+2020-03-24 19:21:29,454 INFO Validation - Epoch: 143, val_loss: 0.6820234, val_str_accuracy: 0.06991767, val_str_levenshtein: 1.180401
+2020-03-24 19:21:29,459 INFO Model saved to 'experiments/exp7/model-143-0.764956.pth'
+2020-03-24 19:22:21,687 INFO Train - Epoch: 144, LR: 0.0001, train_loss: 0.7464527, train_str_accuracy: 0.06734348, train_str_levenshtein: 1.554688
+2020-03-24 19:22:34,945 INFO Validation - Epoch: 144, val_loss: 0.6632333, val_str_accuracy: 0.06544738, val_str_levenshtein: 1.178174
+2020-03-24 19:22:34,949 INFO Model saved to 'experiments/exp7/model-144-0.746453.pth'
+2020-03-24 19:23:26,778 INFO Train - Epoch: 145, LR: 0.0001, train_loss: 0.7523503, train_str_accuracy: 0.06474777, train_str_levenshtein: 1.589844
+2020-03-24 19:23:40,243 INFO Validation - Epoch: 145, val_loss: 0.664013, val_str_accuracy: 0.06567878, val_str_levenshtein: 1.222717
+2020-03-24 19:23:40,248 INFO Model saved to 'experiments/exp7/model-145-0.752350.pth'
+2020-03-24 19:24:31,964 INFO Train - Epoch: 146, LR: 0.0001, train_loss: 0.736551, train_str_accuracy: 0.06560318, train_str_levenshtein: 1.607422
+2020-03-24 19:24:45,318 INFO Validation - Epoch: 146, val_loss: 0.6565776, val_str_accuracy: 0.06671228, val_str_levenshtein: 1.191537
+2020-03-24 19:24:45,323 INFO Model saved to 'experiments/exp7/model-146-0.736551.pth'
+2020-03-24 19:25:37,155 INFO Train - Epoch: 147, LR: 0.0001, train_loss: 0.7217211, train_str_accuracy: 0.06564858, train_str_levenshtein: 1.421875
+2020-03-24 19:25:50,304 INFO Validation - Epoch: 147, val_loss: 0.6466745, val_str_accuracy: 0.06079514, val_str_levenshtein: 1.120267
+2020-03-24 19:25:50,310 INFO Model saved to 'experiments/exp7/model-147-0.721721.pth'
+2020-03-24 19:26:42,317 INFO Train - Epoch: 148, LR: 0.0001, train_loss: 0.716645, train_str_accuracy: 0.06598012, train_str_levenshtein: 1.720703
+2020-03-24 19:26:55,428 INFO Validation - Epoch: 148, val_loss: 0.6276666, val_str_accuracy: 0.06656742, val_str_levenshtein: 1.169265
+2020-03-24 19:26:55,433 INFO Model saved to 'experiments/exp7/model-148-0.716645.pth'
+2020-03-24 19:27:46,858 INFO Train - Epoch: 149, LR: 0.0001, train_loss: 0.7123772, train_str_accuracy: 0.06605395, train_str_levenshtein: 1.574219
+2020-03-24 19:27:59,855 INFO Validation - Epoch: 149, val_loss: 0.6501895, val_str_accuracy: 0.06359427, val_str_levenshtein: 1.32294
+2020-03-24 19:27:59,860 INFO Model saved to 'experiments/exp7/model-149-0.712377.pth'
+2020-03-24 19:28:51,383 INFO Train - Epoch: 150, LR: 0.0001, train_loss: 0.705015, train_str_accuracy: 0.06641967, train_str_levenshtein: 1.5625
+2020-03-24 19:29:04,637 INFO Validation - Epoch: 150, val_loss: 0.6358894, val_str_accuracy: 0.06372366, val_str_levenshtein: 1.146993
+2020-03-24 19:29:04,642 INFO Model saved to 'experiments/exp7/model-150-0.705015.pth'
+2020-03-24 19:29:56,390 INFO Train - Epoch: 151, LR: 0.0001, train_loss: 0.7003742, train_str_accuracy: 0.06400843, train_str_levenshtein: 1.486328
+2020-03-24 19:30:09,510 INFO Validation - Epoch: 151, val_loss: 0.6131034, val_str_accuracy: 0.06707625, val_str_levenshtein: 1.126949
+2020-03-24 19:30:09,515 INFO Model saved to 'experiments/exp7/model-151-0.700374.pth'
+2020-03-24 19:31:01,134 INFO Train - Epoch: 152, LR: 0.0001, train_loss: 0.6880885, train_str_accuracy: 0.06715112, train_str_levenshtein: 1.414062
+2020-03-24 19:31:14,165 INFO Validation - Epoch: 152, val_loss: 0.6061958, val_str_accuracy: 0.06583192, val_str_levenshtein: 1.140312
+2020-03-24 19:31:14,170 INFO Model saved to 'experiments/exp7/model-152-0.688089.pth'
+2020-03-24 19:32:05,924 INFO Train - Epoch: 153, LR: 0.0001, train_loss: 0.6794538, train_str_accuracy: 0.06759555, train_str_levenshtein: 1.621094
+2020-03-24 19:32:19,042 INFO Validation - Epoch: 153, val_loss: 0.5965902, val_str_accuracy: 0.06621582, val_str_levenshtein: 1.064588
+2020-03-24 19:32:19,047 INFO Model saved to 'experiments/exp7/model-153-0.679454.pth'
+2020-03-24 19:33:10,995 INFO Train - Epoch: 154, LR: 0.0001, train_loss: 0.6704706, train_str_accuracy: 0.06574757, train_str_levenshtein: 1.384766
+2020-03-24 19:33:24,161 INFO Validation - Epoch: 154, val_loss: 0.5881016, val_str_accuracy: 0.06564551, val_str_levenshtein: 1.080178
+2020-03-24 19:33:24,166 INFO Model saved to 'experiments/exp7/model-154-0.670471.pth'
+2020-03-24 19:34:16,747 INFO Train - Epoch: 155, LR: 0.0001, train_loss: 0.6678249, train_str_accuracy: 0.0675594, train_str_levenshtein: 1.53125
+2020-03-24 19:34:30,014 INFO Validation - Epoch: 155, val_loss: 0.5964071, val_str_accuracy: 0.06822546, val_str_levenshtein: 1.13363
+2020-03-24 19:34:30,020 INFO Model saved to 'experiments/exp7/model-155-0.667825.pth'
+2020-03-24 19:35:22,702 INFO Train - Epoch: 156, LR: 0.0001, train_loss: 0.6587924, train_str_accuracy: 0.068134, train_str_levenshtein: 1.404297
+2020-03-24 19:35:36,149 INFO Validation - Epoch: 156, val_loss: 0.6038719, val_str_accuracy: 0.0649449, val_str_levenshtein: 1.106904
+2020-03-24 19:35:36,154 INFO Model saved to 'experiments/exp7/model-156-0.658792.pth'
+2020-03-24 19:36:29,201 INFO Train - Epoch: 157, LR: 0.0001, train_loss: 0.6489797, train_str_accuracy: 0.0654043, train_str_levenshtein: 1.425781
+2020-03-24 19:36:42,818 INFO Validation - Epoch: 157, val_loss: 0.5810132, val_str_accuracy: 0.06741385, val_str_levenshtein: 1.091314
+2020-03-24 19:36:42,823 INFO Model saved to 'experiments/exp7/model-157-0.648980.pth'
+2020-03-24 19:37:35,992 INFO Train - Epoch: 158, LR: 0.0001, train_loss: 0.6424197, train_str_accuracy: 0.06599482, train_str_levenshtein: 1.369141
+2020-03-24 19:37:49,561 INFO Validation - Epoch: 158, val_loss: 0.5679334, val_str_accuracy: 0.06771534, val_str_levenshtein: 1.140312
+2020-03-24 19:37:49,566 INFO Model saved to 'experiments/exp7/model-158-0.642420.pth'
+2020-03-24 19:38:41,692 INFO Train - Epoch: 159, LR: 0.0001, train_loss: 0.6358102, train_str_accuracy: 0.06688525, train_str_levenshtein: 1.332031
+2020-03-24 19:38:54,735 INFO Validation - Epoch: 159, val_loss: 0.5609954, val_str_accuracy: 0.06741859, val_str_levenshtein: 1.091314
+2020-03-24 19:38:54,739 INFO Model saved to 'experiments/exp7/model-159-0.635810.pth'
+2020-03-24 19:39:46,137 INFO Train - Epoch: 160, LR: 0.0001, train_loss: 0.6252409, train_str_accuracy: 0.06737501, train_str_levenshtein: 1.355469
+2020-03-24 19:39:59,581 INFO Validation - Epoch: 160, val_loss: 0.5700073, val_str_accuracy: 0.06516505, val_str_levenshtein: 1.006682
+2020-03-24 19:39:59,587 INFO Model saved to 'experiments/exp7/model-160-0.625241.pth'
+2020-03-24 19:40:52,571 INFO Train - Epoch: 161, LR: 0.0001, train_loss: 0.6201638, train_str_accuracy: 0.06337034, train_str_levenshtein: 1.419922
+2020-03-24 19:41:05,919 INFO Validation - Epoch: 161, val_loss: 0.5507445, val_str_accuracy: 0.06526092, val_str_levenshtein: 1.060134
+2020-03-24 19:41:05,924 INFO Model saved to 'experiments/exp7/model-161-0.620164.pth'
+2020-03-24 19:41:58,694 INFO Train - Epoch: 162, LR: 0.0001, train_loss: 0.6180687, train_str_accuracy: 0.06691557, train_str_levenshtein: 1.482422
+2020-03-24 19:42:11,934 INFO Validation - Epoch: 162, val_loss: 0.5406033, val_str_accuracy: 0.0656854, val_str_levenshtein: 1.080178
+2020-03-24 19:42:11,939 INFO Model saved to 'experiments/exp7/model-162-0.618069.pth'
+2020-03-24 19:43:04,490 INFO Train - Epoch: 163, LR: 0.0001, train_loss: 0.6107704, train_str_accuracy: 0.0683876, train_str_levenshtein: 1.302734
+2020-03-24 19:43:17,960 INFO Validation - Epoch: 163, val_loss: 0.5682733, val_str_accuracy: 0.0635988, val_str_levenshtein: 1.053452
+2020-03-24 19:43:17,965 INFO Model saved to 'experiments/exp7/model-163-0.610770.pth'
+2020-03-24 19:44:10,653 INFO Train - Epoch: 164, LR: 0.0001, train_loss: 0.6046665, train_str_accuracy: 0.06548119, train_str_levenshtein: 1.363281
+2020-03-24 19:44:23,801 INFO Validation - Epoch: 164, val_loss: 0.5344011, val_str_accuracy: 0.06844978, val_str_levenshtein: 1.042316
+2020-03-24 19:44:23,806 INFO Model saved to 'experiments/exp7/model-164-0.604667.pth'
+2020-03-24 19:45:16,731 INFO Train - Epoch: 165, LR: 0.0001, train_loss: 0.597916, train_str_accuracy: 0.06442569, train_str_levenshtein: 1.339844
+2020-03-24 19:45:30,075 INFO Validation - Epoch: 165, val_loss: 0.520736, val_str_accuracy: 0.06563496, val_str_levenshtein: 1.077951
+2020-03-24 19:45:30,080 INFO Model saved to 'experiments/exp7/model-165-0.597916.pth'
+2020-03-24 19:46:23,107 INFO Train - Epoch: 166, LR: 0.0001, train_loss: 0.5919882, train_str_accuracy: 0.06757418, train_str_levenshtein: 1.337891
+2020-03-24 19:46:36,516 INFO Validation - Epoch: 166, val_loss: 0.5248844, val_str_accuracy: 0.06630765, val_str_levenshtein: 1.017817
+2020-03-24 19:46:36,522 INFO Model saved to 'experiments/exp7/model-166-0.591988.pth'
+2020-03-24 19:47:29,469 INFO Train - Epoch: 167, LR: 0.0001, train_loss: 0.5827045, train_str_accuracy: 0.06810242, train_str_levenshtein: 1.294922
+2020-03-24 19:47:42,889 INFO Validation - Epoch: 167, val_loss: 0.5151336, val_str_accuracy: 0.06811249, val_str_levenshtein: 1.026726
+2020-03-24 19:47:42,895 INFO Model saved to 'experiments/exp7/model-167-0.582705.pth'
+2020-03-24 19:48:36,518 INFO Train - Epoch: 168, LR: 0.0001, train_loss: 0.5794723, train_str_accuracy: 0.06666762, train_str_levenshtein: 1.308594
+2020-03-24 19:48:50,405 INFO Validation - Epoch: 168, val_loss: 0.5200591, val_str_accuracy: 0.06330569, val_str_levenshtein: 1.051225
+2020-03-24 19:48:50,410 INFO Model saved to 'experiments/exp7/model-168-0.579472.pth'
+2020-03-24 19:49:43,229 INFO Train - Epoch: 169, LR: 0.0001, train_loss: 0.5838518, train_str_accuracy: 0.06659103, train_str_levenshtein: 1.314453
+2020-03-24 19:49:56,589 INFO Validation - Epoch: 169, val_loss: 0.5224398, val_str_accuracy: 0.06796076, val_str_levenshtein: 1.069042
+2020-03-24 19:49:56,594 INFO Model saved to 'experiments/exp7/model-169-0.583852.pth'
+2020-03-24 19:50:49,315 INFO Train - Epoch: 170, LR: 0.0001, train_loss: 0.5738987, train_str_accuracy: 0.06727794, train_str_levenshtein: 1.28125
+2020-03-24 19:51:02,853 INFO Validation - Epoch: 170, val_loss: 0.5083188, val_str_accuracy: 0.06679748, val_str_levenshtein: 1.020045
+2020-03-24 19:51:02,859 INFO Model saved to 'experiments/exp7/model-170-0.573899.pth'
+2020-03-24 19:51:55,355 INFO Train - Epoch: 171, LR: 0.0001, train_loss: 0.5730652, train_str_accuracy: 0.06686038, train_str_levenshtein: 1.296875
+2020-03-24 19:52:08,843 INFO Validation - Epoch: 171, val_loss: 0.5052458, val_str_accuracy: 0.06987169, val_str_levenshtein: 1.022272
+2020-03-24 19:52:08,848 INFO Model saved to 'experiments/exp7/model-171-0.573065.pth'
+2020-03-24 19:53:01,551 INFO Train - Epoch: 172, LR: 0.0001, train_loss: 0.5602455, train_str_accuracy: 0.06729724, train_str_levenshtein: 1.228516
+2020-03-24 19:53:14,858 INFO Validation - Epoch: 172, val_loss: 0.4922747, val_str_accuracy: 0.06437361, val_str_levenshtein: 0.9532294
+2020-03-24 19:53:14,864 INFO Model saved to 'experiments/exp7/model-172-0.560245.pth'
+2020-03-24 19:54:06,748 INFO Train - Epoch: 173, LR: 0.0001, train_loss: 0.5647606, train_str_accuracy: 0.06613226, train_str_levenshtein: 1.287109
+2020-03-24 19:54:19,929 INFO Validation - Epoch: 173, val_loss: 0.4890402, val_str_accuracy: 0.06717333, val_str_levenshtein: 1.024499
+2020-03-24 19:54:19,935 INFO Model saved to 'experiments/exp7/model-173-0.564761.pth'
+2020-03-24 19:55:11,958 INFO Train - Epoch: 174, LR: 0.0001, train_loss: 0.5684738, train_str_accuracy: 0.06541629, train_str_levenshtein: 1.412109
+2020-03-24 19:55:25,145 INFO Validation - Epoch: 174, val_loss: 0.5000825, val_str_accuracy: 0.0674766, val_str_levenshtein: 1.024499
+2020-03-24 19:55:25,150 INFO Model saved to 'experiments/exp7/model-174-0.568474.pth'
+2020-03-24 19:56:17,226 INFO Train - Epoch: 175, LR: 0.0001, train_loss: 0.5457058, train_str_accuracy: 0.06652458, train_str_levenshtein: 1.335938
+2020-03-24 19:56:30,224 INFO Validation - Epoch: 175, val_loss: 0.4764189, val_str_accuracy: 0.06270546, val_str_levenshtein: 1
+2020-03-24 19:56:30,229 INFO Model saved to 'experiments/exp7/model-175-0.545706.pth'
+2020-03-24 19:57:21,923 INFO Train - Epoch: 176, LR: 0.0001, train_loss: 0.5398065, train_str_accuracy: 0.06723455, train_str_levenshtein: 1.341797
+2020-03-24 19:57:35,086 INFO Validation - Epoch: 176, val_loss: 0.4780184, val_str_accuracy: 0.0668607, val_str_levenshtein: 0.9576837
+2020-03-24 19:57:35,091 INFO Model saved to 'experiments/exp7/model-176-0.539806.pth'
+2020-03-24 19:58:27,080 INFO Train - Epoch: 177, LR: 0.0001, train_loss: 0.5390199, train_str_accuracy: 0.06961549, train_str_levenshtein: 1.328125
+2020-03-24 19:58:40,170 INFO Validation - Epoch: 177, val_loss: 0.4869208, val_str_accuracy: 0.06338323, val_str_levenshtein: 0.9844098
+2020-03-24 19:58:40,175 INFO Model saved to 'experiments/exp7/model-177-0.539020.pth'
+2020-03-24 19:59:31,729 INFO Train - Epoch: 178, LR: 0.0001, train_loss: 0.532853, train_str_accuracy: 0.06742131, train_str_levenshtein: 1.275391
+2020-03-24 19:59:45,016 INFO Validation - Epoch: 178, val_loss: 0.4686558, val_str_accuracy: 0.06434002, val_str_levenshtein: 1.004454
+2020-03-24 19:59:45,020 INFO Model saved to 'experiments/exp7/model-178-0.532853.pth'
+2020-03-24 20:00:36,983 INFO Train - Epoch: 179, LR: 0.0001, train_loss: 0.5278055, train_str_accuracy: 0.06644044, train_str_levenshtein: 1.289062
+2020-03-24 20:00:50,030 INFO Validation - Epoch: 179, val_loss: 0.4670438, val_str_accuracy: 0.06765849, val_str_levenshtein: 1.002227
+2020-03-24 20:00:50,034 INFO Model saved to 'experiments/exp7/model-179-0.527805.pth'
+2020-03-24 20:01:41,491 INFO Train - Epoch: 180, LR: 0.0001, train_loss: 0.5271266, train_str_accuracy: 0.06872125, train_str_levenshtein: 1.234375
+2020-03-24 20:01:54,820 INFO Validation - Epoch: 180, val_loss: 0.4725282, val_str_accuracy: 0.06876513, val_str_levenshtein: 1.03118
+2020-03-24 20:01:54,825 INFO Model saved to 'experiments/exp7/model-180-0.527127.pth'
+2020-03-24 20:02:48,230 INFO Train - Epoch: 181, LR: 0.0001, train_loss: 0.5193762, train_str_accuracy: 0.06382889, train_str_levenshtein: 1.28125
+2020-03-24 20:03:02,190 INFO Validation - Epoch: 181, val_loss: 0.4566491, val_str_accuracy: 0.06220212, val_str_levenshtein: 0.9732739
+2020-03-24 20:03:02,195 INFO Model saved to 'experiments/exp7/model-181-0.519376.pth'
+2020-03-24 20:03:56,416 INFO Train - Epoch: 182, LR: 0.0001, train_loss: 0.5136128, train_str_accuracy: 0.06716418, train_str_levenshtein: 1.25
+2020-03-24 20:04:09,725 INFO Validation - Epoch: 182, val_loss: 0.4531266, val_str_accuracy: 0.06526063, val_str_levenshtein: 1.026726
+2020-03-24 20:04:09,730 INFO Model saved to 'experiments/exp7/model-182-0.513613.pth'
+2020-03-24 20:05:02,720 INFO Train - Epoch: 183, LR: 0.0001, train_loss: 0.5279884, train_str_accuracy: 0.06890244, train_str_levenshtein: 1.105469
+2020-03-24 20:05:16,208 INFO Validation - Epoch: 183, val_loss: 0.476357, val_str_accuracy: 0.0691801, val_str_levenshtein: 1.044543
+2020-03-24 20:05:16,213 INFO Model saved to 'experiments/exp7/model-183-0.527988.pth'
+2020-03-24 20:06:08,847 INFO Train - Epoch: 184, LR: 0.0001, train_loss: 0.5043895, train_str_accuracy: 0.06631464, train_str_levenshtein: 1.298828
+2020-03-24 20:06:22,089 INFO Validation - Epoch: 184, val_loss: 0.4349953, val_str_accuracy: 0.06675037, val_str_levenshtein: 0.9977728
+2020-03-24 20:06:22,095 INFO Model saved to 'experiments/exp7/model-184-0.504390.pth'
+2020-03-24 20:07:15,108 INFO Train - Epoch: 185, LR: 0.0001, train_loss: 0.4992359, train_str_accuracy: 0.06623439, train_str_levenshtein: 1.222656
+2020-03-24 20:07:28,323 INFO Validation - Epoch: 185, val_loss: 0.4321709, val_str_accuracy: 0.06903218, val_str_levenshtein: 0.9710468
+2020-03-24 20:07:28,329 INFO Model saved to 'experiments/exp7/model-185-0.499236.pth'
+2020-03-24 20:08:21,327 INFO Train - Epoch: 186, LR: 0.0001, train_loss: 0.4913719, train_str_accuracy: 0.06745987, train_str_levenshtein: 1.291016
+2020-03-24 20:08:34,692 INFO Validation - Epoch: 186, val_loss: 0.4449969, val_str_accuracy: 0.07139735, val_str_levenshtein: 0.9465479
+2020-03-24 20:08:34,697 INFO Model saved to 'experiments/exp7/model-186-0.491372.pth'
+2020-03-24 20:09:27,227 INFO Train - Epoch: 187, LR: 0.0001, train_loss: 0.4940291, train_str_accuracy: 0.0682601, train_str_levenshtein: 1.273438
+2020-03-24 20:09:40,481 INFO Validation - Epoch: 187, val_loss: 0.4410233, val_str_accuracy: 0.06419614, val_str_levenshtein: 0.9888641
+2020-03-24 20:09:40,486 INFO Model saved to 'experiments/exp7/model-187-0.494029.pth'
+2020-03-24 20:10:33,238 INFO Train - Epoch: 188, LR: 0.0001, train_loss: 0.4876999, train_str_accuracy: 0.06858737, train_str_levenshtein: 1.166016
+2020-03-24 20:10:46,536 INFO Validation - Epoch: 188, val_loss: 0.4314742, val_str_accuracy: 0.06862274, val_str_levenshtein: 0.9799555
+2020-03-24 20:10:46,541 INFO Model saved to 'experiments/exp7/model-188-0.487700.pth'
+2020-03-24 20:11:38,646 INFO Train - Epoch: 189, LR: 0.0001, train_loss: 0.4864627, train_str_accuracy: 0.06661725, train_str_levenshtein: 1.121094
+2020-03-24 20:11:52,024 INFO Validation - Epoch: 189, val_loss: 0.4224577, val_str_accuracy: 0.06584362, val_str_levenshtein: 0.9331849
+2020-03-24 20:11:52,029 INFO Model saved to 'experiments/exp7/model-189-0.486463.pth'
+2020-03-24 20:12:43,913 INFO Train - Epoch: 190, LR: 0.0001, train_loss: 0.4836039, train_str_accuracy: 0.06471585, train_str_levenshtein: 1.121094
+2020-03-24 20:12:57,263 INFO Validation - Epoch: 190, val_loss: 0.4249904, val_str_accuracy: 0.0646212, val_str_levenshtein: 0.922049
+2020-03-24 20:12:57,269 INFO Model saved to 'experiments/exp7/model-190-0.483604.pth'
+2020-03-24 20:13:50,057 INFO Train - Epoch: 191, LR: 0.0001, train_loss: 0.4746018, train_str_accuracy: 0.06685377, train_str_levenshtein: 1.179688
+2020-03-24 20:14:03,382 INFO Validation - Epoch: 191, val_loss: 0.413831, val_str_accuracy: 0.06731423, val_str_levenshtein: 0.9465479
+2020-03-24 20:14:03,388 INFO Model saved to 'experiments/exp7/model-191-0.474602.pth'
+2020-03-24 20:14:55,929 INFO Train - Epoch: 192, LR: 0.0001, train_loss: 0.4690373, train_str_accuracy: 0.06795669, train_str_levenshtein: 1.177734
+2020-03-24 20:15:09,299 INFO Validation - Epoch: 192, val_loss: 0.4021164, val_str_accuracy: 0.07097735, val_str_levenshtein: 0.9443207
+2020-03-24 20:15:09,304 INFO Model saved to 'experiments/exp7/model-192-0.469037.pth'
+2020-03-24 20:16:02,142 INFO Train - Epoch: 193, LR: 0.0001, train_loss: 0.46693, train_str_accuracy: 0.06811766, train_str_levenshtein: 1.201172
+2020-03-24 20:16:15,427 INFO Validation - Epoch: 193, val_loss: 0.4280057, val_str_accuracy: 0.06870229, val_str_levenshtein: 0.9910913
+2020-03-24 20:16:15,433 INFO Model saved to 'experiments/exp7/model-193-0.466930.pth'
+2020-03-24 20:17:07,305 INFO Train - Epoch: 194, LR: 0.0001, train_loss: 0.4712212, train_str_accuracy: 0.06745617, train_str_levenshtein: 1.220703
+2020-03-24 20:17:20,531 INFO Validation - Epoch: 194, val_loss: 0.4192609, val_str_accuracy: 0.07237675, val_str_levenshtein: 0.9576837
+2020-03-24 20:17:20,536 INFO Model saved to 'experiments/exp7/model-194-0.471221.pth'
+2020-03-24 20:18:12,196 INFO Train - Epoch: 195, LR: 0.0001, train_loss: 0.4591922, train_str_accuracy: 0.06404242, train_str_levenshtein: 1.322266
+2020-03-24 20:18:25,502 INFO Validation - Epoch: 195, val_loss: 0.3910687, val_str_accuracy: 0.06995835, val_str_levenshtein: 0.9376392
+2020-03-24 20:18:25,508 INFO Model saved to 'experiments/exp7/model-195-0.459192.pth'
+2020-03-24 20:19:17,387 INFO Train - Epoch: 196, LR: 0.0001, train_loss: 0.4604241, train_str_accuracy: 0.0674201, train_str_levenshtein: 1.242188
+2020-03-24 20:19:30,558 INFO Validation - Epoch: 196, val_loss: 0.4006908, val_str_accuracy: 0.06661032, val_str_levenshtein: 0.9643653
+2020-03-24 20:19:30,562 INFO Model saved to 'experiments/exp7/model-196-0.460424.pth'
+2020-03-24 20:20:22,363 INFO Train - Epoch: 197, LR: 0.0001, train_loss: 0.4584418, train_str_accuracy: 0.06732116, train_str_levenshtein: 1.138672
+2020-03-24 20:20:35,534 INFO Validation - Epoch: 197, val_loss: 0.4004478, val_str_accuracy: 0.06676244, val_str_levenshtein: 0.9487751
+2020-03-24 20:20:35,539 INFO Model saved to 'experiments/exp7/model-197-0.458442.pth'
+2020-03-24 20:21:27,194 INFO Train - Epoch: 198, LR: 0.0001, train_loss: 0.4521336, train_str_accuracy: 0.06592934, train_str_levenshtein: 1.134766
+2020-03-24 20:21:40,511 INFO Validation - Epoch: 198, val_loss: 0.389361, val_str_accuracy: 0.06884523, val_str_levenshtein: 0.9309577
+2020-03-24 20:21:40,516 INFO Model saved to 'experiments/exp7/model-198-0.452134.pth'
+2020-03-24 20:22:32,223 INFO Train - Epoch: 199, LR: 0.0001, train_loss: 0.445933, train_str_accuracy: 0.06951761, train_str_levenshtein: 1.214844
+2020-03-24 20:22:45,605 INFO Validation - Epoch: 199, val_loss: 0.3960726, val_str_accuracy: 0.07595689, val_str_levenshtein: 0.9309577
+2020-03-24 20:22:45,610 INFO Model saved to 'experiments/exp7/model-199-0.445933.pth'
+2020-03-24 20:23:37,454 INFO Train - Epoch: 200, LR: 0.0001, train_loss: 0.4416112, train_str_accuracy: 0.06739151, train_str_levenshtein: 1.167969
+2020-03-24 20:23:50,661 INFO Validation - Epoch: 200, val_loss: 0.3832702, val_str_accuracy: 0.07053411, val_str_levenshtein: 0.9153675
+2020-03-24 20:23:50,666 INFO Model saved to 'experiments/exp7/model-200-0.441611.pth'
+2020-03-24 20:24:42,558 INFO Train - Epoch: 201, LR: 0.0001, train_loss: 0.4368399, train_str_accuracy: 0.07032919, train_str_levenshtein: 1.1875
+2020-03-24 20:24:55,667 INFO Validation - Epoch: 201, val_loss: 0.3869905, val_str_accuracy: 0.07383456, val_str_levenshtein: 0.9331849
+2020-03-24 20:24:55,672 INFO Model saved to 'experiments/exp7/model-201-0.436840.pth'
+2020-03-24 20:25:47,327 INFO Train - Epoch: 202, LR: 0.0001, train_loss: 0.4386433, train_str_accuracy: 0.06587978, train_str_levenshtein: 1.414062
+2020-03-24 20:26:00,412 INFO Validation - Epoch: 202, val_loss: 0.4069733, val_str_accuracy: 0.06520947, val_str_levenshtein: 0.9532294
+2020-03-24 20:26:00,417 INFO Model saved to 'experiments/exp7/model-202-0.438643.pth'
+2020-03-24 20:26:52,523 INFO Train - Epoch: 203, LR: 0.0001, train_loss: 0.4402958, train_str_accuracy: 0.06792988, train_str_levenshtein: 1.15625
+2020-03-24 20:27:05,852 INFO Validation - Epoch: 203, val_loss: 0.3951784, val_str_accuracy: 0.06716271, val_str_levenshtein: 0.9020045
+2020-03-24 20:27:05,858 INFO Model saved to 'experiments/exp7/model-203-0.440296.pth'
+2020-03-24 20:27:58,043 INFO Train - Epoch: 204, LR: 0.0001, train_loss: 0.4240568, train_str_accuracy: 0.06444809, train_str_levenshtein: 1.085938
+2020-03-24 20:28:11,419 INFO Validation - Epoch: 204, val_loss: 0.3906832, val_str_accuracy: 0.06880446, val_str_levenshtein: 0.8930958
+2020-03-24 20:28:11,424 INFO Model saved to 'experiments/exp7/model-204-0.424057.pth'
+2020-03-24 20:29:03,042 INFO Train - Epoch: 205, LR: 0.0001, train_loss: 0.4270531, train_str_accuracy: 0.0684677, train_str_levenshtein: 1.1875
+2020-03-24 20:29:16,249 INFO Validation - Epoch: 205, val_loss: 0.3765995, val_str_accuracy: 0.07103956, val_str_levenshtein: 0.9175947
+2020-03-24 20:29:16,256 INFO Model saved to 'experiments/exp7/model-205-0.427053.pth'
+2020-03-24 20:30:09,323 INFO Train - Epoch: 206, LR: 0.0001, train_loss: 0.4180437, train_str_accuracy: 0.06839765, train_str_levenshtein: 1.205078
+2020-03-24 20:30:22,733 INFO Validation - Epoch: 206, val_loss: 0.3682196, val_str_accuracy: 0.06889394, val_str_levenshtein: 0.8997773
+2020-03-24 20:30:22,738 INFO Model saved to 'experiments/exp7/model-206-0.418044.pth'
+2020-03-24 20:31:15,662 INFO Train - Epoch: 207, LR: 0.0001, train_loss: 0.4080141, train_str_accuracy: 0.06775502, train_str_levenshtein: 1.068359
+2020-03-24 20:31:29,069 INFO Validation - Epoch: 207, val_loss: 0.3655325, val_str_accuracy: 0.06911584, val_str_levenshtein: 0.908686
+2020-03-24 20:31:29,073 INFO Model saved to 'experiments/exp7/model-207-0.408014.pth'
+2020-03-24 20:32:22,156 INFO Train - Epoch: 208, LR: 0.0001, train_loss: 0.4216764, train_str_accuracy: 0.06772065, train_str_levenshtein: 1.144531
+2020-03-24 20:32:35,633 INFO Validation - Epoch: 208, val_loss: 0.3624918, val_str_accuracy: 0.07206033, val_str_levenshtein: 0.8841871
+2020-03-24 20:32:35,639 INFO Model saved to 'experiments/exp7/model-208-0.421676.pth'
+2020-03-24 20:33:28,457 INFO Train - Epoch: 209, LR: 0.0001, train_loss: 0.413242, train_str_accuracy: 0.06824983, train_str_levenshtein: 1.085938
+2020-03-24 20:33:41,941 INFO Validation - Epoch: 209, val_loss: 0.3669625, val_str_accuracy: 0.06779527, val_str_levenshtein: 0.8886414
+2020-03-24 20:33:41,946 INFO Model saved to 'experiments/exp7/model-209-0.413242.pth'
+2020-03-24 20:34:34,497 INFO Train - Epoch: 210, LR: 0.0001, train_loss: 0.4117513, train_str_accuracy: 0.06830391, train_str_levenshtein: 1.191406
+2020-03-24 20:34:48,132 INFO Validation - Epoch: 210, val_loss: 0.3636392, val_str_accuracy: 0.06520677, val_str_levenshtein: 0.9420935
+2020-03-24 20:34:48,137 INFO Model saved to 'experiments/exp7/model-210-0.411751.pth'
+2020-03-24 20:35:41,331 INFO Train - Epoch: 211, LR: 0.0001, train_loss: 0.4070119, train_str_accuracy: 0.06665843, train_str_levenshtein: 1.248047
+2020-03-24 20:35:55,007 INFO Validation - Epoch: 211, val_loss: 0.3594727, val_str_accuracy: 0.06956212, val_str_levenshtein: 0.9309577
+2020-03-24 20:35:55,015 INFO Model saved to 'experiments/exp7/model-211-0.407012.pth'
+2020-03-24 20:36:49,191 INFO Train - Epoch: 212, LR: 0.0001, train_loss: 0.4026762, train_str_accuracy: 0.06744167, train_str_levenshtein: 1.072266
+2020-03-24 20:37:03,085 INFO Validation - Epoch: 212, val_loss: 0.3549844, val_str_accuracy: 0.06670607, val_str_levenshtein: 0.908686
+2020-03-24 20:37:03,090 INFO Model saved to 'experiments/exp7/model-212-0.402676.pth'
+2020-03-24 20:37:57,157 INFO Train - Epoch: 213, LR: 0.0001, train_loss: 0.4039007, train_str_accuracy: 0.06804364, train_str_levenshtein: 1.201172
+2020-03-24 20:38:10,890 INFO Validation - Epoch: 213, val_loss: 0.3444337, val_str_accuracy: 0.06910117, val_str_levenshtein: 0.8775056
+2020-03-24 20:38:10,895 INFO Model saved to 'experiments/exp7/model-213-0.403901.pth'
+2020-03-24 20:39:04,343 INFO Train - Epoch: 214, LR: 0.0001, train_loss: 0.3993957, train_str_accuracy: 0.07031325, train_str_levenshtein: 1.160156
+2020-03-24 20:39:17,817 INFO Validation - Epoch: 214, val_loss: 0.3432037, val_str_accuracy: 0.06815749, val_str_levenshtein: 0.8841871
+2020-03-24 20:39:17,822 INFO Model saved to 'experiments/exp7/model-214-0.399396.pth'
+2020-03-24 20:40:11,207 INFO Train - Epoch: 215, LR: 0.0001, train_loss: 0.3885374, train_str_accuracy: 0.07041581, train_str_levenshtein: 1.085938
+2020-03-24 20:40:24,608 INFO Validation - Epoch: 215, val_loss: 0.340498, val_str_accuracy: 0.06677259, val_str_levenshtein: 0.8730512
+2020-03-24 20:40:24,613 INFO Model saved to 'experiments/exp7/model-215-0.388537.pth'
+2020-03-24 20:41:17,765 INFO Train - Epoch: 216, LR: 0.0001, train_loss: 0.3837358, train_str_accuracy: 0.06417882, train_str_levenshtein: 1.144531
+2020-03-24 20:41:31,451 INFO Validation - Epoch: 216, val_loss: 0.3393769, val_str_accuracy: 0.06891496, val_str_levenshtein: 0.8886414
+2020-03-24 20:41:31,455 INFO Model saved to 'experiments/exp7/model-216-0.383736.pth'
+2020-03-24 20:42:24,631 INFO Train - Epoch: 217, LR: 0.0001, train_loss: 0.3954139, train_str_accuracy: 0.06904274, train_str_levenshtein: 1.082031
+2020-03-24 20:42:38,161 INFO Validation - Epoch: 217, val_loss: 0.3558059, val_str_accuracy: 0.0710099, val_str_levenshtein: 0.9420935
+2020-03-24 20:42:38,166 INFO Model saved to 'experiments/exp7/model-217-0.395414.pth'
+2020-03-24 20:43:31,552 INFO Train - Epoch: 218, LR: 0.0001, train_loss: 0.393868, train_str_accuracy: 0.06892212, train_str_levenshtein: 1.044922
+2020-03-24 20:43:44,985 INFO Validation - Epoch: 218, val_loss: 0.3716879, val_str_accuracy: 0.06840485, val_str_levenshtein: 0.9910913
+2020-03-24 20:43:44,989 INFO Model saved to 'experiments/exp7/model-218-0.393868.pth'
+2020-03-24 20:44:38,844 INFO Train - Epoch: 219, LR: 0.0001, train_loss: 0.3861227, train_str_accuracy: 0.06992807, train_str_levenshtein: 1.005859
+2020-03-24 20:44:52,412 INFO Validation - Epoch: 219, val_loss: 0.3383039, val_str_accuracy: 0.07127404, val_str_levenshtein: 0.8797327
+2020-03-24 20:44:52,417 INFO Model saved to 'experiments/exp7/model-219-0.386123.pth'
+2020-03-24 20:45:46,032 INFO Train - Epoch: 220, LR: 0.0001, train_loss: 0.3701036, train_str_accuracy: 0.06768772, train_str_levenshtein: 1.050781
+2020-03-24 20:45:59,371 INFO Validation - Epoch: 220, val_loss: 0.325518, val_str_accuracy: 0.06927027, val_str_levenshtein: 0.9064588
+2020-03-24 20:45:59,376 INFO Model saved to 'experiments/exp7/model-220-0.370104.pth'
+2020-03-24 20:46:52,714 INFO Train - Epoch: 221, LR: 0.0001, train_loss: 0.3648343, train_str_accuracy: 0.07029343, train_str_levenshtein: 1.074219
+2020-03-24 20:47:06,360 INFO Validation - Epoch: 221, val_loss: 0.327316, val_str_accuracy: 0.07134741, val_str_levenshtein: 0.8418708
+2020-03-24 20:47:06,366 INFO Model saved to 'experiments/exp7/model-221-0.364834.pth'
+2020-03-24 20:48:00,586 INFO Train - Epoch: 222, LR: 0.0001, train_loss: 0.3674733, train_str_accuracy: 0.06762106, train_str_levenshtein: 1.111328
+2020-03-24 20:48:14,353 INFO Validation - Epoch: 222, val_loss: 0.327123, val_str_accuracy: 0.07065518, val_str_levenshtein: 0.8819599
+2020-03-24 20:48:14,358 INFO Model saved to 'experiments/exp7/model-222-0.367473.pth'
+2020-03-24 20:49:07,891 INFO Train - Epoch: 223, LR: 0.0001, train_loss: 0.3716122, train_str_accuracy: 0.06809238, train_str_levenshtein: 1.041016
+2020-03-24 20:49:21,538 INFO Validation - Epoch: 223, val_loss: 0.3205281, val_str_accuracy: 0.06980733, val_str_levenshtein: 0.8886414
+2020-03-24 20:49:21,543 INFO Model saved to 'experiments/exp7/model-223-0.371612.pth'
+2020-03-24 20:50:15,421 INFO Train - Epoch: 224, LR: 0.0001, train_loss: 0.3650828, train_str_accuracy: 0.07018616, train_str_levenshtein: 1.150391
+2020-03-24 20:50:29,078 INFO Validation - Epoch: 224, val_loss: 0.3287422, val_str_accuracy: 0.06803841, val_str_levenshtein: 0.8730512
+2020-03-24 20:50:29,083 INFO Model saved to 'experiments/exp7/model-224-0.365083.pth'
+2020-03-24 20:51:22,385 INFO Train - Epoch: 225, LR: 0.0001, train_loss: 0.36141, train_str_accuracy: 0.06764933, train_str_levenshtein: 1.037109
+2020-03-24 20:51:36,044 INFO Validation - Epoch: 225, val_loss: 0.3027787, val_str_accuracy: 0.06739892, val_str_levenshtein: 0.8752784
+2020-03-24 20:51:36,049 INFO Model saved to 'experiments/exp7/model-225-0.361410.pth'
+2020-03-24 20:52:29,361 INFO Train - Epoch: 226, LR: 0.0001, train_loss: 0.3637137, train_str_accuracy: 0.06881761, train_str_levenshtein: 1.140625
+2020-03-24 20:52:43,254 INFO Validation - Epoch: 226, val_loss: 0.3393678, val_str_accuracy: 0.06944174, val_str_levenshtein: 0.908686
+2020-03-24 20:52:43,259 INFO Model saved to 'experiments/exp7/model-226-0.363714.pth'
+2020-03-24 20:53:37,053 INFO Train - Epoch: 227, LR: 0.0001, train_loss: 0.3616885, train_str_accuracy: 0.06866924, train_str_levenshtein: 1.083984
+2020-03-24 20:53:50,540 INFO Validation - Epoch: 227, val_loss: 0.3306897, val_str_accuracy: 0.06976652, val_str_levenshtein: 0.9020045
+2020-03-24 20:53:50,545 INFO Model saved to 'experiments/exp7/model-227-0.361689.pth'
+2020-03-24 20:54:44,103 INFO Train - Epoch: 228, LR: 0.0001, train_loss: 0.3577135, train_str_accuracy: 0.06881616, train_str_levenshtein: 1.03125
+2020-03-24 20:54:57,833 INFO Validation - Epoch: 228, val_loss: 0.3193736, val_str_accuracy: 0.06860813, val_str_levenshtein: 0.8930958
+2020-03-24 20:54:57,838 INFO Model saved to 'experiments/exp7/model-228-0.357714.pth'
+2020-03-24 20:55:49,998 INFO Train - Epoch: 229, LR: 0.0001, train_loss: 0.3521651, train_str_accuracy: 0.07056149, train_str_levenshtein: 1.0625
+2020-03-24 20:56:03,547 INFO Validation - Epoch: 229, val_loss: 0.3095231, val_str_accuracy: 0.0758814, val_str_levenshtein: 0.8841871
+2020-03-24 20:56:03,553 INFO Model saved to 'experiments/exp7/model-229-0.352165.pth'
+2020-03-24 20:56:56,746 INFO Train - Epoch: 230, LR: 0.0001, train_loss: 0.3562098, train_str_accuracy: 0.06543611, train_str_levenshtein: 1.144531
+2020-03-24 20:57:10,490 INFO Validation - Epoch: 230, val_loss: 0.3126557, val_str_accuracy: 0.06768671, val_str_levenshtein: 0.8775056
+2020-03-24 20:57:10,495 INFO Model saved to 'experiments/exp7/model-230-0.356210.pth'
+2020-03-24 20:58:05,003 INFO Train - Epoch: 231, LR: 0.0001, train_loss: 0.3477199, train_str_accuracy: 0.06889387, train_str_levenshtein: 1.023438
+2020-03-24 20:58:18,851 INFO Validation - Epoch: 231, val_loss: 0.2927754, val_str_accuracy: 0.07275153, val_str_levenshtein: 0.8552339
+2020-03-24 20:58:18,856 INFO Model saved to 'experiments/exp7/model-231-0.347720.pth'
+2020-03-24 20:59:13,108 INFO Train - Epoch: 232, LR: 0.0001, train_loss: 0.3472513, train_str_accuracy: 0.06985869, train_str_levenshtein: 1.066406
+2020-03-24 20:59:26,701 INFO Validation - Epoch: 232, val_loss: 0.3116886, val_str_accuracy: 0.07332963, val_str_levenshtein: 0.9020045
+2020-03-24 20:59:26,706 INFO Model saved to 'experiments/exp7/model-232-0.347251.pth'
+2020-03-24 21:00:19,850 INFO Train - Epoch: 233, LR: 0.0001, train_loss: 0.3387429, train_str_accuracy: 0.06732609, train_str_levenshtein: 1.013672
+2020-03-24 21:00:33,312 INFO Validation - Epoch: 233, val_loss: 0.29513, val_str_accuracy: 0.06840634, val_str_levenshtein: 0.8797327
+2020-03-24 21:00:33,318 INFO Model saved to 'experiments/exp7/model-233-0.338743.pth'
+2020-03-24 21:01:26,828 INFO Train - Epoch: 234, LR: 0.0001, train_loss: 0.3357758, train_str_accuracy: 0.06851269, train_str_levenshtein: 0.9921875
+2020-03-24 21:01:40,654 INFO Validation - Epoch: 234, val_loss: 0.3041028, val_str_accuracy: 0.06826633, val_str_levenshtein: 0.8886414
+2020-03-24 21:01:40,660 INFO Model saved to 'experiments/exp7/model-234-0.335776.pth'
+2020-03-24 21:02:34,827 INFO Train - Epoch: 235, LR: 0.0001, train_loss: 0.3408492, train_str_accuracy: 0.06969832, train_str_levenshtein: 1.046875
+2020-03-24 21:02:48,711 INFO Validation - Epoch: 235, val_loss: 0.2926199, val_str_accuracy: 0.07187953, val_str_levenshtein: 0.8997773
+2020-03-24 21:02:48,717 INFO Model saved to 'experiments/exp7/model-235-0.340849.pth'
+2020-03-24 21:03:43,501 INFO Train - Epoch: 236, LR: 0.0001, train_loss: 0.3427186, train_str_accuracy: 0.06841168, train_str_levenshtein: 1.128906
+2020-03-24 21:03:57,446 INFO Validation - Epoch: 236, val_loss: 0.2948797, val_str_accuracy: 0.0684122, val_str_levenshtein: 0.8797327
+2020-03-24 21:03:57,451 INFO Model saved to 'experiments/exp7/model-236-0.342719.pth'
+2020-03-24 21:04:51,984 INFO Train - Epoch: 237, LR: 0.0001, train_loss: 0.3398773, train_str_accuracy: 0.07012763, train_str_levenshtein: 1.117188
+2020-03-24 21:05:05,794 INFO Validation - Epoch: 237, val_loss: 0.3010325, val_str_accuracy: 0.0761864, val_str_levenshtein: 0.8864143
+2020-03-24 21:05:05,799 INFO Model saved to 'experiments/exp7/model-237-0.339877.pth'
+2020-03-24 21:05:59,969 INFO Train - Epoch: 238, LR: 0.0001, train_loss: 0.3384449, train_str_accuracy: 0.06866849, train_str_levenshtein: 1.070312
+2020-03-24 21:06:13,733 INFO Validation - Epoch: 238, val_loss: 0.3006456, val_str_accuracy: 0.06598051, val_str_levenshtein: 0.9331849
+2020-03-24 21:06:13,738 INFO Model saved to 'experiments/exp7/model-238-0.338445.pth'
+2020-03-24 21:07:07,326 INFO Train - Epoch: 239, LR: 0.0001, train_loss: 0.3303947, train_str_accuracy: 0.07192241, train_str_levenshtein: 1.089844
+2020-03-24 21:07:21,084 INFO Validation - Epoch: 239, val_loss: 0.2903304, val_str_accuracy: 0.07485147, val_str_levenshtein: 0.8685969
+2020-03-24 21:07:21,089 INFO Model saved to 'experiments/exp7/model-239-0.330395.pth'
+2020-03-24 21:08:15,203 INFO Train - Epoch: 240, LR: 0.0001, train_loss: 0.3310411, train_str_accuracy: 0.06874899, train_str_levenshtein: 1.070312
+2020-03-24 21:08:28,900 INFO Validation - Epoch: 240, val_loss: 0.2806369, val_str_accuracy: 0.07195767, val_str_levenshtein: 0.8775056
+2020-03-24 21:08:28,905 INFO Model saved to 'experiments/exp7/model-240-0.331041.pth'
+2020-03-24 21:09:22,430 INFO Train - Epoch: 241, LR: 0.0001, train_loss: 0.3204104, train_str_accuracy: 0.07027258, train_str_levenshtein: 1.142578
+2020-03-24 21:09:36,156 INFO Validation - Epoch: 241, val_loss: 0.2883633, val_str_accuracy: 0.06767749, val_str_levenshtein: 0.8953229
+2020-03-24 21:09:36,162 INFO Model saved to 'experiments/exp7/model-241-0.320410.pth'
+2020-03-24 21:10:30,041 INFO Train - Epoch: 242, LR: 0.0001, train_loss: 0.3227625, train_str_accuracy: 0.06909047, train_str_levenshtein: 1.121094
+2020-03-24 21:10:43,713 INFO Validation - Epoch: 242, val_loss: 0.2867072, val_str_accuracy: 0.07688401, val_str_levenshtein: 0.8886414
+2020-03-24 21:10:43,718 INFO Model saved to 'experiments/exp7/model-242-0.322763.pth'
+2020-03-24 21:11:38,099 INFO Train - Epoch: 243, LR: 0.0001, train_loss: 0.3286037, train_str_accuracy: 0.06684381, train_str_levenshtein: 1.058594
+2020-03-24 21:11:51,908 INFO Validation - Epoch: 243, val_loss: 0.2825106, val_str_accuracy: 0.06531329, val_str_levenshtein: 0.8908686
+2020-03-24 21:11:51,913 INFO Model saved to 'experiments/exp7/model-243-0.328604.pth'
+2020-03-24 21:12:45,700 INFO Train - Epoch: 244, LR: 0.0001, train_loss: 0.3244793, train_str_accuracy: 0.06888001, train_str_levenshtein: 1.007812
+2020-03-24 21:12:59,506 INFO Validation - Epoch: 244, val_loss: 0.3065074, val_str_accuracy: 0.07257908, val_str_levenshtein: 0.8908686
+2020-03-24 21:12:59,510 INFO Model saved to 'experiments/exp7/model-244-0.324479.pth'
+2020-03-24 21:13:53,267 INFO Train - Epoch: 245, LR: 0.0001, train_loss: 0.313474, train_str_accuracy: 0.07215295, train_str_levenshtein: 1.001953
+2020-03-24 21:14:07,061 INFO Validation - Epoch: 245, val_loss: 0.2923239, val_str_accuracy: 0.07131488, val_str_levenshtein: 0.8908686
+2020-03-24 21:14:07,067 INFO Model saved to 'experiments/exp7/model-245-0.313474.pth'
+2020-03-24 21:15:00,831 INFO Train - Epoch: 246, LR: 0.0001, train_loss: 0.3167461, train_str_accuracy: 0.06760798, train_str_levenshtein: 1.066406
+2020-03-24 21:15:14,410 INFO Validation - Epoch: 246, val_loss: 0.303308, val_str_accuracy: 0.07115053, val_str_levenshtein: 0.9242762
+2020-03-24 21:15:14,415 INFO Model saved to 'experiments/exp7/model-246-0.316746.pth'
+2020-03-24 21:16:08,262 INFO Train - Epoch: 247, LR: 0.0001, train_loss: 0.3170933, train_str_accuracy: 0.06823567, train_str_levenshtein: 1.066406
+2020-03-24 21:16:22,099 INFO Validation - Epoch: 247, val_loss: 0.2712964, val_str_accuracy: 0.07255632, val_str_levenshtein: 0.8841871
+2020-03-24 21:16:22,104 INFO Model saved to 'experiments/exp7/model-247-0.317093.pth'
+2020-03-24 21:17:16,291 INFO Train - Epoch: 248, LR: 0.0001, train_loss: 0.305104, train_str_accuracy: 0.06836931, train_str_levenshtein: 1.023438
+2020-03-24 21:17:30,106 INFO Validation - Epoch: 248, val_loss: 0.2692778, val_str_accuracy: 0.07042969, val_str_levenshtein: 0.8819599
+2020-03-24 21:17:30,110 INFO Model saved to 'experiments/exp7/model-248-0.305104.pth'
+2020-03-24 21:18:23,785 INFO Train - Epoch: 249, LR: 0.0001, train_loss: 0.306942, train_str_accuracy: 0.07050242, train_str_levenshtein: 1.162109
+2020-03-24 21:18:37,846 INFO Validation - Epoch: 249, val_loss: 0.2737832, val_str_accuracy: 0.0673215, val_str_levenshtein: 0.8708241
+2020-03-24 21:18:37,851 INFO Model saved to 'experiments/exp7/model-249-0.306942.pth'
+2020-03-24 21:19:31,934 INFO Train - Epoch: 250, LR: 0.0001, train_loss: 0.3099316, train_str_accuracy: 0.06919238, train_str_levenshtein: 1.064453
+2020-03-24 21:19:45,734 INFO Validation - Epoch: 250, val_loss: 0.2816448, val_str_accuracy: 0.07361915, val_str_levenshtein: 0.8730512
+2020-03-24 21:19:45,739 INFO Model saved to 'experiments/exp7/model-250-0.309932.pth'
+2020-03-24 21:20:39,899 INFO Train - Epoch: 251, LR: 0.0001, train_loss: 0.3133786, train_str_accuracy: 0.06903768, train_str_levenshtein: 1.099609
+2020-03-24 21:20:53,721 INFO Validation - Epoch: 251, val_loss: 0.2810116, val_str_accuracy: 0.07056981, val_str_levenshtein: 0.9042316
+2020-03-24 21:20:53,727 INFO Model saved to 'experiments/exp7/model-251-0.313379.pth'
+2020-03-24 21:21:48,227 INFO Train - Epoch: 252, LR: 0.0001, train_loss: 0.3154256, train_str_accuracy: 0.07060253, train_str_levenshtein: 1.050781
+2020-03-24 21:22:02,132 INFO Validation - Epoch: 252, val_loss: 0.2770922, val_str_accuracy: 0.06746615, val_str_levenshtein: 0.8841871
+2020-03-24 21:22:02,137 INFO Model saved to 'experiments/exp7/model-252-0.315426.pth'
+2020-03-24 21:22:56,532 INFO Train - Epoch: 253, LR: 0.0001, train_loss: 0.2998974, train_str_accuracy: 0.06986532, train_str_levenshtein: 1.175781
+2020-03-24 21:23:10,326 INFO Validation - Epoch: 253, val_loss: 0.2759978, val_str_accuracy: 0.07059961, val_str_levenshtein: 0.8730512
+2020-03-24 21:23:10,331 INFO Model saved to 'experiments/exp7/model-253-0.299897.pth'
+2020-03-24 21:24:04,559 INFO Train - Epoch: 254, LR: 0.0001, train_loss: 0.2986539, train_str_accuracy: 0.07043998, train_str_levenshtein: 0.9355469
+2020-03-24 21:24:18,354 INFO Validation - Epoch: 254, val_loss: 0.2625112, val_str_accuracy: 0.07126526, val_str_levenshtein: 0.8708241
+2020-03-24 21:24:18,360 INFO Model saved to 'experiments/exp7/model-254-0.298654.pth'
+2020-03-24 21:25:12,785 INFO Train - Epoch: 255, LR: 0.0001, train_loss: 0.2977791, train_str_accuracy: 0.07056438, train_str_levenshtein: 1.070312
+2020-03-24 21:25:26,890 INFO Validation - Epoch: 255, val_loss: 0.2693315, val_str_accuracy: 0.0766883, val_str_levenshtein: 0.8864143
+2020-03-24 21:25:26,895 INFO Model saved to 'experiments/exp7/model-255-0.297779.pth'
+2020-03-24 21:26:20,929 INFO Train - Epoch: 256, LR: 0.0001, train_loss: 0.3033365, train_str_accuracy: 0.06992048, train_str_levenshtein: 0.96875
+2020-03-24 21:26:34,775 INFO Validation - Epoch: 256, val_loss: 0.2761183, val_str_accuracy: 0.07569164, val_str_levenshtein: 0.8797327
+2020-03-24 21:26:34,780 INFO Model saved to 'experiments/exp7/model-256-0.303337.pth'
+2020-03-24 21:27:29,315 INFO Train - Epoch: 257, LR: 0.0001, train_loss: 0.2978091, train_str_accuracy: 0.07036381, train_str_levenshtein: 1.056641
+2020-03-24 21:27:43,110 INFO Validation - Epoch: 257, val_loss: 0.2675919, val_str_accuracy: 0.07000931, val_str_levenshtein: 0.8841871
+2020-03-24 21:27:43,114 INFO Model saved to 'experiments/exp7/model-257-0.297809.pth'
+2020-03-24 21:28:37,853 INFO Train - Epoch: 258, LR: 0.0001, train_loss: 0.285919, train_str_accuracy: 0.06946068, train_str_levenshtein: 1.058594
+2020-03-24 21:28:51,820 INFO Validation - Epoch: 258, val_loss: 0.2592432, val_str_accuracy: 0.07274578, val_str_levenshtein: 0.8374165
+2020-03-24 21:28:51,825 INFO Model saved to 'experiments/exp7/model-258-0.285919.pth'
+2020-03-24 21:29:46,636 INFO Train - Epoch: 259, LR: 0.0001, train_loss: 0.2814432, train_str_accuracy: 0.0706432, train_str_levenshtein: 1.058594
+2020-03-24 21:30:00,472 INFO Validation - Epoch: 259, val_loss: 0.2445154, val_str_accuracy: 0.08002182, val_str_levenshtein: 0.8507795
+2020-03-24 21:30:00,478 INFO Model saved to 'experiments/exp7/model-259-0.281443.pth'
+2020-03-24 21:30:54,487 INFO Train - Epoch: 260, LR: 0.0001, train_loss: 0.2810186, train_str_accuracy: 0.06975912, train_str_levenshtein: 0.9863281
+2020-03-24 21:31:08,296 INFO Validation - Epoch: 260, val_loss: 0.2509379, val_str_accuracy: 0.08227824, val_str_levenshtein: 0.8173719
+2020-03-24 21:31:08,301 INFO Model saved to 'experiments/exp7/model-260-0.281019.pth'
+2020-03-24 21:32:02,168 INFO Train - Epoch: 261, LR: 0.0001, train_loss: 0.2843276, train_str_accuracy: 0.07579264, train_str_levenshtein: 1.130859
+2020-03-24 21:32:15,872 INFO Validation - Epoch: 261, val_loss: 0.268327, val_str_accuracy: 0.07318578, val_str_levenshtein: 0.8797327
+2020-03-24 21:32:15,877 INFO Model saved to 'experiments/exp7/model-261-0.284328.pth'
+2020-03-24 21:33:09,999 INFO Train - Epoch: 262, LR: 0.0001, train_loss: 0.2815402, train_str_accuracy: 0.07028885, train_str_levenshtein: 0.9609375
+2020-03-24 21:33:23,747 INFO Validation - Epoch: 262, val_loss: 0.2580968, val_str_accuracy: 0.08127016, val_str_levenshtein: 0.8752784
+2020-03-24 21:33:23,752 INFO Model saved to 'experiments/exp7/model-262-0.281540.pth'
+2020-03-24 21:34:17,820 INFO Train - Epoch: 263, LR: 0.0001, train_loss: 0.2836789, train_str_accuracy: 0.07169701, train_str_levenshtein: 1.039062
+2020-03-24 21:34:31,788 INFO Validation - Epoch: 263, val_loss: 0.2546772, val_str_accuracy: 0.07816691, val_str_levenshtein: 0.8775056
+2020-03-24 21:34:31,793 INFO Model saved to 'experiments/exp7/model-263-0.283679.pth'
+2020-03-24 21:35:26,735 INFO Train - Epoch: 264, LR: 0.0001, train_loss: 0.2889687, train_str_accuracy: 0.06963751, train_str_levenshtein: 1.109375
+2020-03-24 21:35:40,627 INFO Validation - Epoch: 264, val_loss: 0.2621724, val_str_accuracy: 0.07622117, val_str_levenshtein: 0.8819599
+2020-03-24 21:35:40,632 INFO Model saved to 'experiments/exp7/model-264-0.288969.pth'
+2020-03-24 21:36:35,771 INFO Train - Epoch: 265, LR: 0.0001, train_loss: 0.2919588, train_str_accuracy: 0.0720759, train_str_levenshtein: 0.9667969
+2020-03-24 21:36:49,596 INFO Validation - Epoch: 265, val_loss: 0.2633995, val_str_accuracy: 0.08698828, val_str_levenshtein: 0.8485523
+2020-03-24 21:36:49,602 INFO Model saved to 'experiments/exp7/model-265-0.291959.pth'
+2020-03-24 21:37:44,733 INFO Train - Epoch: 266, LR: 0.0001, train_loss: 0.2804896, train_str_accuracy: 0.07070895, train_str_levenshtein: 1.060547
+2020-03-24 21:37:58,512 INFO Validation - Epoch: 266, val_loss: 0.245179, val_str_accuracy: 0.07883495, val_str_levenshtein: 0.8641425
+2020-03-24 21:37:58,517 INFO Model saved to 'experiments/exp7/model-266-0.280490.pth'
+2020-03-24 21:38:53,128 INFO Train - Epoch: 267, LR: 0.0001, train_loss: 0.2713634, train_str_accuracy: 0.07000212, train_str_levenshtein: 1.027344
+2020-03-24 21:39:06,886 INFO Validation - Epoch: 267, val_loss: 0.2453834, val_str_accuracy: 0.07716879, val_str_levenshtein: 0.8730512
+2020-03-24 21:39:06,891 INFO Model saved to 'experiments/exp7/model-267-0.271363.pth'
+2020-03-24 21:40:01,189 INFO Train - Epoch: 268, LR: 0.0001, train_loss: 0.2713613, train_str_accuracy: 0.07093834, train_str_levenshtein: 1.072266
+2020-03-24 21:40:14,797 INFO Validation - Epoch: 268, val_loss: 0.2417284, val_str_accuracy: 0.0695774, val_str_levenshtein: 0.8463252
+2020-03-24 21:40:14,805 INFO Model saved to 'experiments/exp7/model-268-0.271361.pth'
+2020-03-24 21:41:08,749 INFO Train - Epoch: 269, LR: 0.0001, train_loss: 0.2724899, train_str_accuracy: 0.07346939, train_str_levenshtein: 1.048828
+2020-03-24 21:41:22,397 INFO Validation - Epoch: 269, val_loss: 0.2501646, val_str_accuracy: 0.08129047, val_str_levenshtein: 0.8819599
+2020-03-24 21:41:22,402 INFO Model saved to 'experiments/exp7/model-269-0.272490.pth'
+2020-03-24 21:42:15,964 INFO Train - Epoch: 270, LR: 0.0001, train_loss: 0.2782061, train_str_accuracy: 0.06986958, train_str_levenshtein: 1.113281
+2020-03-24 21:42:29,499 INFO Validation - Epoch: 270, val_loss: 0.2459606, val_str_accuracy: 0.06925985, val_str_levenshtein: 0.8930958
+2020-03-24 21:42:29,504 INFO Model saved to 'experiments/exp7/model-270-0.278206.pth'
+2020-03-24 21:43:22,706 INFO Train - Epoch: 271, LR: 0.0001, train_loss: 0.268308, train_str_accuracy: 0.07151745, train_str_levenshtein: 1.037109
+2020-03-24 21:43:36,340 INFO Validation - Epoch: 271, val_loss: 0.2401591, val_str_accuracy: 0.07571209, val_str_levenshtein: 0.8552339
+2020-03-24 21:43:36,345 INFO Model saved to 'experiments/exp7/model-271-0.268308.pth'
+2020-03-24 21:44:29,981 INFO Train - Epoch: 272, LR: 0.0001, train_loss: 0.2740678, train_str_accuracy: 0.06977299, train_str_levenshtein: 1.048828
+2020-03-24 21:44:43,645 INFO Validation - Epoch: 272, val_loss: 0.247801, val_str_accuracy: 0.07639689, val_str_levenshtein: 0.857461
+2020-03-24 21:44:43,650 INFO Model saved to 'experiments/exp7/model-272-0.274068.pth'
+2020-03-24 21:45:37,725 INFO Train - Epoch: 273, LR: 0.0001, train_loss: 0.2613753, train_str_accuracy: 0.0707906, train_str_levenshtein: 1.041016
+2020-03-24 21:45:51,451 INFO Validation - Epoch: 273, val_loss: 0.2347897, val_str_accuracy: 0.07855808, val_str_levenshtein: 0.8418708
+2020-03-24 21:45:51,456 INFO Model saved to 'experiments/exp7/model-273-0.261375.pth'
+2020-03-24 21:46:45,476 INFO Train - Epoch: 274, LR: 0.0001, train_loss: 0.258855, train_str_accuracy: 0.07181971, train_str_levenshtein: 1.015625
+2020-03-24 21:46:59,059 INFO Validation - Epoch: 274, val_loss: 0.2366391, val_str_accuracy: 0.07608696, val_str_levenshtein: 0.8619154
+2020-03-24 21:46:59,064 INFO Model saved to 'experiments/exp7/model-274-0.258855.pth'
+2020-03-24 21:47:53,618 INFO Train - Epoch: 275, LR: 0.0001, train_loss: 0.2630848, train_str_accuracy: 0.06859163, train_str_levenshtein: 1.001953
+2020-03-24 21:48:07,320 INFO Validation - Epoch: 275, val_loss: 0.2312475, val_str_accuracy: 0.07567042, val_str_levenshtein: 0.8775056
+2020-03-24 21:48:07,325 INFO Model saved to 'experiments/exp7/model-275-0.263085.pth'
+2020-03-24 21:49:01,260 INFO Train - Epoch: 276, LR: 0.0001, train_loss: 0.2725966, train_str_accuracy: 0.07291708, train_str_levenshtein: 1.126953
+2020-03-24 21:49:14,776 INFO Validation - Epoch: 276, val_loss: 0.2605147, val_str_accuracy: 0.07908639, val_str_levenshtein: 0.9198218
+2020-03-24 21:49:14,781 INFO Model saved to 'experiments/exp7/model-276-0.272597.pth'
+2020-03-24 21:50:09,217 INFO Train - Epoch: 277, LR: 0.0001, train_loss: 0.2682242, train_str_accuracy: 0.07011905, train_str_levenshtein: 1.068359
+2020-03-24 21:50:22,849 INFO Validation - Epoch: 277, val_loss: 0.2325732, val_str_accuracy: 0.07620933, val_str_levenshtein: 0.830735
+2020-03-24 21:50:22,854 INFO Model saved to 'experiments/exp7/model-277-0.268224.pth'
+2020-03-24 21:51:16,470 INFO Train - Epoch: 278, LR: 0.0001, train_loss: 0.2561264, train_str_accuracy: 0.07290829, train_str_levenshtein: 1.060547
+2020-03-24 21:51:30,181 INFO Validation - Epoch: 278, val_loss: 0.2333607, val_str_accuracy: 0.08098088, val_str_levenshtein: 0.8552339
+2020-03-24 21:51:30,186 INFO Model saved to 'experiments/exp7/model-278-0.256126.pth'
+2020-03-24 21:52:23,815 INFO Train - Epoch: 279, LR: 0.0001, train_loss: 0.2669086, train_str_accuracy: 0.07525973, train_str_levenshtein: 1.033203
+2020-03-24 21:52:37,637 INFO Validation - Epoch: 279, val_loss: 0.2465586, val_str_accuracy: 0.08647125, val_str_levenshtein: 0.8530067
+2020-03-24 21:52:37,642 INFO Model saved to 'experiments/exp7/model-279-0.266909.pth'
+2020-03-24 21:53:31,777 INFO Train - Epoch: 280, LR: 0.0001, train_loss: 0.2593038, train_str_accuracy: 0.07219093, train_str_levenshtein: 1.044922
+2020-03-24 21:53:45,529 INFO Validation - Epoch: 280, val_loss: 0.2376706, val_str_accuracy: 0.08238845, val_str_levenshtein: 0.8552339
+2020-03-24 21:53:45,534 INFO Model saved to 'experiments/exp7/model-280-0.259304.pth'
+2020-03-24 21:54:39,323 INFO Train - Epoch: 281, LR: 0.0001, train_loss: 0.262163, train_str_accuracy: 0.07427764, train_str_levenshtein: 1.039062
+2020-03-24 21:54:53,269 INFO Validation - Epoch: 281, val_loss: 0.2550671, val_str_accuracy: 0.08065136, val_str_levenshtein: 0.8596882
+2020-03-24 21:54:53,274 INFO Model saved to 'experiments/exp7/model-281-0.262163.pth'
+2020-03-24 21:55:47,410 INFO Train - Epoch: 282, LR: 0.0001, train_loss: 0.254571, train_str_accuracy: 0.06935716, train_str_levenshtein: 0.9746094
+2020-03-24 21:56:01,205 INFO Validation - Epoch: 282, val_loss: 0.2258027, val_str_accuracy: 0.08562409, val_str_levenshtein: 0.8418708
+2020-03-24 21:56:01,210 INFO Model saved to 'experiments/exp7/model-282-0.254571.pth'
+2020-03-24 21:56:54,725 INFO Train - Epoch: 283, LR: 0.0001, train_loss: 0.2551139, train_str_accuracy: 0.06996265, train_str_levenshtein: 1.044922
+2020-03-24 21:57:08,418 INFO Validation - Epoch: 283, val_loss: 0.2568756, val_str_accuracy: 0.07927634, val_str_levenshtein: 0.8953229
+2020-03-24 21:57:08,423 INFO Model saved to 'experiments/exp7/model-283-0.255114.pth'
+2020-03-24 21:58:02,561 INFO Train - Epoch: 284, LR: 0.0001, train_loss: 0.2565325, train_str_accuracy: 0.07703272, train_str_levenshtein: 1.033203
+2020-03-24 21:58:16,299 INFO Validation - Epoch: 284, val_loss: 0.2334332, val_str_accuracy: 0.08299346, val_str_levenshtein: 0.8552339
+2020-03-24 21:58:16,304 INFO Model saved to 'experiments/exp7/model-284-0.256533.pth'
+2020-03-24 21:59:10,397 INFO Train - Epoch: 285, LR: 0.0001, train_loss: 0.2625933, train_str_accuracy: 0.06975915, train_str_levenshtein: 1.005859
+2020-03-24 21:59:24,245 INFO Validation - Epoch: 285, val_loss: 0.237213, val_str_accuracy: 0.08515965, val_str_levenshtein: 0.9042316
+2020-03-24 21:59:24,250 INFO Model saved to 'experiments/exp7/model-285-0.262593.pth'
+2020-03-24 22:00:18,647 INFO Train - Epoch: 286, LR: 0.0001, train_loss: 0.2485605, train_str_accuracy: 0.07366606, train_str_levenshtein: 1.021484
+2020-03-24 22:00:32,560 INFO Validation - Epoch: 286, val_loss: 0.2300266, val_str_accuracy: 0.09100688, val_str_levenshtein: 0.8485523
+2020-03-24 22:00:32,565 INFO Model saved to 'experiments/exp7/model-286-0.248560.pth'
+2020-03-24 22:01:26,593 INFO Train - Epoch: 287, LR: 0.0001, train_loss: 0.2420785, train_str_accuracy: 0.071837, train_str_levenshtein: 0.9746094
+2020-03-24 22:01:40,258 INFO Validation - Epoch: 287, val_loss: 0.2247039, val_str_accuracy: 0.07757692, val_str_levenshtein: 0.8418708
+2020-03-24 22:01:40,263 INFO Model saved to 'experiments/exp7/model-287-0.242078.pth'
+2020-03-24 22:02:34,142 INFO Train - Epoch: 288, LR: 0.0001, train_loss: 0.2420817, train_str_accuracy: 0.07212869, train_str_levenshtein: 0.9785156
+2020-03-24 22:02:48,222 INFO Validation - Epoch: 288, val_loss: 0.2261366, val_str_accuracy: 0.0820302, val_str_levenshtein: 0.8507795
+2020-03-24 22:02:48,227 INFO Model saved to 'experiments/exp7/model-288-0.242082.pth'
+2020-03-24 22:03:45,211 INFO Train - Epoch: 289, LR: 0.0001, train_loss: 0.2478792, train_str_accuracy: 0.07297682, train_str_levenshtein: 1.125
+2020-03-24 22:03:59,616 INFO Validation - Epoch: 289, val_loss: 0.2297829, val_str_accuracy: 0.08424684, val_str_levenshtein: 0.8552339
+2020-03-24 22:03:59,622 INFO Model saved to 'experiments/exp7/model-289-0.247879.pth'
+2020-03-24 22:04:55,656 INFO Train - Epoch: 290, LR: 0.0001, train_loss: 0.2450537, train_str_accuracy: 0.07243877, train_str_levenshtein: 1.101562
+2020-03-24 22:05:10,033 INFO Validation - Epoch: 290, val_loss: 0.2385394, val_str_accuracy: 0.08647841, val_str_levenshtein: 0.8663697
+2020-03-24 22:05:10,040 INFO Model saved to 'experiments/exp7/model-290-0.245054.pth'
+2020-03-24 22:06:05,772 INFO Train - Epoch: 291, LR: 0.0001, train_loss: 0.2476278, train_str_accuracy: 0.07410871, train_str_levenshtein: 1.152344
+2020-03-24 22:06:19,846 INFO Validation - Epoch: 291, val_loss: 0.2300785, val_str_accuracy: 0.07467205, val_str_levenshtein: 0.857461
+2020-03-24 22:06:19,851 INFO Model saved to 'experiments/exp7/model-291-0.247628.pth'
+2020-03-24 22:07:15,128 INFO Train - Epoch: 292, LR: 0.0001, train_loss: 0.2428889, train_str_accuracy: 0.07695452, train_str_levenshtein: 1.003906
+2020-03-24 22:07:29,173 INFO Validation - Epoch: 292, val_loss: 0.2208264, val_str_accuracy: 0.08144151, val_str_levenshtein: 0.8418708
+2020-03-24 22:07:29,178 INFO Model saved to 'experiments/exp7/model-292-0.242889.pth'
+2020-03-24 22:08:24,306 INFO Train - Epoch: 293, LR: 0.0001, train_loss: 0.2388876, train_str_accuracy: 0.07737571, train_str_levenshtein: 1.078125
+2020-03-24 22:08:38,843 INFO Validation - Epoch: 293, val_loss: 0.2296872, val_str_accuracy: 0.08797913, val_str_levenshtein: 0.8841871
+2020-03-24 22:08:38,849 INFO Model saved to 'experiments/exp7/model-293-0.238888.pth'
+2020-03-24 22:09:34,693 INFO Train - Epoch: 294, LR: 0.0001, train_loss: 0.2405826, train_str_accuracy: 0.07930177, train_str_levenshtein: 1.027344
+2020-03-24 22:09:48,863 INFO Validation - Epoch: 294, val_loss: 0.233718, val_str_accuracy: 0.07925632, val_str_levenshtein: 0.8396437
+2020-03-24 22:09:48,868 INFO Model saved to 'experiments/exp7/model-294-0.240583.pth'
+2020-03-24 22:10:43,522 INFO Train - Epoch: 295, LR: 0.0001, train_loss: 0.2397823, train_str_accuracy: 0.06835563, train_str_levenshtein: 1.001953
+2020-03-24 22:10:57,442 INFO Validation - Epoch: 295, val_loss: 0.2197791, val_str_accuracy: 0.08133051, val_str_levenshtein: 0.857461
+2020-03-24 22:10:57,447 INFO Model saved to 'experiments/exp7/model-295-0.239782.pth'
+2020-03-24 22:11:52,269 INFO Train - Epoch: 296, LR: 0.0001, train_loss: 0.2431299, train_str_accuracy: 0.07894044, train_str_levenshtein: 1.041016
+2020-03-24 22:12:06,184 INFO Validation - Epoch: 296, val_loss: 0.2218847, val_str_accuracy: 0.08210624, val_str_levenshtein: 0.8619154
+2020-03-24 22:12:06,189 INFO Model saved to 'experiments/exp7/model-296-0.243130.pth'
+2020-03-24 22:13:01,329 INFO Train - Epoch: 297, LR: 0.0001, train_loss: 0.2373932, train_str_accuracy: 0.07283237, train_str_levenshtein: 1.009766
+2020-03-24 22:13:15,163 INFO Validation - Epoch: 297, val_loss: 0.2278531, val_str_accuracy: 0.08616388, val_str_levenshtein: 0.8596882
+2020-03-24 22:13:15,168 INFO Model saved to 'experiments/exp7/model-297-0.237393.pth'
+2020-03-24 22:14:10,249 INFO Train - Epoch: 298, LR: 0.0001, train_loss: 0.2302904, train_str_accuracy: 0.07511417, train_str_levenshtein: 0.9550781
+2020-03-24 22:14:24,213 INFO Validation - Epoch: 298, val_loss: 0.2180232, val_str_accuracy: 0.0796039, val_str_levenshtein: 0.857461
+2020-03-24 22:14:24,218 INFO Model saved to 'experiments/exp7/model-298-0.230290.pth'
+2020-03-24 22:15:19,253 INFO Train - Epoch: 299, LR: 0.0001, train_loss: 0.2269766, train_str_accuracy: 0.07373266, train_str_levenshtein: 0.9765625
+2020-03-24 22:15:33,500 INFO Validation - Epoch: 299, val_loss: 0.2117368, val_str_accuracy: 0.08302335, val_str_levenshtein: 0.8240535
+2020-03-24 22:15:33,506 INFO Model saved to 'experiments/exp7/model-299-0.226977.pth'
+2020-03-24 22:16:27,917 INFO Train - Epoch: 300, LR: 0.0001, train_loss: 0.232195, train_str_accuracy: 0.06949999, train_str_levenshtein: 1.033203
+2020-03-24 22:16:41,621 INFO Validation - Epoch: 300, val_loss: 0.2170823, val_str_accuracy: 0.08498998, val_str_levenshtein: 0.8596882
+2020-03-24 22:16:41,626 INFO Model saved to 'experiments/exp7/model-300-0.232195.pth'

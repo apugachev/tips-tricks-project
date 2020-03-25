@@ -62,7 +62,19 @@ class RandomCropTransform(object):
         width = np.random.randint(image.shape[1] // 1.5, image.shape[1])
         return RandomCrop(height, width)(image=image)['image']
 
-def get_transforms(image_size):
+def get_transforms_train(image_size):
+    transform = Compose([
+        ToGrayScale(),
+        ScaleTransform(image_size),
+        BrightnessTransform(),
+        GaussNoiseTransfrorm(),
+        BlurTransform(),
+        RotateTransform(),
+        ImageNormalization(),
+        FromNumpyToTensor()])
+    return transform
+
+def get_transforms_val(image_size):
     transform = Compose([
         ToGrayScale(),
         ScaleTransform(image_size),

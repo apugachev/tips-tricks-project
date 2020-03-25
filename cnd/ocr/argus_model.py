@@ -28,7 +28,9 @@ class CRNNModel(Model):
 
         self.optimizer.zero_grad()
         images = batch["image"].to(self.device)
-        text, length =  self.converter.encode(batch["target"])
+        texts, length =  self.converter.encode(batch["target"])
+        text = torch.IntTensor(texts).to(self.device)
+        length = length.to(self.device)
         preds = self.nn_module(images)
         sim_preds, preds_size =  self.preds_converter(preds, images.size(0))
         loss = self.loss(preds, text, preds_size, length)

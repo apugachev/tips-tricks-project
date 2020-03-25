@@ -1,0 +1,100 @@
+[2020-03-25 01:14:24,993][INFO] - VideoReader: Create VideoReader
+[2020-03-25 01:14:24,997][INFO] - VideoWriter: Create VideoWriter
+[2020-03-25 01:14:25,015][INFO] - OcrStream: Create OcrStream
+[2020-03-25 01:14:25,015][INFO] - VisualizeStream: Create VisualizeStream
+[2020-03-25 01:14:25,015][INFO] - CNDProject: Start Project
+[2020-03-25 01:14:25,015][INFO] - CNDProject: Start project act start
+[2020-03-25 01:14:25,015][INFO] - VideoReader: Start VideoReader
+[2020-03-25 01:14:25,035][INFO] - VisualizeStream: Start VisualizeStream
+[2020-03-25 01:14:25,036][INFO] - VideoReader: Start VideoReader
+[2020-03-25 01:14:36,374][ERROR] - VisualizeStream: No frame found
+Traceback (most recent call last):
+  File "/Users/alex/PycharmProjects/tips-tricks-project/worker/visualize_stream.py", line 67, in _visualize
+    frame = self.in_video.read()
+  File "/Users/alex/PycharmProjects/tips-tricks-project/worker/video_reader.py", line 25, in read
+    raise Exception("No frame found")
+Exception: No frame found
+[2020-03-25 01:14:36,386][INFO] - CNDProject: Stop Project
+[2020-03-25 01:14:36,386][INFO] - VideoReader: Stop VideoReader
+[2020-03-25 01:14:36,406][INFO] - VisualizeStream: Stop VisualizeStream
+[2020-03-25 01:14:36,409][INFO] - VideoWriter: Stop VideoWriter
+[2020-03-25 01:14:36,409][INFO] - __main__: TIME (seconds): 11.415538
+[2020-03-25 01:14:36,409][INFO] - CNDProject: Stop Project
+[2020-03-25 01:14:36,409][INFO] - VideoReader: Stop VideoReader
+[2020-03-25 01:14:36,409][INFO] - VisualizeStream: Stop VisualizeStream
+[2020-03-25 01:14:36,409][INFO] - VideoWriter: Stop VideoWriter
+[2020-03-25 01:25:07,699][INFO] - VideoReader: Create VideoReader
+[2020-03-25 01:25:07,704][INFO] - VideoWriter: Create VideoWriter
+[2020-03-25 01:25:07,718][INFO] - OcrStream: Create OcrStream
+[2020-03-25 01:25:07,719][INFO] - VisualizeStream: Create VisualizeStream
+[2020-03-25 01:25:07,719][INFO] - CNDProject: Start Project
+[2020-03-25 01:25:07,719][INFO] - CNDProject: Start project act start
+[2020-03-25 01:25:07,719][INFO] - VideoReader: Start VideoReader
+[2020-03-25 01:25:07,744][INFO] - VisualizeStream: Start VisualizeStream
+[2020-03-25 01:25:07,744][INFO] - VideoReader: Start VideoReader
+[2020-03-25 01:25:18,776][ERROR] - VisualizeStream: No frame found
+Traceback (most recent call last):
+  File "/Users/alex/PycharmProjects/tips-tricks-project/worker/visualize_stream.py", line 67, in _visualize
+    frame = self.in_video.read()
+  File "/Users/alex/PycharmProjects/tips-tricks-project/worker/video_reader.py", line 25, in read
+    raise Exception("No frame found")
+Exception: No frame found
+[2020-03-25 01:25:18,786][INFO] - CNDProject: Stop Project
+[2020-03-25 01:25:18,786][INFO] - VideoReader: Stop VideoReader
+[2020-03-25 01:25:18,803][INFO] - VisualizeStream: Stop VisualizeStream
+[2020-03-25 01:25:18,805][INFO] - VideoWriter: Stop VideoWriter
+[2020-03-25 01:25:18,805][INFO] - __main__: TIME (seconds): 11.105992
+[2020-03-25 01:25:18,805][INFO] - CNDProject: Stop Project
+[2020-03-25 01:25:18,805][INFO] - VideoReader: Stop VideoReader
+[2020-03-25 01:25:18,806][INFO] - VisualizeStream: Stop VisualizeStream
+[2020-03-25 01:25:18,806][INFO] - VideoWriter: Stop VideoWriter
+[2020-03-25 01:26:27,081][INFO] - VideoReader: Create VideoReader
+[2020-03-25 01:26:27,086][INFO] - VideoWriter: Create VideoWriter
+[2020-03-25 01:26:27,100][INFO] - OcrStream: Create OcrStream
+[2020-03-25 01:26:27,100][INFO] - VisualizeStream: Create VisualizeStream
+[2020-03-25 01:26:27,100][INFO] - CNDProject: Start Project
+[2020-03-25 01:26:27,100][INFO] - CNDProject: Start project act start
+[2020-03-25 01:26:27,100][INFO] - VideoReader: Start VideoReader
+[2020-03-25 01:26:27,113][INFO] - VisualizeStream: Start VisualizeStream
+[2020-03-25 01:26:27,114][INFO] - VideoReader: Start VideoReader
+[2020-03-25 01:26:36,147][ERROR] - VisualizeStream: No frame found
+Traceback (most recent call last):
+  File "/Users/alex/PycharmProjects/tips-tricks-project/worker/visualize_stream.py", line 67, in _visualize
+    frame = self.in_video.read()
+  File "/Users/alex/PycharmProjects/tips-tricks-project/worker/video_reader.py", line 25, in read
+    raise Exception("No frame found")
+Exception: No frame found
+[2020-03-25 01:26:36,158][INFO] - CNDProject: Stop Project
+[2020-03-25 01:26:36,159][INFO] - VideoReader: Stop VideoReader
+[2020-03-25 01:26:36,187][INFO] - VisualizeStream: Stop VisualizeStream
+[2020-03-25 01:26:36,189][INFO] - VideoWriter: Stop VideoWriter
+[2020-03-25 01:26:36,189][INFO] - __main__: TIME (seconds): 9.107962
+[2020-03-25 01:26:36,189][INFO] - CNDProject: Stop Project
+[2020-03-25 01:26:36,190][INFO] - VideoReader: Stop VideoReader
+[2020-03-25 01:26:36,190][INFO] - VisualizeStream: Stop VisualizeStream
+[2020-03-25 01:26:36,190][INFO] - VideoWriter: Stop VideoWriter
+[2020-03-25 01:42:31,967][INFO] - VideoReader: Create VideoReader
+[2020-03-25 01:42:31,971][INFO] - VideoWriter: Create VideoWriter
+[2020-03-25 01:42:31,986][INFO] - OcrStream: Create OcrStream
+[2020-03-25 01:42:31,987][INFO] - VisualizeStream: Create VisualizeStream
+[2020-03-25 01:42:31,987][INFO] - CNDProject: Start Project
+[2020-03-25 01:42:31,987][INFO] - CNDProject: Start project act start
+[2020-03-25 01:42:31,987][INFO] - VideoReader: Start VideoReader
+[2020-03-25 01:42:32,010][INFO] - VisualizeStream: Start VisualizeStream
+[2020-03-25 01:42:32,011][INFO] - VideoReader: Start VideoReader
+[2020-03-25 01:42:41,231][ERROR] - VisualizeStream: No frame found
+Traceback (most recent call last):
+  File "/Users/alex/PycharmProjects/tips-tricks-project/worker/visualize_stream.py", line 67, in _visualize
+    frame = self.in_video.read()
+  File "/Users/alex/PycharmProjects/tips-tricks-project/worker/video_reader.py", line 25, in read
+    raise Exception("No frame found")
+Exception: No frame found
+[2020-03-25 01:42:41,242][INFO] - CNDProject: Stop Project
+[2020-03-25 01:42:41,242][INFO] - VideoReader: Stop VideoReader
+[2020-03-25 01:42:41,263][INFO] - VisualizeStream: Stop VisualizeStream
+[2020-03-25 01:42:41,266][INFO] - VideoWriter: Stop VideoWriter
+[2020-03-25 01:42:41,266][INFO] - __main__: TIME (seconds): 9.29915
+[2020-03-25 01:42:41,267][INFO] - CNDProject: Stop Project
+[2020-03-25 01:42:41,267][INFO] - VideoReader: Stop VideoReader
+[2020-03-25 01:42:41,267][INFO] - VisualizeStream: Stop VisualizeStream
+[2020-03-25 01:42:41,267][INFO] - VideoWriter: Stop VideoWriter

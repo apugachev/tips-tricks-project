@@ -2,12 +2,21 @@ import cv2
 
 cv2.setNumThreads(0)
 import logging
+import argparse
 from datetime import datetime
 from logging.handlers import RotatingFileHandler
 
 from worker.state import State
 from worker.video_reader import VideoReader
 from worker.visualize_stream import VisualizeStream
+
+parser = argparse.ArgumentParser()
+parser.add_argument("-vp", "--video_path", help = "Path to video file", required = True)
+parser.add_argument("-sp", "--save_path", help = "Save path for video", required = True)
+parser.add_argument("-log", "--log_path", help="Logging file", default='experiments/logs/video_logs.txt')
+parser.add_argument("-lvl", "--log_level", help="Level for logging", default='INFO')
+args = parser.parse_args()
+
 
 def setup_logging(path, level='INFO'):
     handlers = [logging.StreamHandler()]
@@ -55,19 +64,17 @@ class CNDProject:
 
 
 if __name__ == '__main__':
-    #setup_logging(sys.argv[1], sys.argv[2])
+    setup_logging(args.log_path, args.log_level)
     logger = logging.getLogger(__name__)
     project = None
     start = datetime.now()
     try:
-        project = CNDProject("CNDProject", '/Users/alex/Downloads/3.mp4',
-                             '/Users/alex/PycharmProjects/tips-tricks-project/experiments/res.mp4')
+        project = CNDProject("CNDProject", args.video_path, args.save_path)
         project.start()
     except Exception as e:
         logger.exception(e)
     finally:
         time = (datetime.now() - start).total_seconds()
-        print('TIME (seconds):', time)
-        logger.info('TIME (seconds):', time)
+        logger.info('TIME (seconds): ' + str(time))
         if project is not None:
             project.stop()

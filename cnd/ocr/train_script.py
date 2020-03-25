@@ -6,7 +6,7 @@ from argus.callbacks import Checkpoint
 from cnd.ocr.dataset import OcrDataset
 from cnd.ocr.argus_model import CRNNModel
 from cnd.config import OCR_EXPERIMENTS_DIR, CONFIG_PATH, Config
-from cnd.ocr.transforms import get_transforms
+from cnd.ocr.transforms import get_transforms_train, get_transforms_val
 from cnd.ocr.metrics import StringAccuracy, LevDistance
 
 from pathlib import Path
@@ -37,14 +37,14 @@ alphabet = "ABEKMHOPCTYX" + "".join([str(i) for i in range(10)]) + "-"
 CRNN_PARAMS = {"image_height": 32,
                 "number_input_channels": 1,
                 "number_class_symbols": len(alphabet),
-                "rnn_size": 16,
+                "rnn_size": 64,
                 }
 
 MODEL_PARAMS = {"nn_module":
                     ("CRNN", CRNN_PARAMS),
                 "alphabet": alphabet,
                 "loss": {"reduction":"mean"},
-                "optimizer": ("Adam", {"lr": 0.0001}),
+                "optimizer": ("Adam", {"lr": 0.0001, "weight_decay": 0.001}),
                 "device": "cpu",
                 }
 
@@ -54,7 +54,8 @@ if __name__ == "__main__":
     else:
         EXPERIMENT_DIR.mkdir(parents=True, exist_ok=True)
 
-    transforms = get_transforms(CV_CONFIG.get('ocr_image_size'))
+    transforms_train = get_transforms_train(CV_CONFIG.get('ocr_image_size'))
+    transforms_val = get_transforms_val(CV_CONFIG.get('ocr_image_size'))
 
     path = CV_CONFIG.get('data_path')
     dataset_paths = Path(path)
@@ -66,11 +67,11 @@ if __name__ == "__main__":
     train_paths, val_paths = train_test_split(filepaths, random_state=6)
 
     train_dataset = ConcatDataset([
-        OcrDataset(train_paths, transforms)
+        OcrDataset(train_paths, transforms_train)
     ])
 
     val_dataset = ConcatDataset([
-        OcrDataset(val_paths, transforms)
+        OcrDataset(val_paths, transforms_val)
     ])
 
     train_loader = DataLoader(

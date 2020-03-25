@@ -4,7 +4,7 @@ from cnd.ocr.converter import strLabelConverter
 import argparse
 import pathlib
 from cnd.config import CONFIG_PATH, Config
-from cnd.ocr.transforms import get_transforms
+from cnd.ocr.transforms import get_transforms_val
 from tabulate import tabulate
 
 
@@ -13,7 +13,7 @@ class Predictor:
         self.device = device
         self.model = load_model(model_path, device=device)
         self.image_size = image_size
-        self.transforms = get_transforms(self.image_size)
+        self.transforms = get_transforms_val(self.image_size)
         self.alphabet = "ABEKMHOPCTYX" + "".join([str(i) for i in range(10)]) + "-"
         self.converter = strLabelConverter(self.alphabet)
 
