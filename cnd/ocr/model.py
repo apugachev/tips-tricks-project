@@ -116,6 +116,7 @@ class CRNN(nn.Module):
             )
 
         self.cnn = nn.Sequential(*cnn)
+
         self.rnn = nn.Sequential(
             BidirectionalLSTM(128, rnn_size, number_class_symbols)
         )

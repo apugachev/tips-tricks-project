@@ -1,40 +1,30 @@
-# HERE YOUR PREDICTOR
-import torch
-from cnd.ocr.model import CRNN
+from argus.model import load_model
 from cnd.ocr.transforms import *
-from cnd.ocr.metrics import WrapCTCLoss
-from torchvision.transforms import Compose
 from cnd.ocr.converter import strLabelConverter
+import argparse
+import pathlib
+from cnd.config import CONFIG_PATH, Config
+from cnd.ocr.transforms import get_transforms_val
+from tabulate import tabulate
 
 
 class Predictor:
-    def __init__(self, model_path, model_params, image_size):
-
-        self.checkpoint = torch.load(model_path)
-        self.model = CRNN(**model_params)
-        self.model.load_state_dict(self.checkpoint['model_state_dict'])
-        self.model.eval()
+    def __init__(self, model_path, image_size, device="cpu"):
+        self.device = device
+        self.model = load_model(model_path, device=device)
         self.image_size = image_size
-        self.transform = Compose([
-            ToGrayScale(),
-            ScaleTransform(self.image_size),
-            ImageNormalization(),
-            FromNumpyToTensor()])
-        self.alphabet = " ABEKMHOPCTYX" + "".join([str(i) for i in range(10)])
+        self.transforms = get_transforms_val(self.image_size)
+        self.alphabet = "ABEKMHOPCTYX" + "".join([str(i) for i in range(10)]) + "-"
         self.converter = strLabelConverter(self.alphabet)
 
     def predict(self, images):
+        images = [images] if len(images[0].shape) == 2 else images
+        img_resized = torch.zeros(tuple([len(images), 1] + self.image_size))
 
-        if len(images.shape) == 3:
-            images_new = self.transform(images)[None, :, :, :]
-        else:
-            self.image_size = [len(images), 1] + self.image_size
-            images_new = torch.zeros(self.image_size)
+        for i in range(len(images)):
+            img_resized[i] = self.transforms(images[i])
 
-            for i, img in enumerate(images):
-                images_new[i] = self.transform(img)
-
-        logits = self.model(images_new)
+        logits = self.model.predict(img_resized)
         len_images = torch.IntTensor([logits.size(0)] * logits.size(1))
 
         _, preds = logits.max(2)
@@ -44,18 +34,27 @@ class Predictor:
 
 if __name__ == "__main__":
 
-    alphabet = " ABEKMHOPCTYX"
-    alphabet += "".join([str(i) for i in range(10)])
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-pcs", "--img-folder", help="Path to folder with images", default="test_folder/pics")
+    parser.add_argument("-m", "--model", help="Path to model", default="models/best_model_colab_700.pth")
+    parser.add_argument("-c", "--cuda", action="store_true", help="Device (gpu or cpu)")
+    args = parser.parse_args()
 
-    path = '/Users/alex/PycharmProjects/tips-tricks-project/cnd/ocr/logs/ocr/checkpoints/best_full.pth'
-    model_params = {
-        "image_height": 32,
-        "number_input_channels": 1,
-        "number_class_symbols": len(alphabet),
-        "rnn_size": 64,
-    }
+    test_paths = pathlib.Path(args.img_folder)
+    device = "cuda" if args.cuda else "cpu"
 
-    pic = cv2.imread('/Users/alex/PycharmProjects/tips-tricks-project/CropNumbers/NumBase/Y446YK 19726.bmp')
+    filepaths = list(test_paths.glob('**/*'))
+    targets = [file.name.split('.')[0] for file in filepaths]
+    filepaths = [str(file) for file in filepaths if file.is_file()]
 
-    p = Predictor(path, model_params, [32,96])
-    print(p.predict(pic))
+    CV_CONFIG = Config(CONFIG_PATH)
+    IMG_SIZE = CV_CONFIG.get('ocr_image_size')
+
+    images = [cv2.imread(file) for file in filepaths]
+
+    p = Predictor(args.model, IMG_SIZE, device)
+    preds = p.predict(images)
+
+    result = [(t.replace(' ', ''), p) for t,p in zip(targets, preds)]
+
+    print(tabulate(result, headers=['Target', 'Predict']))

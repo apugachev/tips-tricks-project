@@ -68,8 +68,8 @@ class OcrDataset(Dataset):
                 carnumber = re.sub(" +", "", carnumber)
 
                 return {"image": img,
-                "targets": carnumber}
+                "target": carnumber}
             else:
                 return {"image": img,
-                "targets": ""}
+                "target": ""}
 

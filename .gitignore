@@ -131,4 +131,4 @@ dmypy.json
 .idea/
 NumBase/.DS_Store
 cnd/ocr/logs/ocr/
-
+cnd/ocr/logs/ocr/train_log/
