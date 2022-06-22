@@ -5,7 +5,7 @@ trafaret==2.0.2
 pytorch_argus==0.0.9
 tabulate==0.8.6
 deep_pipe==0.0.7.post1
-numpy==1.18.1
+numpy==1.22.0
 torchvision==0.5.0
 trafaret_config==2.0.2
 pytorch-argus==0.0.9
